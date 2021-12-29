@@ -32,3 +32,5 @@ node_modules/
 *.sql
 *.sqlite
 /wp-content/themes/fictional-university-theme/api-keys.php
+/wp-content/themes/fictional-university-theme/bak/node_modules.bak/
+/wp-content/themes/fictional-university-theme/package-lock.json
