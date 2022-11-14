@@ -2,6 +2,8 @@
 /*
 !.gitignore
 !README.md
+*.map
+package-lock.json
 !wp-content/
 
 # ignore everything in the "wp-content" directory, except:
