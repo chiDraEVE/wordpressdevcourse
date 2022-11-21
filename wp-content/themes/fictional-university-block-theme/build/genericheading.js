@@ -143,14 +143,12 @@ __webpack_require__.r(__webpack_exports__);
   edit: EditComponent,
   save: SaveComponent
 });
-
 function EditComponent(props) {
   function handleTextChange(x) {
     props.setAttributes({
       text: x
     });
   }
-
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.BlockControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.ToolbarGroup, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_1__.ToolbarButton, {
     isPressed: props.attributes.size === "large",
     onClick: () => props.setAttributes({
@@ -174,21 +172,17 @@ function EditComponent(props) {
     onChange: handleTextChange
   }));
 }
-
 function SaveComponent(props) {
   function createTagName() {
     switch (props.attributes.size) {
       case "large":
         return "h1";
-
       case "medium":
         return "h2";
-
       case "small":
         return "h3";
     }
   }
-
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText.Content, {
     tagName: createTagName(),
     value: props.attributes.text,

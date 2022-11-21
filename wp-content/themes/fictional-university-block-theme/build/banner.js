@@ -130,7 +130,6 @@ __webpack_require__.r(__webpack_exports__);
   edit: EditComponent,
   save: SaveComponent
 });
-
 function EditComponent() {
   const useMeLater = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", {
     className: "headline headline--large"
@@ -147,7 +146,7 @@ function EditComponent() {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "page-banner__bg-image",
     style: {
-      backgroundImage: "url('/wp-content/themes/fictional-block-theme/images/library-hero.jpg')"
+      backgroundImage: "url('/udemy/wpdev/wp-content/themes/fictional-university-block-theme/images/library-hero.jpg')"
     }
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "page-banner__content container t-center c-white"
@@ -155,14 +154,13 @@ function EditComponent() {
     allowedBlocks: ["ourblocktheme/genericheading"]
   })));
 }
-
 function SaveComponent() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "page-banner"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "page-banner__bg-image",
     style: {
-      backgroundImage: "url('/wp-content/themes/fictional-block-theme/images/library-hero.jpg')"
+      backgroundImage: "url('/udemy/wpdev/wp-content/themes/fictional-university-block-theme/images/library-hero.jpg')"
     }
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "page-banner__content container t-center c-white"
