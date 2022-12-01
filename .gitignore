@@ -15,6 +15,7 @@ wp-content/plugins/*
 !wp-content/plugins/are-you-paying-attention/
 !wp-content/plugins/our-first-unique-plugin/
 !wp-content/plugins/our-world-filter-plugin/
+!wp-content/plugins/featured-professor/
 
 !wp-content/themes/
 wp-content/themes/*
