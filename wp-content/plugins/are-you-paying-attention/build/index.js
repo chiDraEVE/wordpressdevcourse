@@ -1,104 +1,18 @@
-/******/ (function(modules) { // webpackBootstrap
-/******/ 	// The module cache
-/******/ 	var installedModules = {};
-/******/
-/******/ 	// The require function
-/******/ 	function __webpack_require__(moduleId) {
-/******/
-/******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId]) {
-/******/ 			return installedModules[moduleId].exports;
-/******/ 		}
-/******/ 		// Create a new module (and put it into the cache)
-/******/ 		var module = installedModules[moduleId] = {
-/******/ 			i: moduleId,
-/******/ 			l: false,
-/******/ 			exports: {}
-/******/ 		};
-/******/
-/******/ 		// Execute the module function
-/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
-/******/
-/******/ 		// Flag the module as loaded
-/******/ 		module.l = true;
-/******/
-/******/ 		// Return the exports of the module
-/******/ 		return module.exports;
-/******/ 	}
-/******/
-/******/
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = modules;
-/******/
-/******/ 	// expose the module cache
-/******/ 	__webpack_require__.c = installedModules;
-/******/
-/******/ 	// define getter function for harmony exports
-/******/ 	__webpack_require__.d = function(exports, name, getter) {
-/******/ 		if(!__webpack_require__.o(exports, name)) {
-/******/ 			Object.defineProperty(exports, name, { enumerable: true, get: getter });
-/******/ 		}
-/******/ 	};
-/******/
-/******/ 	// define __esModule on exports
-/******/ 	__webpack_require__.r = function(exports) {
-/******/ 		if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 			Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 		}
-/******/ 		Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 	};
-/******/
-/******/ 	// create a fake namespace object
-/******/ 	// mode & 1: value is a module id, require it
-/******/ 	// mode & 2: merge all properties of value into the ns
-/******/ 	// mode & 4: return value when already ns object
-/******/ 	// mode & 8|1: behave like require
-/******/ 	__webpack_require__.t = function(value, mode) {
-/******/ 		if(mode & 1) value = __webpack_require__(value);
-/******/ 		if(mode & 8) return value;
-/******/ 		if((mode & 4) && typeof value === 'object' && value && value.__esModule) return value;
-/******/ 		var ns = Object.create(null);
-/******/ 		__webpack_require__.r(ns);
-/******/ 		Object.defineProperty(ns, 'default', { enumerable: true, value: value });
-/******/ 		if(mode & 2 && typeof value != 'string') for(var key in value) __webpack_require__.d(ns, key, function(key) { return value[key]; }.bind(null, key));
-/******/ 		return ns;
-/******/ 	};
-/******/
-/******/ 	// getDefaultExport function for compatibility with non-harmony modules
-/******/ 	__webpack_require__.n = function(module) {
-/******/ 		var getter = module && module.__esModule ?
-/******/ 			function getDefault() { return module['default']; } :
-/******/ 			function getModuleExports() { return module; };
-/******/ 		__webpack_require__.d(getter, 'a', getter);
-/******/ 		return getter;
-/******/ 	};
-/******/
-/******/ 	// Object.prototype.hasOwnProperty.call
-/******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
-/******/
-/******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
-/******/
-/******/
-/******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/index.js");
-/******/ })
-/************************************************************************/
-/******/ ({
+/******/ (function() { // webpackBootstrap
+/******/ 	var __webpack_modules__ = ({
 
 /***/ "./node_modules/@icons/material/CheckIcon.js":
 /*!***************************************************!*\
   !*** ./node_modules/@icons/material/CheckIcon.js ***!
   \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, "__esModule", ({
   value: true
-});
+}));
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -112,7 +26,7 @@ function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in ob
 
 var DEFAULT_SIZE = 24;
 
-exports.default = function (_ref) {
+exports["default"] = function (_ref) {
   var _ref$fill = _ref.fill,
       fill = _ref$fill === undefined ? 'currentColor' : _ref$fill,
       _ref$width = _ref.width,
@@ -139,15 +53,14 @@ exports.default = function (_ref) {
 /*!******************************************************************!*\
   !*** ./node_modules/@icons/material/UnfoldMoreHorizontalIcon.js ***!
   \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, "__esModule", ({
   value: true
-});
+}));
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -161,7 +74,7 @@ function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in ob
 
 var DEFAULT_SIZE = 24;
 
-exports.default = function (_ref) {
+exports["default"] = function (_ref) {
   var _ref$fill = _ref.fill,
       fill = _ref$fill === undefined ? 'currentColor' : _ref$fill,
       _ref$width = _ref.width,
@@ -188,8 +101,7 @@ exports.default = function (_ref) {
 /*!******************************************!*\
   !*** ./node_modules/lodash/_DataView.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var getNative = __webpack_require__(/*! ./_getNative */ "./node_modules/lodash/_getNative.js"),
     root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
@@ -206,8 +118,7 @@ module.exports = DataView;
 /*!**************************************!*\
   !*** ./node_modules/lodash/_Hash.js ***!
   \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var hashClear = __webpack_require__(/*! ./_hashClear */ "./node_modules/lodash/_hashClear.js"),
     hashDelete = __webpack_require__(/*! ./_hashDelete */ "./node_modules/lodash/_hashDelete.js"),
@@ -249,8 +160,7 @@ module.exports = Hash;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_ListCache.js ***!
   \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var listCacheClear = __webpack_require__(/*! ./_listCacheClear */ "./node_modules/lodash/_listCacheClear.js"),
     listCacheDelete = __webpack_require__(/*! ./_listCacheDelete */ "./node_modules/lodash/_listCacheDelete.js"),
@@ -292,8 +202,7 @@ module.exports = ListCache;
 /*!*************************************!*\
   !*** ./node_modules/lodash/_Map.js ***!
   \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var getNative = __webpack_require__(/*! ./_getNative */ "./node_modules/lodash/_getNative.js"),
     root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
@@ -310,8 +219,7 @@ module.exports = Map;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_MapCache.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var mapCacheClear = __webpack_require__(/*! ./_mapCacheClear */ "./node_modules/lodash/_mapCacheClear.js"),
     mapCacheDelete = __webpack_require__(/*! ./_mapCacheDelete */ "./node_modules/lodash/_mapCacheDelete.js"),
@@ -353,8 +261,7 @@ module.exports = MapCache;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_Promise.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var getNative = __webpack_require__(/*! ./_getNative */ "./node_modules/lodash/_getNative.js"),
     root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
@@ -371,8 +278,7 @@ module.exports = Promise;
 /*!*************************************!*\
   !*** ./node_modules/lodash/_Set.js ***!
   \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var getNative = __webpack_require__(/*! ./_getNative */ "./node_modules/lodash/_getNative.js"),
     root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
@@ -389,8 +295,7 @@ module.exports = Set;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_SetCache.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var MapCache = __webpack_require__(/*! ./_MapCache */ "./node_modules/lodash/_MapCache.js"),
     setCacheAdd = __webpack_require__(/*! ./_setCacheAdd */ "./node_modules/lodash/_setCacheAdd.js"),
@@ -427,8 +332,7 @@ module.exports = SetCache;
 /*!***************************************!*\
   !*** ./node_modules/lodash/_Stack.js ***!
   \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var ListCache = __webpack_require__(/*! ./_ListCache */ "./node_modules/lodash/_ListCache.js"),
     stackClear = __webpack_require__(/*! ./_stackClear */ "./node_modules/lodash/_stackClear.js"),
@@ -465,8 +369,7 @@ module.exports = Stack;
 /*!****************************************!*\
   !*** ./node_modules/lodash/_Symbol.js ***!
   \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
 
@@ -482,8 +385,7 @@ module.exports = Symbol;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_Uint8Array.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
 
@@ -499,8 +401,7 @@ module.exports = Uint8Array;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_WeakMap.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var getNative = __webpack_require__(/*! ./_getNative */ "./node_modules/lodash/_getNative.js"),
     root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
@@ -517,8 +418,7 @@ module.exports = WeakMap;
 /*!***************************************!*\
   !*** ./node_modules/lodash/_apply.js ***!
   \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * A faster alternative to `Function#apply`, this function invokes `func`
@@ -549,8 +449,7 @@ module.exports = apply;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_arrayEach.js ***!
   \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * A specialized version of `_.forEach` for arrays without support for
@@ -582,8 +481,7 @@ module.exports = arrayEach;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_arrayFilter.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * A specialized version of `_.filter` for arrays without support for
@@ -618,8 +516,7 @@ module.exports = arrayFilter;
 /*!***********************************************!*\
   !*** ./node_modules/lodash/_arrayLikeKeys.js ***!
   \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseTimes = __webpack_require__(/*! ./_baseTimes */ "./node_modules/lodash/_baseTimes.js"),
     isArguments = __webpack_require__(/*! ./isArguments */ "./node_modules/lodash/isArguments.js"),
@@ -678,8 +575,7 @@ module.exports = arrayLikeKeys;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_arrayMap.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * A specialized version of `_.map` for arrays without support for iteratee
@@ -710,8 +606,7 @@ module.exports = arrayMap;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_arrayPush.js ***!
   \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Appends the elements of `values` to `array`.
@@ -741,8 +636,7 @@ module.exports = arrayPush;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_arraySome.js ***!
   \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * A specialized version of `_.some` for arrays without support for iteratee
@@ -775,8 +669,7 @@ module.exports = arraySome;
 /*!**************************************************!*\
   !*** ./node_modules/lodash/_assignMergeValue.js ***!
   \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseAssignValue = __webpack_require__(/*! ./_baseAssignValue */ "./node_modules/lodash/_baseAssignValue.js"),
     eq = __webpack_require__(/*! ./eq */ "./node_modules/lodash/eq.js");
@@ -806,8 +699,7 @@ module.exports = assignMergeValue;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_assignValue.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseAssignValue = __webpack_require__(/*! ./_baseAssignValue */ "./node_modules/lodash/_baseAssignValue.js"),
     eq = __webpack_require__(/*! ./eq */ "./node_modules/lodash/eq.js");
@@ -845,8 +737,7 @@ module.exports = assignValue;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_assocIndexOf.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var eq = __webpack_require__(/*! ./eq */ "./node_modules/lodash/eq.js");
 
@@ -877,8 +768,7 @@ module.exports = assocIndexOf;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_baseAssign.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var copyObject = __webpack_require__(/*! ./_copyObject */ "./node_modules/lodash/_copyObject.js"),
     keys = __webpack_require__(/*! ./keys */ "./node_modules/lodash/keys.js");
@@ -905,8 +795,7 @@ module.exports = baseAssign;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_baseAssignIn.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var copyObject = __webpack_require__(/*! ./_copyObject */ "./node_modules/lodash/_copyObject.js"),
     keysIn = __webpack_require__(/*! ./keysIn */ "./node_modules/lodash/keysIn.js");
@@ -933,8 +822,7 @@ module.exports = baseAssignIn;
 /*!*************************************************!*\
   !*** ./node_modules/lodash/_baseAssignValue.js ***!
   \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var defineProperty = __webpack_require__(/*! ./_defineProperty */ "./node_modules/lodash/_defineProperty.js");
 
@@ -969,8 +857,7 @@ module.exports = baseAssignValue;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_baseClone.js ***!
   \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var Stack = __webpack_require__(/*! ./_Stack */ "./node_modules/lodash/_Stack.js"),
     arrayEach = __webpack_require__(/*! ./_arrayEach */ "./node_modules/lodash/_arrayEach.js"),
@@ -1146,8 +1033,7 @@ module.exports = baseClone;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_baseCreate.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var isObject = __webpack_require__(/*! ./isObject */ "./node_modules/lodash/isObject.js");
 
@@ -1187,8 +1073,7 @@ module.exports = baseCreate;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_baseEach.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseForOwn = __webpack_require__(/*! ./_baseForOwn */ "./node_modules/lodash/_baseForOwn.js"),
     createBaseEach = __webpack_require__(/*! ./_createBaseEach */ "./node_modules/lodash/_createBaseEach.js");
@@ -1212,8 +1097,7 @@ module.exports = baseEach;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_baseFor.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var createBaseFor = __webpack_require__(/*! ./_createBaseFor */ "./node_modules/lodash/_createBaseFor.js");
 
@@ -1239,8 +1123,7 @@ module.exports = baseFor;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_baseForOwn.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseFor = __webpack_require__(/*! ./_baseFor */ "./node_modules/lodash/_baseFor.js"),
     keys = __webpack_require__(/*! ./keys */ "./node_modules/lodash/keys.js");
@@ -1266,8 +1149,7 @@ module.exports = baseForOwn;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_baseGet.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var castPath = __webpack_require__(/*! ./_castPath */ "./node_modules/lodash/_castPath.js"),
     toKey = __webpack_require__(/*! ./_toKey */ "./node_modules/lodash/_toKey.js");
@@ -1301,8 +1183,7 @@ module.exports = baseGet;
 /*!************************************************!*\
   !*** ./node_modules/lodash/_baseGetAllKeys.js ***!
   \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var arrayPush = __webpack_require__(/*! ./_arrayPush */ "./node_modules/lodash/_arrayPush.js"),
     isArray = __webpack_require__(/*! ./isArray */ "./node_modules/lodash/isArray.js");
@@ -1332,8 +1213,7 @@ module.exports = baseGetAllKeys;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_baseGetTag.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(/*! ./_Symbol */ "./node_modules/lodash/_Symbol.js"),
     getRawTag = __webpack_require__(/*! ./_getRawTag */ "./node_modules/lodash/_getRawTag.js"),
@@ -1371,8 +1251,7 @@ module.exports = baseGetTag;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_baseHasIn.js ***!
   \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * The base implementation of `_.hasIn` without support for deep paths.
@@ -1395,8 +1274,7 @@ module.exports = baseHasIn;
 /*!*************************************************!*\
   !*** ./node_modules/lodash/_baseIsArguments.js ***!
   \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(/*! ./_baseGetTag */ "./node_modules/lodash/_baseGetTag.js"),
     isObjectLike = __webpack_require__(/*! ./isObjectLike */ "./node_modules/lodash/isObjectLike.js");
@@ -1424,8 +1302,7 @@ module.exports = baseIsArguments;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_baseIsEqual.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseIsEqualDeep = __webpack_require__(/*! ./_baseIsEqualDeep */ "./node_modules/lodash/_baseIsEqualDeep.js"),
     isObjectLike = __webpack_require__(/*! ./isObjectLike */ "./node_modules/lodash/isObjectLike.js");
@@ -1463,8 +1340,7 @@ module.exports = baseIsEqual;
 /*!*************************************************!*\
   !*** ./node_modules/lodash/_baseIsEqualDeep.js ***!
   \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var Stack = __webpack_require__(/*! ./_Stack */ "./node_modules/lodash/_Stack.js"),
     equalArrays = __webpack_require__(/*! ./_equalArrays */ "./node_modules/lodash/_equalArrays.js"),
@@ -1557,8 +1433,7 @@ module.exports = baseIsEqualDeep;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_baseIsMap.js ***!
   \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var getTag = __webpack_require__(/*! ./_getTag */ "./node_modules/lodash/_getTag.js"),
     isObjectLike = __webpack_require__(/*! ./isObjectLike */ "./node_modules/lodash/isObjectLike.js");
@@ -1586,8 +1461,7 @@ module.exports = baseIsMap;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_baseIsMatch.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var Stack = __webpack_require__(/*! ./_Stack */ "./node_modules/lodash/_Stack.js"),
     baseIsEqual = __webpack_require__(/*! ./_baseIsEqual */ "./node_modules/lodash/_baseIsEqual.js");
@@ -1659,8 +1533,7 @@ module.exports = baseIsMatch;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_baseIsNative.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var isFunction = __webpack_require__(/*! ./isFunction */ "./node_modules/lodash/isFunction.js"),
     isMasked = __webpack_require__(/*! ./_isMasked */ "./node_modules/lodash/_isMasked.js"),
@@ -1717,8 +1590,7 @@ module.exports = baseIsNative;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_baseIsSet.js ***!
   \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var getTag = __webpack_require__(/*! ./_getTag */ "./node_modules/lodash/_getTag.js"),
     isObjectLike = __webpack_require__(/*! ./isObjectLike */ "./node_modules/lodash/isObjectLike.js");
@@ -1746,8 +1618,7 @@ module.exports = baseIsSet;
 /*!**************************************************!*\
   !*** ./node_modules/lodash/_baseIsTypedArray.js ***!
   \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(/*! ./_baseGetTag */ "./node_modules/lodash/_baseGetTag.js"),
     isLength = __webpack_require__(/*! ./isLength */ "./node_modules/lodash/isLength.js"),
@@ -1817,8 +1688,7 @@ module.exports = baseIsTypedArray;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_baseIteratee.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseMatches = __webpack_require__(/*! ./_baseMatches */ "./node_modules/lodash/_baseMatches.js"),
     baseMatchesProperty = __webpack_require__(/*! ./_baseMatchesProperty */ "./node_modules/lodash/_baseMatchesProperty.js"),
@@ -1859,8 +1729,7 @@ module.exports = baseIteratee;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_baseKeys.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var isPrototype = __webpack_require__(/*! ./_isPrototype */ "./node_modules/lodash/_isPrototype.js"),
     nativeKeys = __webpack_require__(/*! ./_nativeKeys */ "./node_modules/lodash/_nativeKeys.js");
@@ -1900,8 +1769,7 @@ module.exports = baseKeys;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_baseKeysIn.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var isObject = __webpack_require__(/*! ./isObject */ "./node_modules/lodash/isObject.js"),
     isPrototype = __webpack_require__(/*! ./_isPrototype */ "./node_modules/lodash/_isPrototype.js"),
@@ -1944,8 +1812,7 @@ module.exports = baseKeysIn;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_baseMap.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseEach = __webpack_require__(/*! ./_baseEach */ "./node_modules/lodash/_baseEach.js"),
     isArrayLike = __webpack_require__(/*! ./isArrayLike */ "./node_modules/lodash/isArrayLike.js");
@@ -1977,8 +1844,7 @@ module.exports = baseMap;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_baseMatches.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseIsMatch = __webpack_require__(/*! ./_baseIsMatch */ "./node_modules/lodash/_baseIsMatch.js"),
     getMatchData = __webpack_require__(/*! ./_getMatchData */ "./node_modules/lodash/_getMatchData.js"),
@@ -2010,8 +1876,7 @@ module.exports = baseMatches;
 /*!*****************************************************!*\
   !*** ./node_modules/lodash/_baseMatchesProperty.js ***!
   \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseIsEqual = __webpack_require__(/*! ./_baseIsEqual */ "./node_modules/lodash/_baseIsEqual.js"),
     get = __webpack_require__(/*! ./get */ "./node_modules/lodash/get.js"),
@@ -2054,8 +1919,7 @@ module.exports = baseMatchesProperty;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_baseMerge.js ***!
   \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var Stack = __webpack_require__(/*! ./_Stack */ "./node_modules/lodash/_Stack.js"),
     assignMergeValue = __webpack_require__(/*! ./_assignMergeValue */ "./node_modules/lodash/_assignMergeValue.js"),
@@ -2107,8 +1971,7 @@ module.exports = baseMerge;
 /*!***********************************************!*\
   !*** ./node_modules/lodash/_baseMergeDeep.js ***!
   \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var assignMergeValue = __webpack_require__(/*! ./_assignMergeValue */ "./node_modules/lodash/_assignMergeValue.js"),
     cloneBuffer = __webpack_require__(/*! ./_cloneBuffer */ "./node_modules/lodash/_cloneBuffer.js"),
@@ -2212,8 +2075,7 @@ module.exports = baseMergeDeep;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_baseProperty.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * The base implementation of `_.property` without support for deep paths.
@@ -2237,8 +2099,7 @@ module.exports = baseProperty;
 /*!**************************************************!*\
   !*** ./node_modules/lodash/_basePropertyDeep.js ***!
   \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseGet = __webpack_require__(/*! ./_baseGet */ "./node_modules/lodash/_baseGet.js");
 
@@ -2264,8 +2125,7 @@ module.exports = basePropertyDeep;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_baseRest.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var identity = __webpack_require__(/*! ./identity */ "./node_modules/lodash/identity.js"),
     overRest = __webpack_require__(/*! ./_overRest */ "./node_modules/lodash/_overRest.js"),
@@ -2292,8 +2152,7 @@ module.exports = baseRest;
 /*!*************************************************!*\
   !*** ./node_modules/lodash/_baseSetToString.js ***!
   \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var constant = __webpack_require__(/*! ./constant */ "./node_modules/lodash/constant.js"),
     defineProperty = __webpack_require__(/*! ./_defineProperty */ "./node_modules/lodash/_defineProperty.js"),
@@ -2325,8 +2184,7 @@ module.exports = baseSetToString;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_baseTimes.js ***!
   \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * The base implementation of `_.times` without support for iteratee shorthands
@@ -2356,8 +2214,7 @@ module.exports = baseTimes;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_baseToString.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(/*! ./_Symbol */ "./node_modules/lodash/_Symbol.js"),
     arrayMap = __webpack_require__(/*! ./_arrayMap */ "./node_modules/lodash/_arrayMap.js"),
@@ -2404,8 +2261,7 @@ module.exports = baseToString;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_baseTrim.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var trimmedEndIndex = __webpack_require__(/*! ./_trimmedEndIndex */ "./node_modules/lodash/_trimmedEndIndex.js");
 
@@ -2434,8 +2290,7 @@ module.exports = baseTrim;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_baseUnary.js ***!
   \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * The base implementation of `_.unary` without support for storing metadata.
@@ -2459,8 +2314,7 @@ module.exports = baseUnary;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_cacheHas.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Checks if a `cache` value for `key` exists.
@@ -2483,8 +2337,7 @@ module.exports = cacheHas;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_castFunction.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var identity = __webpack_require__(/*! ./identity */ "./node_modules/lodash/identity.js");
 
@@ -2508,8 +2361,7 @@ module.exports = castFunction;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_castPath.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var isArray = __webpack_require__(/*! ./isArray */ "./node_modules/lodash/isArray.js"),
     isKey = __webpack_require__(/*! ./_isKey */ "./node_modules/lodash/_isKey.js"),
@@ -2540,8 +2392,7 @@ module.exports = castPath;
 /*!**************************************************!*\
   !*** ./node_modules/lodash/_cloneArrayBuffer.js ***!
   \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var Uint8Array = __webpack_require__(/*! ./_Uint8Array */ "./node_modules/lodash/_Uint8Array.js");
 
@@ -2567,16 +2418,16 @@ module.exports = cloneArrayBuffer;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_cloneBuffer.js ***!
   \*********************************************/
-/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
+/* module decorator */ module = __webpack_require__.nmd(module);
+var root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
 
 /** Detect free variable `exports`. */
 var freeExports =  true && exports && !exports.nodeType && exports;
 
 /** Detect free variable `module`. */
-var freeModule = freeExports && typeof module == 'object' && module && !module.nodeType && module;
+var freeModule = freeExports && "object" == 'object' && module && !module.nodeType && module;
 
 /** Detect the popular CommonJS extension `module.exports`. */
 var moduleExports = freeModule && freeModule.exports === freeExports;
@@ -2606,7 +2457,6 @@ function cloneBuffer(buffer, isDeep) {
 
 module.exports = cloneBuffer;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module)))
 
 /***/ }),
 
@@ -2614,8 +2464,7 @@ module.exports = cloneBuffer;
 /*!***********************************************!*\
   !*** ./node_modules/lodash/_cloneDataView.js ***!
   \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var cloneArrayBuffer = __webpack_require__(/*! ./_cloneArrayBuffer */ "./node_modules/lodash/_cloneArrayBuffer.js");
 
@@ -2641,8 +2490,7 @@ module.exports = cloneDataView;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_cloneRegExp.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /** Used to match `RegExp` flags from their coerced string values. */
 var reFlags = /\w*$/;
@@ -2669,8 +2517,7 @@ module.exports = cloneRegExp;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_cloneSymbol.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(/*! ./_Symbol */ "./node_modules/lodash/_Symbol.js");
 
@@ -2698,8 +2545,7 @@ module.exports = cloneSymbol;
 /*!*************************************************!*\
   !*** ./node_modules/lodash/_cloneTypedArray.js ***!
   \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var cloneArrayBuffer = __webpack_require__(/*! ./_cloneArrayBuffer */ "./node_modules/lodash/_cloneArrayBuffer.js");
 
@@ -2725,8 +2571,7 @@ module.exports = cloneTypedArray;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_copyArray.js ***!
   \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Copies the values of `source` to `array`.
@@ -2756,8 +2601,7 @@ module.exports = copyArray;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_copyObject.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var assignValue = __webpack_require__(/*! ./_assignValue */ "./node_modules/lodash/_assignValue.js"),
     baseAssignValue = __webpack_require__(/*! ./_baseAssignValue */ "./node_modules/lodash/_baseAssignValue.js");
@@ -2807,8 +2651,7 @@ module.exports = copyObject;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_copySymbols.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var copyObject = __webpack_require__(/*! ./_copyObject */ "./node_modules/lodash/_copyObject.js"),
     getSymbols = __webpack_require__(/*! ./_getSymbols */ "./node_modules/lodash/_getSymbols.js");
@@ -2834,8 +2677,7 @@ module.exports = copySymbols;
 /*!***********************************************!*\
   !*** ./node_modules/lodash/_copySymbolsIn.js ***!
   \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var copyObject = __webpack_require__(/*! ./_copyObject */ "./node_modules/lodash/_copyObject.js"),
     getSymbolsIn = __webpack_require__(/*! ./_getSymbolsIn */ "./node_modules/lodash/_getSymbolsIn.js");
@@ -2861,8 +2703,7 @@ module.exports = copySymbolsIn;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_coreJsData.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
 
@@ -2878,8 +2719,7 @@ module.exports = coreJsData;
 /*!************************************************!*\
   !*** ./node_modules/lodash/_createAssigner.js ***!
   \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseRest = __webpack_require__(/*! ./_baseRest */ "./node_modules/lodash/_baseRest.js"),
     isIterateeCall = __webpack_require__(/*! ./_isIterateeCall */ "./node_modules/lodash/_isIterateeCall.js");
@@ -2926,8 +2766,7 @@ module.exports = createAssigner;
 /*!************************************************!*\
   !*** ./node_modules/lodash/_createBaseEach.js ***!
   \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var isArrayLike = __webpack_require__(/*! ./isArrayLike */ "./node_modules/lodash/isArrayLike.js");
 
@@ -2969,8 +2808,7 @@ module.exports = createBaseEach;
 /*!***********************************************!*\
   !*** ./node_modules/lodash/_createBaseFor.js ***!
   \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Creates a base function for methods like `_.forIn` and `_.forOwn`.
@@ -3005,8 +2843,7 @@ module.exports = createBaseFor;
 /*!************************************************!*\
   !*** ./node_modules/lodash/_defineProperty.js ***!
   \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var getNative = __webpack_require__(/*! ./_getNative */ "./node_modules/lodash/_getNative.js");
 
@@ -3027,8 +2864,7 @@ module.exports = defineProperty;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_equalArrays.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var SetCache = __webpack_require__(/*! ./_SetCache */ "./node_modules/lodash/_SetCache.js"),
     arraySome = __webpack_require__(/*! ./_arraySome */ "./node_modules/lodash/_arraySome.js"),
@@ -3122,8 +2958,7 @@ module.exports = equalArrays;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_equalByTag.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(/*! ./_Symbol */ "./node_modules/lodash/_Symbol.js"),
     Uint8Array = __webpack_require__(/*! ./_Uint8Array */ "./node_modules/lodash/_Uint8Array.js"),
@@ -3245,8 +3080,7 @@ module.exports = equalByTag;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_equalObjects.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var getAllKeys = __webpack_require__(/*! ./_getAllKeys */ "./node_modules/lodash/_getAllKeys.js");
 
@@ -3346,15 +3180,13 @@ module.exports = equalObjects;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_freeGlobal.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(global) {/** Detect free variable `global` from Node.js. */
-var freeGlobal = typeof global == 'object' && global && global.Object === Object && global;
+/** Detect free variable `global` from Node.js. */
+var freeGlobal = typeof __webpack_require__.g == 'object' && __webpack_require__.g && __webpack_require__.g.Object === Object && __webpack_require__.g;
 
 module.exports = freeGlobal;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/global.js */ "./node_modules/webpack/buildin/global.js")))
 
 /***/ }),
 
@@ -3362,8 +3194,7 @@ module.exports = freeGlobal;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_getAllKeys.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseGetAllKeys = __webpack_require__(/*! ./_baseGetAllKeys */ "./node_modules/lodash/_baseGetAllKeys.js"),
     getSymbols = __webpack_require__(/*! ./_getSymbols */ "./node_modules/lodash/_getSymbols.js"),
@@ -3389,8 +3220,7 @@ module.exports = getAllKeys;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_getAllKeysIn.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseGetAllKeys = __webpack_require__(/*! ./_baseGetAllKeys */ "./node_modules/lodash/_baseGetAllKeys.js"),
     getSymbolsIn = __webpack_require__(/*! ./_getSymbolsIn */ "./node_modules/lodash/_getSymbolsIn.js"),
@@ -3417,8 +3247,7 @@ module.exports = getAllKeysIn;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_getMapData.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var isKeyable = __webpack_require__(/*! ./_isKeyable */ "./node_modules/lodash/_isKeyable.js");
 
@@ -3446,8 +3275,7 @@ module.exports = getMapData;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_getMatchData.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var isStrictComparable = __webpack_require__(/*! ./_isStrictComparable */ "./node_modules/lodash/_isStrictComparable.js"),
     keys = __webpack_require__(/*! ./keys */ "./node_modules/lodash/keys.js");
@@ -3481,8 +3309,7 @@ module.exports = getMatchData;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_getNative.js ***!
   \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseIsNative = __webpack_require__(/*! ./_baseIsNative */ "./node_modules/lodash/_baseIsNative.js"),
     getValue = __webpack_require__(/*! ./_getValue */ "./node_modules/lodash/_getValue.js");
@@ -3509,8 +3336,7 @@ module.exports = getNative;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_getPrototype.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var overArg = __webpack_require__(/*! ./_overArg */ "./node_modules/lodash/_overArg.js");
 
@@ -3526,8 +3352,7 @@ module.exports = getPrototype;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_getRawTag.js ***!
   \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var Symbol = __webpack_require__(/*! ./_Symbol */ "./node_modules/lodash/_Symbol.js");
 
@@ -3583,8 +3408,7 @@ module.exports = getRawTag;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_getSymbols.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var arrayFilter = __webpack_require__(/*! ./_arrayFilter */ "./node_modules/lodash/_arrayFilter.js"),
     stubArray = __webpack_require__(/*! ./stubArray */ "./node_modules/lodash/stubArray.js");
@@ -3624,8 +3448,7 @@ module.exports = getSymbols;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_getSymbolsIn.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var arrayPush = __webpack_require__(/*! ./_arrayPush */ "./node_modules/lodash/_arrayPush.js"),
     getPrototype = __webpack_require__(/*! ./_getPrototype */ "./node_modules/lodash/_getPrototype.js"),
@@ -3660,8 +3483,7 @@ module.exports = getSymbolsIn;
 /*!****************************************!*\
   !*** ./node_modules/lodash/_getTag.js ***!
   \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var DataView = __webpack_require__(/*! ./_DataView */ "./node_modules/lodash/_DataView.js"),
     Map = __webpack_require__(/*! ./_Map */ "./node_modules/lodash/_Map.js"),
@@ -3729,8 +3551,7 @@ module.exports = getTag;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_getValue.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Gets the value at `key` of `object`.
@@ -3753,8 +3574,7 @@ module.exports = getValue;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_hasPath.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var castPath = __webpack_require__(/*! ./_castPath */ "./node_modules/lodash/_castPath.js"),
     isArguments = __webpack_require__(/*! ./isArguments */ "./node_modules/lodash/isArguments.js"),
@@ -3803,8 +3623,7 @@ module.exports = hasPath;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_hashClear.js ***!
   \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ "./node_modules/lodash/_nativeCreate.js");
 
@@ -3829,8 +3648,7 @@ module.exports = hashClear;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_hashDelete.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Removes `key` and its value from the hash.
@@ -3857,8 +3675,7 @@ module.exports = hashDelete;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_hashGet.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ "./node_modules/lodash/_nativeCreate.js");
 
@@ -3898,8 +3715,7 @@ module.exports = hashGet;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_hashHas.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ "./node_modules/lodash/_nativeCreate.js");
 
@@ -3932,8 +3748,7 @@ module.exports = hashHas;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_hashSet.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var nativeCreate = __webpack_require__(/*! ./_nativeCreate */ "./node_modules/lodash/_nativeCreate.js");
 
@@ -3966,8 +3781,7 @@ module.exports = hashSet;
 /*!************************************************!*\
   !*** ./node_modules/lodash/_initCloneArray.js ***!
   \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -4003,8 +3817,7 @@ module.exports = initCloneArray;
 /*!************************************************!*\
   !*** ./node_modules/lodash/_initCloneByTag.js ***!
   \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var cloneArrayBuffer = __webpack_require__(/*! ./_cloneArrayBuffer */ "./node_modules/lodash/_cloneArrayBuffer.js"),
     cloneDataView = __webpack_require__(/*! ./_cloneDataView */ "./node_modules/lodash/_cloneDataView.js"),
@@ -4091,8 +3904,7 @@ module.exports = initCloneByTag;
 /*!*************************************************!*\
   !*** ./node_modules/lodash/_initCloneObject.js ***!
   \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseCreate = __webpack_require__(/*! ./_baseCreate */ "./node_modules/lodash/_baseCreate.js"),
     getPrototype = __webpack_require__(/*! ./_getPrototype */ "./node_modules/lodash/_getPrototype.js"),
@@ -4120,8 +3932,7 @@ module.exports = initCloneObject;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_isIndex.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /** Used as references for various `Number` constants. */
 var MAX_SAFE_INTEGER = 9007199254740991;
@@ -4156,8 +3967,7 @@ module.exports = isIndex;
 /*!************************************************!*\
   !*** ./node_modules/lodash/_isIterateeCall.js ***!
   \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var eq = __webpack_require__(/*! ./eq */ "./node_modules/lodash/eq.js"),
     isArrayLike = __webpack_require__(/*! ./isArrayLike */ "./node_modules/lodash/isArrayLike.js"),
@@ -4197,8 +4007,7 @@ module.exports = isIterateeCall;
 /*!***************************************!*\
   !*** ./node_modules/lodash/_isKey.js ***!
   \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var isArray = __webpack_require__(/*! ./isArray */ "./node_modules/lodash/isArray.js"),
     isSymbol = __webpack_require__(/*! ./isSymbol */ "./node_modules/lodash/isSymbol.js");
@@ -4237,8 +4046,7 @@ module.exports = isKey;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/_isKeyable.js ***!
   \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Checks if `value` is suitable for use as unique object key.
@@ -4263,8 +4071,7 @@ module.exports = isKeyable;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_isMasked.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var coreJsData = __webpack_require__(/*! ./_coreJsData */ "./node_modules/lodash/_coreJsData.js");
 
@@ -4294,8 +4101,7 @@ module.exports = isMasked;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_isPrototype.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -4323,8 +4129,7 @@ module.exports = isPrototype;
 /*!****************************************************!*\
   !*** ./node_modules/lodash/_isStrictComparable.js ***!
   \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var isObject = __webpack_require__(/*! ./isObject */ "./node_modules/lodash/isObject.js");
 
@@ -4349,8 +4154,7 @@ module.exports = isStrictComparable;
 /*!************************************************!*\
   !*** ./node_modules/lodash/_listCacheClear.js ***!
   \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Removes all key-value entries from the list cache.
@@ -4373,8 +4177,7 @@ module.exports = listCacheClear;
 /*!*************************************************!*\
   !*** ./node_modules/lodash/_listCacheDelete.js ***!
   \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ "./node_modules/lodash/_assocIndexOf.js");
 
@@ -4419,8 +4222,7 @@ module.exports = listCacheDelete;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_listCacheGet.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ "./node_modules/lodash/_assocIndexOf.js");
 
@@ -4449,8 +4251,7 @@ module.exports = listCacheGet;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_listCacheHas.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ "./node_modules/lodash/_assocIndexOf.js");
 
@@ -4476,8 +4277,7 @@ module.exports = listCacheHas;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_listCacheSet.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var assocIndexOf = __webpack_require__(/*! ./_assocIndexOf */ "./node_modules/lodash/_assocIndexOf.js");
 
@@ -4513,8 +4313,7 @@ module.exports = listCacheSet;
 /*!***********************************************!*\
   !*** ./node_modules/lodash/_mapCacheClear.js ***!
   \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var Hash = __webpack_require__(/*! ./_Hash */ "./node_modules/lodash/_Hash.js"),
     ListCache = __webpack_require__(/*! ./_ListCache */ "./node_modules/lodash/_ListCache.js"),
@@ -4545,8 +4344,7 @@ module.exports = mapCacheClear;
 /*!************************************************!*\
   !*** ./node_modules/lodash/_mapCacheDelete.js ***!
   \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(/*! ./_getMapData */ "./node_modules/lodash/_getMapData.js");
 
@@ -4574,8 +4372,7 @@ module.exports = mapCacheDelete;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_mapCacheGet.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(/*! ./_getMapData */ "./node_modules/lodash/_getMapData.js");
 
@@ -4601,8 +4398,7 @@ module.exports = mapCacheGet;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_mapCacheHas.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(/*! ./_getMapData */ "./node_modules/lodash/_getMapData.js");
 
@@ -4628,8 +4424,7 @@ module.exports = mapCacheHas;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_mapCacheSet.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var getMapData = __webpack_require__(/*! ./_getMapData */ "./node_modules/lodash/_getMapData.js");
 
@@ -4661,8 +4456,7 @@ module.exports = mapCacheSet;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_mapToArray.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Converts `map` to its key-value pairs.
@@ -4690,8 +4484,7 @@ module.exports = mapToArray;
 /*!*********************************************************!*\
   !*** ./node_modules/lodash/_matchesStrictComparable.js ***!
   \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * A specialized version of `matchesProperty` for source values suitable
@@ -4721,8 +4514,7 @@ module.exports = matchesStrictComparable;
 /*!***********************************************!*\
   !*** ./node_modules/lodash/_memoizeCapped.js ***!
   \***********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var memoize = __webpack_require__(/*! ./memoize */ "./node_modules/lodash/memoize.js");
 
@@ -4758,8 +4550,7 @@ module.exports = memoizeCapped;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_nativeCreate.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var getNative = __webpack_require__(/*! ./_getNative */ "./node_modules/lodash/_getNative.js");
 
@@ -4775,8 +4566,7 @@ module.exports = nativeCreate;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_nativeKeys.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var overArg = __webpack_require__(/*! ./_overArg */ "./node_modules/lodash/_overArg.js");
 
@@ -4792,8 +4582,7 @@ module.exports = nativeKeys;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_nativeKeysIn.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * This function is like
@@ -4823,16 +4612,16 @@ module.exports = nativeKeysIn;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_nodeUtil.js ***!
   \******************************************/
-/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var freeGlobal = __webpack_require__(/*! ./_freeGlobal */ "./node_modules/lodash/_freeGlobal.js");
+/* module decorator */ module = __webpack_require__.nmd(module);
+var freeGlobal = __webpack_require__(/*! ./_freeGlobal */ "./node_modules/lodash/_freeGlobal.js");
 
 /** Detect free variable `exports`. */
 var freeExports =  true && exports && !exports.nodeType && exports;
 
 /** Detect free variable `module`. */
-var freeModule = freeExports && typeof module == 'object' && module && !module.nodeType && module;
+var freeModule = freeExports && "object" == 'object' && module && !module.nodeType && module;
 
 /** Detect the popular CommonJS extension `module.exports`. */
 var moduleExports = freeModule && freeModule.exports === freeExports;
@@ -4857,7 +4646,6 @@ var nodeUtil = (function() {
 
 module.exports = nodeUtil;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module)))
 
 /***/ }),
 
@@ -4865,8 +4653,7 @@ module.exports = nodeUtil;
 /*!************************************************!*\
   !*** ./node_modules/lodash/_objectToString.js ***!
   \************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /** Used for built-in method references. */
 var objectProto = Object.prototype;
@@ -4898,8 +4685,7 @@ module.exports = objectToString;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_overArg.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Creates a unary function that invokes `func` with its argument transformed.
@@ -4924,8 +4710,7 @@ module.exports = overArg;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_overRest.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var apply = __webpack_require__(/*! ./_apply */ "./node_modules/lodash/_apply.js");
 
@@ -4971,8 +4756,7 @@ module.exports = overRest;
 /*!**************************************!*\
   !*** ./node_modules/lodash/_root.js ***!
   \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var freeGlobal = __webpack_require__(/*! ./_freeGlobal */ "./node_modules/lodash/_freeGlobal.js");
 
@@ -4991,8 +4775,7 @@ module.exports = root;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/_safeGet.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Gets the value at `key`, unless `key` is "__proto__" or "constructor".
@@ -5023,8 +4806,7 @@ module.exports = safeGet;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_setCacheAdd.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /** Used to stand-in for `undefined` hash values. */
 var HASH_UNDEFINED = '__lodash_hash_undefined__';
@@ -5053,8 +4835,7 @@ module.exports = setCacheAdd;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_setCacheHas.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Checks if `value` is in the array cache.
@@ -5078,8 +4859,7 @@ module.exports = setCacheHas;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_setToArray.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Converts `set` to an array of its values.
@@ -5107,8 +4887,7 @@ module.exports = setToArray;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_setToString.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseSetToString = __webpack_require__(/*! ./_baseSetToString */ "./node_modules/lodash/_baseSetToString.js"),
     shortOut = __webpack_require__(/*! ./_shortOut */ "./node_modules/lodash/_shortOut.js");
@@ -5132,8 +4911,7 @@ module.exports = setToString;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_shortOut.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /** Used to detect hot functions by number of calls within a span of milliseconds. */
 var HOT_COUNT = 800,
@@ -5180,8 +4958,7 @@ module.exports = shortOut;
 /*!********************************************!*\
   !*** ./node_modules/lodash/_stackClear.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var ListCache = __webpack_require__(/*! ./_ListCache */ "./node_modules/lodash/_ListCache.js");
 
@@ -5206,8 +4983,7 @@ module.exports = stackClear;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/_stackDelete.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Removes `key` and its value from the stack.
@@ -5235,8 +5011,7 @@ module.exports = stackDelete;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_stackGet.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Gets the stack value for `key`.
@@ -5260,8 +5035,7 @@ module.exports = stackGet;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_stackHas.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Checks if a stack value for `key` exists.
@@ -5285,8 +5059,7 @@ module.exports = stackHas;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_stackSet.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var ListCache = __webpack_require__(/*! ./_ListCache */ "./node_modules/lodash/_ListCache.js"),
     Map = __webpack_require__(/*! ./_Map */ "./node_modules/lodash/_Map.js"),
@@ -5330,8 +5103,7 @@ module.exports = stackSet;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/_stringToPath.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var memoizeCapped = __webpack_require__(/*! ./_memoizeCapped */ "./node_modules/lodash/_memoizeCapped.js");
 
@@ -5368,8 +5140,7 @@ module.exports = stringToPath;
 /*!***************************************!*\
   !*** ./node_modules/lodash/_toKey.js ***!
   \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var isSymbol = __webpack_require__(/*! ./isSymbol */ "./node_modules/lodash/isSymbol.js");
 
@@ -5400,8 +5171,7 @@ module.exports = toKey;
 /*!******************************************!*\
   !*** ./node_modules/lodash/_toSource.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /** Used for built-in method references. */
 var funcProto = Function.prototype;
@@ -5437,8 +5207,7 @@ module.exports = toSource;
 /*!*************************************************!*\
   !*** ./node_modules/lodash/_trimmedEndIndex.js ***!
   \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /** Used to match a single whitespace character. */
 var reWhitespace = /\s/;
@@ -5467,8 +5236,7 @@ module.exports = trimmedEndIndex;
 /*!******************************************!*\
   !*** ./node_modules/lodash/cloneDeep.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseClone = __webpack_require__(/*! ./_baseClone */ "./node_modules/lodash/_baseClone.js");
 
@@ -5507,8 +5275,7 @@ module.exports = cloneDeep;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/constant.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Creates a function that returns `value`.
@@ -5544,8 +5311,7 @@ module.exports = constant;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/debounce.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var isObject = __webpack_require__(/*! ./isObject */ "./node_modules/lodash/isObject.js"),
     now = __webpack_require__(/*! ./now */ "./node_modules/lodash/now.js"),
@@ -5746,8 +5512,7 @@ module.exports = debounce;
 /*!*************************************!*\
   !*** ./node_modules/lodash/each.js ***!
   \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! ./forEach */ "./node_modules/lodash/forEach.js");
 
@@ -5758,8 +5523,7 @@ module.exports = __webpack_require__(/*! ./forEach */ "./node_modules/lodash/for
 /*!***********************************!*\
   !*** ./node_modules/lodash/eq.js ***!
   \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Performs a
@@ -5806,8 +5570,7 @@ module.exports = eq;
 /*!****************************************!*\
   !*** ./node_modules/lodash/forEach.js ***!
   \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var arrayEach = __webpack_require__(/*! ./_arrayEach */ "./node_modules/lodash/_arrayEach.js"),
     baseEach = __webpack_require__(/*! ./_baseEach */ "./node_modules/lodash/_baseEach.js"),
@@ -5858,8 +5621,7 @@ module.exports = forEach;
 /*!***************************************!*\
   !*** ./node_modules/lodash/forOwn.js ***!
   \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseForOwn = __webpack_require__(/*! ./_baseForOwn */ "./node_modules/lodash/_baseForOwn.js"),
     castFunction = __webpack_require__(/*! ./_castFunction */ "./node_modules/lodash/_castFunction.js");
@@ -5905,8 +5667,7 @@ module.exports = forOwn;
 /*!************************************!*\
   !*** ./node_modules/lodash/get.js ***!
   \************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseGet = __webpack_require__(/*! ./_baseGet */ "./node_modules/lodash/_baseGet.js");
 
@@ -5949,8 +5710,7 @@ module.exports = get;
 /*!**************************************!*\
   !*** ./node_modules/lodash/hasIn.js ***!
   \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseHasIn = __webpack_require__(/*! ./_baseHasIn */ "./node_modules/lodash/_baseHasIn.js"),
     hasPath = __webpack_require__(/*! ./_hasPath */ "./node_modules/lodash/_hasPath.js");
@@ -5994,8 +5754,7 @@ module.exports = hasIn;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/identity.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * This method returns the first argument it receives.
@@ -6026,8 +5785,7 @@ module.exports = identity;
 /*!********************************************!*\
   !*** ./node_modules/lodash/isArguments.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseIsArguments = __webpack_require__(/*! ./_baseIsArguments */ "./node_modules/lodash/_baseIsArguments.js"),
     isObjectLike = __webpack_require__(/*! ./isObjectLike */ "./node_modules/lodash/isObjectLike.js");
@@ -6073,8 +5831,7 @@ module.exports = isArguments;
 /*!****************************************!*\
   !*** ./node_modules/lodash/isArray.js ***!
   \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Checks if `value` is classified as an `Array` object.
@@ -6110,8 +5867,7 @@ module.exports = isArray;
 /*!********************************************!*\
   !*** ./node_modules/lodash/isArrayLike.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var isFunction = __webpack_require__(/*! ./isFunction */ "./node_modules/lodash/isFunction.js"),
     isLength = __webpack_require__(/*! ./isLength */ "./node_modules/lodash/isLength.js");
@@ -6154,8 +5910,7 @@ module.exports = isArrayLike;
 /*!**************************************************!*\
   !*** ./node_modules/lodash/isArrayLikeObject.js ***!
   \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var isArrayLike = __webpack_require__(/*! ./isArrayLike */ "./node_modules/lodash/isArrayLike.js"),
     isObjectLike = __webpack_require__(/*! ./isObjectLike */ "./node_modules/lodash/isObjectLike.js");
@@ -6198,17 +5953,17 @@ module.exports = isArrayLikeObject;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/isBuffer.js ***!
   \*****************************************/
-/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-/* WEBPACK VAR INJECTION */(function(module) {var root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js"),
+/* module decorator */ module = __webpack_require__.nmd(module);
+var root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js"),
     stubFalse = __webpack_require__(/*! ./stubFalse */ "./node_modules/lodash/stubFalse.js");
 
 /** Detect free variable `exports`. */
 var freeExports =  true && exports && !exports.nodeType && exports;
 
 /** Detect free variable `module`. */
-var freeModule = freeExports && typeof module == 'object' && module && !module.nodeType && module;
+var freeModule = freeExports && "object" == 'object' && module && !module.nodeType && module;
 
 /** Detect the popular CommonJS extension `module.exports`. */
 var moduleExports = freeModule && freeModule.exports === freeExports;
@@ -6240,7 +5995,6 @@ var isBuffer = nativeIsBuffer || stubFalse;
 
 module.exports = isBuffer;
 
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../webpack/buildin/module.js */ "./node_modules/webpack/buildin/module.js")(module)))
 
 /***/ }),
 
@@ -6248,8 +6002,7 @@ module.exports = isBuffer;
 /*!*******************************************!*\
   !*** ./node_modules/lodash/isFunction.js ***!
   \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(/*! ./_baseGetTag */ "./node_modules/lodash/_baseGetTag.js"),
     isObject = __webpack_require__(/*! ./isObject */ "./node_modules/lodash/isObject.js");
@@ -6296,8 +6049,7 @@ module.exports = isFunction;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/isLength.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /** Used as references for various `Number` constants. */
 var MAX_SAFE_INTEGER = 9007199254740991;
@@ -6342,8 +6094,7 @@ module.exports = isLength;
 /*!**************************************!*\
   !*** ./node_modules/lodash/isMap.js ***!
   \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseIsMap = __webpack_require__(/*! ./_baseIsMap */ "./node_modules/lodash/_baseIsMap.js"),
     baseUnary = __webpack_require__(/*! ./_baseUnary */ "./node_modules/lodash/_baseUnary.js"),
@@ -6380,8 +6131,7 @@ module.exports = isMap;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/isObject.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Checks if `value` is the
@@ -6422,8 +6172,7 @@ module.exports = isObject;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/isObjectLike.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Checks if `value` is object-like. A value is object-like if it's not `null`
@@ -6462,8 +6211,7 @@ module.exports = isObjectLike;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/isPlainObject.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(/*! ./_baseGetTag */ "./node_modules/lodash/_baseGetTag.js"),
     getPrototype = __webpack_require__(/*! ./_getPrototype */ "./node_modules/lodash/_getPrototype.js"),
@@ -6535,8 +6283,7 @@ module.exports = isPlainObject;
 /*!**************************************!*\
   !*** ./node_modules/lodash/isSet.js ***!
   \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseIsSet = __webpack_require__(/*! ./_baseIsSet */ "./node_modules/lodash/_baseIsSet.js"),
     baseUnary = __webpack_require__(/*! ./_baseUnary */ "./node_modules/lodash/_baseUnary.js"),
@@ -6573,8 +6320,7 @@ module.exports = isSet;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/isString.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(/*! ./_baseGetTag */ "./node_modules/lodash/_baseGetTag.js"),
     isArray = __webpack_require__(/*! ./isArray */ "./node_modules/lodash/isArray.js"),
@@ -6614,8 +6360,7 @@ module.exports = isString;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/isSymbol.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseGetTag = __webpack_require__(/*! ./_baseGetTag */ "./node_modules/lodash/_baseGetTag.js"),
     isObjectLike = __webpack_require__(/*! ./isObjectLike */ "./node_modules/lodash/isObjectLike.js");
@@ -6654,8 +6399,7 @@ module.exports = isSymbol;
 /*!*********************************************!*\
   !*** ./node_modules/lodash/isTypedArray.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseIsTypedArray = __webpack_require__(/*! ./_baseIsTypedArray */ "./node_modules/lodash/_baseIsTypedArray.js"),
     baseUnary = __webpack_require__(/*! ./_baseUnary */ "./node_modules/lodash/_baseUnary.js"),
@@ -6692,8 +6436,7 @@ module.exports = isTypedArray;
 /*!********************************************!*\
   !*** ./node_modules/lodash/isUndefined.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * Checks if `value` is `undefined`.
@@ -6725,8 +6468,7 @@ module.exports = isUndefined;
 /*!*************************************!*\
   !*** ./node_modules/lodash/keys.js ***!
   \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var arrayLikeKeys = __webpack_require__(/*! ./_arrayLikeKeys */ "./node_modules/lodash/_arrayLikeKeys.js"),
     baseKeys = __webpack_require__(/*! ./_baseKeys */ "./node_modules/lodash/_baseKeys.js"),
@@ -6773,8 +6515,7 @@ module.exports = keys;
 /*!***************************************!*\
   !*** ./node_modules/lodash/keysIn.js ***!
   \***************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var arrayLikeKeys = __webpack_require__(/*! ./_arrayLikeKeys */ "./node_modules/lodash/_arrayLikeKeys.js"),
     baseKeysIn = __webpack_require__(/*! ./_baseKeysIn */ "./node_modules/lodash/_baseKeysIn.js"),
@@ -6816,8 +6557,7 @@ module.exports = keysIn;
 /*!************************************!*\
   !*** ./node_modules/lodash/map.js ***!
   \************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var arrayMap = __webpack_require__(/*! ./_arrayMap */ "./node_modules/lodash/_arrayMap.js"),
     baseIteratee = __webpack_require__(/*! ./_baseIteratee */ "./node_modules/lodash/_baseIteratee.js"),
@@ -6880,8 +6620,7 @@ module.exports = map;
 /*!****************************************!*\
   !*** ./node_modules/lodash/memoize.js ***!
   \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var MapCache = __webpack_require__(/*! ./_MapCache */ "./node_modules/lodash/_MapCache.js");
 
@@ -6964,8 +6703,7 @@ module.exports = memoize;
 /*!**************************************!*\
   !*** ./node_modules/lodash/merge.js ***!
   \**************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseMerge = __webpack_require__(/*! ./_baseMerge */ "./node_modules/lodash/_baseMerge.js"),
     createAssigner = __webpack_require__(/*! ./_createAssigner */ "./node_modules/lodash/_createAssigner.js");
@@ -7014,8 +6752,7 @@ module.exports = merge;
 /*!************************************!*\
   !*** ./node_modules/lodash/now.js ***!
   \************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var root = __webpack_require__(/*! ./_root */ "./node_modules/lodash/_root.js");
 
@@ -7048,8 +6785,7 @@ module.exports = now;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/property.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseProperty = __webpack_require__(/*! ./_baseProperty */ "./node_modules/lodash/_baseProperty.js"),
     basePropertyDeep = __webpack_require__(/*! ./_basePropertyDeep */ "./node_modules/lodash/_basePropertyDeep.js"),
@@ -7091,8 +6827,7 @@ module.exports = property;
 /*!******************************************!*\
   !*** ./node_modules/lodash/stubArray.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * This method returns a new empty array.
@@ -7125,8 +6860,7 @@ module.exports = stubArray;
 /*!******************************************!*\
   !*** ./node_modules/lodash/stubFalse.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 /**
  * This method returns `false`.
@@ -7154,8 +6888,7 @@ module.exports = stubFalse;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/throttle.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var debounce = __webpack_require__(/*! ./debounce */ "./node_modules/lodash/debounce.js"),
     isObject = __webpack_require__(/*! ./isObject */ "./node_modules/lodash/isObject.js");
@@ -7234,8 +6967,7 @@ module.exports = throttle;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/toNumber.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseTrim = __webpack_require__(/*! ./_baseTrim */ "./node_modules/lodash/_baseTrim.js"),
     isObject = __webpack_require__(/*! ./isObject */ "./node_modules/lodash/isObject.js"),
@@ -7309,8 +7041,7 @@ module.exports = toNumber;
 /*!**********************************************!*\
   !*** ./node_modules/lodash/toPlainObject.js ***!
   \**********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var copyObject = __webpack_require__(/*! ./_copyObject */ "./node_modules/lodash/_copyObject.js"),
     keysIn = __webpack_require__(/*! ./keysIn */ "./node_modules/lodash/keysIn.js");
@@ -7352,8 +7083,7 @@ module.exports = toPlainObject;
 /*!*****************************************!*\
   !*** ./node_modules/lodash/toString.js ***!
   \*****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 var baseToString = __webpack_require__(/*! ./_baseToString */ "./node_modules/lodash/_baseToString.js");
 
@@ -7391,36 +7121,37 @@ module.exports = toString;
 /*!************************************************************!*\
   !*** ./node_modules/material-colors/dist/colors.es2015.js ***!
   \************************************************************/
-/*! exports provided: red, pink, purple, deepPurple, indigo, blue, lightBlue, cyan, teal, green, lightGreen, lime, yellow, amber, orange, deepOrange, brown, grey, blueGrey, darkText, lightText, darkIcons, lightIcons, white, black, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "red", function() { return red; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "pink", function() { return pink; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "purple", function() { return purple; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deepPurple", function() { return deepPurple; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "indigo", function() { return indigo; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blue", function() { return blue; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lightBlue", function() { return lightBlue; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "cyan", function() { return cyan; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "teal", function() { return teal; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "green", function() { return green; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lightGreen", function() { return lightGreen; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lime", function() { return lime; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "yellow", function() { return yellow; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "amber", function() { return amber; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "orange", function() { return orange; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "deepOrange", function() { return deepOrange; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "brown", function() { return brown; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "grey", function() { return grey; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "blueGrey", function() { return blueGrey; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "darkText", function() { return darkText; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lightText", function() { return lightText; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "darkIcons", function() { return darkIcons; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "lightIcons", function() { return lightIcons; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "white", function() { return white; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "black", function() { return black; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "amber": function() { return /* binding */ amber; },
+/* harmony export */   "black": function() { return /* binding */ black; },
+/* harmony export */   "blue": function() { return /* binding */ blue; },
+/* harmony export */   "blueGrey": function() { return /* binding */ blueGrey; },
+/* harmony export */   "brown": function() { return /* binding */ brown; },
+/* harmony export */   "cyan": function() { return /* binding */ cyan; },
+/* harmony export */   "darkIcons": function() { return /* binding */ darkIcons; },
+/* harmony export */   "darkText": function() { return /* binding */ darkText; },
+/* harmony export */   "deepOrange": function() { return /* binding */ deepOrange; },
+/* harmony export */   "deepPurple": function() { return /* binding */ deepPurple; },
+/* harmony export */   "green": function() { return /* binding */ green; },
+/* harmony export */   "grey": function() { return /* binding */ grey; },
+/* harmony export */   "indigo": function() { return /* binding */ indigo; },
+/* harmony export */   "lightBlue": function() { return /* binding */ lightBlue; },
+/* harmony export */   "lightGreen": function() { return /* binding */ lightGreen; },
+/* harmony export */   "lightIcons": function() { return /* binding */ lightIcons; },
+/* harmony export */   "lightText": function() { return /* binding */ lightText; },
+/* harmony export */   "lime": function() { return /* binding */ lime; },
+/* harmony export */   "orange": function() { return /* binding */ orange; },
+/* harmony export */   "pink": function() { return /* binding */ pink; },
+/* harmony export */   "purple": function() { return /* binding */ purple; },
+/* harmony export */   "red": function() { return /* binding */ red; },
+/* harmony export */   "teal": function() { return /* binding */ teal; },
+/* harmony export */   "white": function() { return /* binding */ white; },
+/* harmony export */   "yellow": function() { return /* binding */ yellow; }
+/* harmony export */ });
 var red = {"50":"#ffebee","100":"#ffcdd2","200":"#ef9a9a","300":"#e57373","400":"#ef5350","500":"#f44336","600":"#e53935","700":"#d32f2f","800":"#c62828","900":"#b71c1c","a100":"#ff8a80","a200":"#ff5252","a400":"#ff1744","a700":"#d50000"};
 var pink = {"50":"#fce4ec","100":"#f8bbd0","200":"#f48fb1","300":"#f06292","400":"#ec407a","500":"#e91e63","600":"#d81b60","700":"#c2185b","800":"#ad1457","900":"#880e4f","a100":"#ff80ab","a200":"#ff4081","a400":"#f50057","a700":"#c51162"};
 var purple = {"50":"#f3e5f5","100":"#e1bee7","200":"#ce93d8","300":"#ba68c8","400":"#ab47bc","500":"#9c27b0","600":"#8e24aa","700":"#7b1fa2","800":"#6a1b9a","900":"#4a148c","a100":"#ea80fc","a200":"#e040fb","a400":"#d500f9","a700":"#aa00ff"};
@@ -7478,12 +7209,24 @@ var black = "#000000";
 
 /***/ }),
 
+/***/ "./src/index.scss":
+/*!************************!*\
+  !*** ./src/index.scss ***!
+  \************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./node_modules/object-assign/index.js":
 /*!*********************************************!*\
   !*** ./node_modules/object-assign/index.js ***!
   \*********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module) {
 
 "use strict";
 /*
@@ -7584,8 +7327,7 @@ module.exports = shouldUseNative() ? Object.assign : function (target, source) {
 /*!***************************************************!*\
   !*** ./node_modules/prop-types/checkPropTypes.js ***!
   \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
 /**
@@ -7699,8 +7441,7 @@ module.exports = checkPropTypes;
 /*!************************************************************!*\
   !*** ./node_modules/prop-types/factoryWithTypeCheckers.js ***!
   \************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
 /**
@@ -8072,7 +7813,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 
   function createUnionTypeChecker(arrayOfTypeCheckers) {
     if (!Array.isArray(arrayOfTypeCheckers)) {
-       true ? printWarning('Invalid argument supplied to oneOfType, expected an instance of array.') : undefined;
+       true ? printWarning('Invalid argument supplied to oneOfType, expected an instance of array.') : 0;
       return emptyFunctionThatReturnsNull;
     }
 
@@ -8321,8 +8062,7 @@ module.exports = function(isValidElement, throwOnDirectAccess) {
 /*!******************************************!*\
   !*** ./node_modules/prop-types/index.js ***!
   \******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
@@ -8347,8 +8087,7 @@ if (true) {
 /*!*************************************************************!*\
   !*** ./node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
   \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module) {
 
 "use strict";
 /**
@@ -8371,8 +8110,7 @@ module.exports = ReactPropTypesSecret;
 /*!********************************************!*\
   !*** ./node_modules/prop-types/lib/has.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module) {
 
 module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
 
@@ -8383,16 +8121,16 @@ module.exports = Function.call.bind(Object.prototype.hasOwnProperty);
 /*!***************************************************************!*\
   !*** ./node_modules/react-color/es/components/alpha/Alpha.js ***!
   \***************************************************************/
-/*! exports provided: AlphaPicker, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AlphaPicker", function() { return AlphaPicker; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AlphaPicker": function() { return /* binding */ AlphaPicker; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
 /* harmony import */ var _AlphaPointer__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./AlphaPointer */ "./node_modules/react-color/es/components/alpha/AlphaPointer.js");
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -8416,7 +8154,7 @@ var AlphaPicker = function AlphaPicker(_ref) {
       _ref$className = _ref.className,
       className = _ref$className === undefined ? '' : _ref$className;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       picker: {
         position: 'relative',
@@ -8430,10 +8168,10 @@ var AlphaPicker = function AlphaPicker(_ref) {
     }
   });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.picker, className: 'alpha-picker ' + className },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_2__["Alpha"], _extends({}, styles.alpha, {
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_2__.Alpha, _extends({}, styles.alpha, {
       rgb: rgb,
       hsl: hsl,
       pointer: pointer,
@@ -8451,7 +8189,7 @@ AlphaPicker.defaultProps = {
   pointer: _AlphaPointer__WEBPACK_IMPORTED_MODULE_3__["default"]
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_common__WEBPACK_IMPORTED_MODULE_2__["ColorWrap"])(AlphaPicker));
+/* harmony default export */ __webpack_exports__["default"] = ((0,_common__WEBPACK_IMPORTED_MODULE_2__.ColorWrap)(AlphaPicker));
 
 /***/ }),
 
@@ -8459,23 +8197,23 @@ AlphaPicker.defaultProps = {
 /*!**********************************************************************!*\
   !*** ./node_modules/react-color/es/components/alpha/AlphaPointer.js ***!
   \**********************************************************************/
-/*! exports provided: AlphaPointer, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AlphaPointer", function() { return AlphaPointer; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AlphaPointer": function() { return /* binding */ AlphaPointer; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
 var AlphaPointer = function AlphaPointer(_ref) {
   var direction = _ref.direction;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       picker: {
         width: '18px',
@@ -8493,7 +8231,7 @@ var AlphaPointer = function AlphaPointer(_ref) {
     }
   }, { vertical: direction === 'vertical' });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.picker });
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.picker });
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (AlphaPointer);
@@ -8504,23 +8242,23 @@ var AlphaPointer = function AlphaPointer(_ref) {
 /*!***************************************************************!*\
   !*** ./node_modules/react-color/es/components/block/Block.js ***!
   \***************************************************************/
-/*! exports provided: Block, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Block", function() { return Block; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Block": function() { return /* binding */ Block; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _helpers_color__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../helpers/color */ "./node_modules/react-color/es/helpers/color.js");
-/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
-/* harmony import */ var _BlockSwatches__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./BlockSwatches */ "./node_modules/react-color/es/components/block/BlockSwatches.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _helpers_color__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../helpers/color */ "./node_modules/react-color/es/helpers/color.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
+/* harmony import */ var _BlockSwatches__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./BlockSwatches */ "./node_modules/react-color/es/components/block/BlockSwatches.js");
 
 
 
@@ -8544,13 +8282,13 @@ var Block = function Block(_ref) {
 
   var transparent = hex === 'transparent';
   var handleChange = function handleChange(hexCode, e) {
-    _helpers_color__WEBPACK_IMPORTED_MODULE_4__["isValidHex"](hexCode) && onChange({
+    _helpers_color__WEBPACK_IMPORTED_MODULE_3__.isValidHex(hexCode) && onChange({
       hex: hexCode,
       source: 'hex'
     }, e);
   };
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_2___default()(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])(lodash_es_merge__WEBPACK_IMPORTED_MODULE_2___default()({
     'default': {
       card: {
         width: width,
@@ -8573,7 +8311,7 @@ var Block = function Block(_ref) {
       },
       label: {
         fontSize: '18px',
-        color: _helpers_color__WEBPACK_IMPORTED_MODULE_4__["getContrastingColor"](hex),
+        color: _helpers_color__WEBPACK_IMPORTED_MODULE_3__.getContrastingColor(hex),
         position: 'relative'
       },
       triangle: {
@@ -8607,25 +8345,25 @@ var Block = function Block(_ref) {
     }
   }, passedStyles), { 'hide-triangle': triangle === 'hide' });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.card, className: 'block-picker ' + className },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.triangle }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.triangle }),
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.head },
-      transparent && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_5__["Checkboard"], { borderRadius: '6px 6px 0 0' }),
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+      transparent && react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_4__.Checkboard, { borderRadius: '6px 6px 0 0' }),
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
         'div',
         { style: styles.label },
         hex
       )
     ),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.body },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_BlockSwatches__WEBPACK_IMPORTED_MODULE_6__["default"], { colors: colors, onClick: handleChange, onSwatchHover: onSwatchHover }),
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_5__["EditableInput"], {
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_BlockSwatches__WEBPACK_IMPORTED_MODULE_5__["default"], { colors: colors, onClick: handleChange, onSwatchHover: onSwatchHover }),
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_4__.EditableInput, {
         style: { input: styles.input },
         value: hex,
         onChange: handleChange
@@ -8635,10 +8373,10 @@ var Block = function Block(_ref) {
 };
 
 Block.propTypes = {
-  width: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number]),
-  colors: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string),
-  triangle: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOf(['top', 'hide']),
-  styles: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object
+  width: prop_types__WEBPACK_IMPORTED_MODULE_6___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_6___default().string), (prop_types__WEBPACK_IMPORTED_MODULE_6___default().number)]),
+  colors: prop_types__WEBPACK_IMPORTED_MODULE_6___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_6___default().string)),
+  triangle: prop_types__WEBPACK_IMPORTED_MODULE_6___default().oneOf(['top', 'hide']),
+  styles: (prop_types__WEBPACK_IMPORTED_MODULE_6___default().object)
 };
 
 Block.defaultProps = {
@@ -8648,7 +8386,7 @@ Block.defaultProps = {
   styles: {}
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_common__WEBPACK_IMPORTED_MODULE_5__["ColorWrap"])(Block));
+/* harmony default export */ __webpack_exports__["default"] = ((0,_common__WEBPACK_IMPORTED_MODULE_4__.ColorWrap)(Block));
 
 /***/ }),
 
@@ -8656,16 +8394,16 @@ Block.defaultProps = {
 /*!***********************************************************************!*\
   !*** ./node_modules/react-color/es/components/block/BlockSwatches.js ***!
   \***********************************************************************/
-/*! exports provided: BlockSwatches, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BlockSwatches", function() { return BlockSwatches; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "BlockSwatches": function() { return /* binding */ BlockSwatches; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es/map */ "./node_modules/lodash/map.js");
 /* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_es_map__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
@@ -8680,7 +8418,7 @@ var BlockSwatches = function BlockSwatches(_ref) {
       onClick = _ref.onClick,
       onSwatchHover = _ref.onSwatchHover;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       swatches: {
         marginRight: '-10px'
@@ -8699,11 +8437,11 @@ var BlockSwatches = function BlockSwatches(_ref) {
     }
   });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.swatches },
     lodash_es_map__WEBPACK_IMPORTED_MODULE_2___default()(colors, function (c) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_3__["Swatch"], {
+      return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.Swatch, {
         key: c,
         color: c,
         style: styles.swatch,
@@ -8714,7 +8452,7 @@ var BlockSwatches = function BlockSwatches(_ref) {
         }
       });
     }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.clear })
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.clear })
   );
 };
 
@@ -8726,24 +8464,24 @@ var BlockSwatches = function BlockSwatches(_ref) {
 /*!*****************************************************************!*\
   !*** ./node_modules/react-color/es/components/chrome/Chrome.js ***!
   \*****************************************************************/
-/*! exports provided: Chrome, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Chrome", function() { return Chrome; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Chrome": function() { return /* binding */ Chrome; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
-/* harmony import */ var _ChromeFields__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ChromeFields */ "./node_modules/react-color/es/components/chrome/ChromeFields.js");
-/* harmony import */ var _ChromePointer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ChromePointer */ "./node_modules/react-color/es/components/chrome/ChromePointer.js");
-/* harmony import */ var _ChromePointerCircle__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ChromePointerCircle */ "./node_modules/react-color/es/components/chrome/ChromePointerCircle.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
+/* harmony import */ var _ChromeFields__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ChromeFields */ "./node_modules/react-color/es/components/chrome/ChromeFields.js");
+/* harmony import */ var _ChromePointer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./ChromePointer */ "./node_modules/react-color/es/components/chrome/ChromePointer.js");
+/* harmony import */ var _ChromePointerCircle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ChromePointerCircle */ "./node_modules/react-color/es/components/chrome/ChromePointerCircle.js");
 
 
 
@@ -8769,7 +8507,7 @@ var Chrome = function Chrome(_ref) {
       className = _ref$className === undefined ? '' : _ref$className,
       defaultView = _ref.defaultView;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_2___default()(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])(lodash_es_merge__WEBPACK_IMPORTED_MODULE_2___default()({
     'default': {
       picker: {
         width: width,
@@ -8850,64 +8588,64 @@ var Chrome = function Chrome(_ref) {
     }
   }, passedStyles), { disableAlpha: disableAlpha });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.picker, className: 'chrome-picker ' + className },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.saturation },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["Saturation"], {
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.Saturation, {
         style: styles.Saturation,
         hsl: hsl,
         hsv: hsv,
-        pointer: _ChromePointerCircle__WEBPACK_IMPORTED_MODULE_7__["default"],
+        pointer: _ChromePointerCircle__WEBPACK_IMPORTED_MODULE_6__["default"],
         onChange: onChange
       })
     ),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.body },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
         'div',
         { style: styles.controls, className: 'flexbox-fix' },
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           { style: styles.color },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
             'div',
             { style: styles.swatch },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.active }),
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["Checkboard"], { renderers: renderers })
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.active }),
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.Checkboard, { renderers: renderers })
           )
         ),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           { style: styles.toggles },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
             'div',
             { style: styles.hue },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["Hue"], {
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.Hue, {
               style: styles.Hue,
               hsl: hsl,
-              pointer: _ChromePointer__WEBPACK_IMPORTED_MODULE_6__["default"],
+              pointer: _ChromePointer__WEBPACK_IMPORTED_MODULE_5__["default"],
               onChange: onChange
             })
           ),
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
             'div',
             { style: styles.alpha },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["Alpha"], {
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.Alpha, {
               style: styles.Alpha,
               rgb: rgb,
               hsl: hsl,
-              pointer: _ChromePointer__WEBPACK_IMPORTED_MODULE_6__["default"],
+              pointer: _ChromePointer__WEBPACK_IMPORTED_MODULE_5__["default"],
               renderers: renderers,
               onChange: onChange
             })
           )
         )
       ),
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ChromeFields__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_ChromeFields__WEBPACK_IMPORTED_MODULE_4__["default"], {
         rgb: rgb,
         hsl: hsl,
         hex: hex,
@@ -8920,10 +8658,10 @@ var Chrome = function Chrome(_ref) {
 };
 
 Chrome.propTypes = {
-  width: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number]),
-  disableAlpha: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
-  styles: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object,
-  defaultView: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOf(["hex", "rgb", "hsl"])
+  width: prop_types__WEBPACK_IMPORTED_MODULE_7___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_7___default().string), (prop_types__WEBPACK_IMPORTED_MODULE_7___default().number)]),
+  disableAlpha: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().bool),
+  styles: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().object),
+  defaultView: prop_types__WEBPACK_IMPORTED_MODULE_7___default().oneOf(["hex", "rgb", "hsl"])
 };
 
 Chrome.defaultProps = {
@@ -8932,7 +8670,7 @@ Chrome.defaultProps = {
   styles: {}
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_common__WEBPACK_IMPORTED_MODULE_4__["ColorWrap"])(Chrome));
+/* harmony default export */ __webpack_exports__["default"] = ((0,_common__WEBPACK_IMPORTED_MODULE_3__.ColorWrap)(Chrome));
 
 /***/ }),
 
@@ -8940,22 +8678,21 @@ Chrome.defaultProps = {
 /*!***********************************************************************!*\
   !*** ./node_modules/react-color/es/components/chrome/ChromeFields.js ***!
   \***********************************************************************/
-/*! exports provided: ChromeFields, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChromeFields", function() { return ChromeFields; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ChromeFields": function() { return /* binding */ ChromeFields; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _helpers_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../helpers/color */ "./node_modules/react-color/es/helpers/color.js");
 /* harmony import */ var lodash_es_isUndefined__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash-es/isUndefined */ "./node_modules/lodash/isUndefined.js");
 /* harmony import */ var lodash_es_isUndefined__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_es_isUndefined__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
 /* harmony import */ var _icons_material_UnfoldMoreHorizontalIcon__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @icons/material/UnfoldMoreHorizontalIcon */ "./node_modules/@icons/material/UnfoldMoreHorizontalIcon.js");
-/* harmony import */ var _icons_material_UnfoldMoreHorizontalIcon__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_icons_material_UnfoldMoreHorizontalIcon__WEBPACK_IMPORTED_MODULE_5__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -8998,7 +8735,7 @@ var ChromeFields = function (_React$Component) {
 
     _this.handleChange = function (data, e) {
       if (data.hex) {
-        _helpers_color__WEBPACK_IMPORTED_MODULE_2__["isValidHex"](data.hex) && _this.props.onChange({
+        _helpers_color__WEBPACK_IMPORTED_MODULE_2__.isValidHex(data.hex) && _this.props.onChange({
           hex: data.hex,
           source: 'hex'
         }, e);
@@ -9073,7 +8810,7 @@ var ChromeFields = function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
-      var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+      var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
         'default': {
           wrap: {
             paddingTop: '16px',
@@ -9149,13 +8886,13 @@ var ChromeFields = function (_React$Component) {
 
       var fields = void 0;
       if (this.state.view === 'hex') {
-        fields = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        fields = react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           { style: styles.fields, className: 'flexbox-fix' },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
             'div',
             { style: styles.field },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["EditableInput"], {
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_4__.EditableInput, {
               style: { input: styles.input, label: styles.label },
               label: 'hex', value: this.props.hex,
               onChange: this.handleChange
@@ -9163,43 +8900,43 @@ var ChromeFields = function (_React$Component) {
           )
         );
       } else if (this.state.view === 'rgb') {
-        fields = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        fields = react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           { style: styles.fields, className: 'flexbox-fix' },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
             'div',
             { style: styles.field },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["EditableInput"], {
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_4__.EditableInput, {
               style: { input: styles.input, label: styles.label },
               label: 'r',
               value: this.props.rgb.r,
               onChange: this.handleChange
             })
           ),
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
             'div',
             { style: styles.field },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["EditableInput"], {
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_4__.EditableInput, {
               style: { input: styles.input, label: styles.label },
               label: 'g',
               value: this.props.rgb.g,
               onChange: this.handleChange
             })
           ),
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
             'div',
             { style: styles.field },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["EditableInput"], {
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_4__.EditableInput, {
               style: { input: styles.input, label: styles.label },
               label: 'b',
               value: this.props.rgb.b,
               onChange: this.handleChange
             })
           ),
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
             'div',
             { style: styles.alpha },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["EditableInput"], {
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_4__.EditableInput, {
               style: { input: styles.input, label: styles.label },
               label: 'a',
               value: this.props.rgb.a,
@@ -9209,43 +8946,43 @@ var ChromeFields = function (_React$Component) {
           )
         );
       } else if (this.state.view === 'hsl') {
-        fields = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        fields = react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           { style: styles.fields, className: 'flexbox-fix' },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
             'div',
             { style: styles.field },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["EditableInput"], {
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_4__.EditableInput, {
               style: { input: styles.input, label: styles.label },
               label: 'h',
               value: Math.round(this.props.hsl.h),
               onChange: this.handleChange
             })
           ),
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
             'div',
             { style: styles.field },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["EditableInput"], {
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_4__.EditableInput, {
               style: { input: styles.input, label: styles.label },
               label: 's',
               value: Math.round(this.props.hsl.s * 100) + '%',
               onChange: this.handleChange
             })
           ),
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
             'div',
             { style: styles.field },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["EditableInput"], {
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_4__.EditableInput, {
               style: { input: styles.input, label: styles.label },
               label: 'l',
               value: Math.round(this.props.hsl.l * 100) + '%',
               onChange: this.handleChange
             })
           ),
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
             'div',
             { style: styles.alpha },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["EditableInput"], {
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_4__.EditableInput, {
               style: { input: styles.input, label: styles.label },
               label: 'a',
               value: this.props.hsl.a,
@@ -9256,19 +8993,19 @@ var ChromeFields = function (_React$Component) {
         );
       }
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+      return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
         'div',
         { style: styles.wrap, className: 'flexbox-fix' },
         fields,
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           { style: styles.toggle },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
             'div',
             { style: styles.icon, onClick: this.toggleViews, ref: function ref(icon) {
                 return _this2.icon = icon;
               } },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_icons_material_UnfoldMoreHorizontalIcon__WEBPACK_IMPORTED_MODULE_5___default.a, {
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_icons_material_UnfoldMoreHorizontalIcon__WEBPACK_IMPORTED_MODULE_5__["default"], {
               style: styles.svg,
               onMouseOver: this.showHighlight,
               onMouseEnter: this.showHighlight,
@@ -9289,7 +9026,7 @@ var ChromeFields = function (_React$Component) {
   }]);
 
   return ChromeFields;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+}((react__WEBPACK_IMPORTED_MODULE_0___default().Component));
 
 ChromeFields.defaultProps = {
   view: "hex"
@@ -9303,21 +9040,21 @@ ChromeFields.defaultProps = {
 /*!************************************************************************!*\
   !*** ./node_modules/react-color/es/components/chrome/ChromePointer.js ***!
   \************************************************************************/
-/*! exports provided: ChromePointer, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChromePointer", function() { return ChromePointer; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ChromePointer": function() { return /* binding */ ChromePointer; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
 var ChromePointer = function ChromePointer() {
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       picker: {
         width: '12px',
@@ -9330,7 +9067,7 @@ var ChromePointer = function ChromePointer() {
     }
   });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.picker });
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.picker });
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ChromePointer);
@@ -9341,21 +9078,21 @@ var ChromePointer = function ChromePointer() {
 /*!******************************************************************************!*\
   !*** ./node_modules/react-color/es/components/chrome/ChromePointerCircle.js ***!
   \******************************************************************************/
-/*! exports provided: ChromePointerCircle, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ChromePointerCircle", function() { return ChromePointerCircle; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ChromePointerCircle": function() { return /* binding */ ChromePointerCircle; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
 var ChromePointerCircle = function ChromePointerCircle() {
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       picker: {
         width: '12px',
@@ -9367,7 +9104,7 @@ var ChromePointerCircle = function ChromePointerCircle() {
     }
   });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.picker });
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.picker });
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ChromePointerCircle);
@@ -9378,25 +9115,25 @@ var ChromePointerCircle = function ChromePointerCircle() {
 /*!*****************************************************************!*\
   !*** ./node_modules/react-color/es/components/circle/Circle.js ***!
   \*****************************************************************/
-/*! exports provided: Circle, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Circle", function() { return Circle; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Circle": function() { return /* binding */ Circle; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash-es/map */ "./node_modules/lodash/map.js");
-/* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_es_map__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var material_colors__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! material-colors */ "./node_modules/material-colors/dist/colors.es2015.js");
-/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
-/* harmony import */ var _CircleSwatch__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./CircleSwatch */ "./node_modules/react-color/es/components/circle/CircleSwatch.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
+/* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es/map */ "./node_modules/lodash/map.js");
+/* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_es_map__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var material_colors__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! material-colors */ "./node_modules/material-colors/dist/colors.es2015.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
+/* harmony import */ var _CircleSwatch__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./CircleSwatch */ "./node_modules/react-color/es/components/circle/CircleSwatch.js");
 
 
 
@@ -9420,7 +9157,7 @@ var Circle = function Circle(_ref) {
       _ref$className = _ref.className,
       className = _ref$className === undefined ? '' : _ref$className;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_2___default()(lodash_es_merge__WEBPACK_IMPORTED_MODULE_4___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default()({
     'default': {
       card: {
         width: width,
@@ -9436,11 +9173,11 @@ var Circle = function Circle(_ref) {
     return onChange({ hex: hexCode, source: 'hex' }, e);
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.card, className: 'circle-picker ' + className },
-    lodash_es_map__WEBPACK_IMPORTED_MODULE_3___default()(colors, function (c) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CircleSwatch__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    lodash_es_map__WEBPACK_IMPORTED_MODULE_2___default()(colors, function (c) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_CircleSwatch__WEBPACK_IMPORTED_MODULE_6__["default"], {
         key: c,
         color: c,
         onClick: handleChange,
@@ -9454,21 +9191,21 @@ var Circle = function Circle(_ref) {
 };
 
 Circle.propTypes = {
-  width: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number]),
-  circleSize: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
-  circleSpacing: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
-  styles: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object
+  width: prop_types__WEBPACK_IMPORTED_MODULE_7___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_7___default().string), (prop_types__WEBPACK_IMPORTED_MODULE_7___default().number)]),
+  circleSize: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().number),
+  circleSpacing: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().number),
+  styles: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().object)
 };
 
 Circle.defaultProps = {
   width: 252,
   circleSize: 28,
   circleSpacing: 14,
-  colors: [material_colors__WEBPACK_IMPORTED_MODULE_5__["red"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["pink"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["purple"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["deepPurple"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["indigo"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["blue"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["lightBlue"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["cyan"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["teal"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["green"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["lightGreen"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["lime"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["yellow"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["amber"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["orange"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["deepOrange"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["brown"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["blueGrey"]['500']],
+  colors: [material_colors__WEBPACK_IMPORTED_MODULE_4__.red[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.pink[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.purple[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.deepPurple[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.indigo[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.blue[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.lightBlue[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.cyan[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.teal[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.green[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.lightGreen[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.lime[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.yellow[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.amber[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.orange[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.deepOrange[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.brown[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.blueGrey[500]],
   styles: {}
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_common__WEBPACK_IMPORTED_MODULE_6__["ColorWrap"])(Circle));
+/* harmony default export */ __webpack_exports__["default"] = ((0,_common__WEBPACK_IMPORTED_MODULE_5__.ColorWrap)(Circle));
 
 /***/ }),
 
@@ -9476,16 +9213,16 @@ Circle.defaultProps = {
 /*!***********************************************************************!*\
   !*** ./node_modules/react-color/es/components/circle/CircleSwatch.js ***!
   \***********************************************************************/
-/*! exports provided: CircleSwatch, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CircleSwatch", function() { return CircleSwatch; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "CircleSwatch": function() { return /* binding */ CircleSwatch; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
 
 
@@ -9501,7 +9238,7 @@ var CircleSwatch = function CircleSwatch(_ref) {
       circleSize = _ref.circleSize,
       circleSpacing = _ref.circleSpacing;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       swatch: {
         width: circleSize,
@@ -9530,10 +9267,10 @@ var CircleSwatch = function CircleSwatch(_ref) {
     }
   }, { hover: hover, active: active });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.swatch },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_2__["Swatch"], {
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_2__.Swatch, {
       style: styles.Swatch,
       color: color,
       onClick: onClick,
@@ -9548,7 +9285,7 @@ CircleSwatch.defaultProps = {
   circleSpacing: 14
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(reactcss__WEBPACK_IMPORTED_MODULE_1__["handleHover"])(CircleSwatch));
+/* harmony default export */ __webpack_exports__["default"] = ((0,reactcss__WEBPACK_IMPORTED_MODULE_1__.handleHover)(CircleSwatch));
 
 /***/ }),
 
@@ -9556,16 +9293,16 @@ CircleSwatch.defaultProps = {
 /*!****************************************************************!*\
   !*** ./node_modules/react-color/es/components/common/Alpha.js ***!
   \****************************************************************/
-/*! exports provided: Alpha, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Alpha", function() { return Alpha; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Alpha": function() { return /* binding */ Alpha; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _helpers_alpha__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../helpers/alpha */ "./node_modules/react-color/es/helpers/alpha.js");
 /* harmony import */ var _Checkboard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Checkboard */ "./node_modules/react-color/es/components/common/Checkboard.js");
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -9599,7 +9336,7 @@ var Alpha = function (_ref) {
     }
 
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref2 = Alpha.__proto__ || Object.getPrototypeOf(Alpha)).call.apply(_ref2, [this].concat(args))), _this), _this.handleChange = function (e) {
-      var change = _helpers_alpha__WEBPACK_IMPORTED_MODULE_2__["calculateChange"](e, _this.props.hsl, _this.props.direction, _this.props.a, _this.container);
+      var change = _helpers_alpha__WEBPACK_IMPORTED_MODULE_2__.calculateChange(e, _this.props.hsl, _this.props.direction, _this.props.a, _this.container);
       change && typeof _this.props.onChange === 'function' && _this.props.onChange(change, e);
     }, _this.handleMouseDown = function (e) {
       _this.handleChange(e);
@@ -9624,7 +9361,7 @@ var Alpha = function (_ref) {
       var _this2 = this;
 
       var rgb = this.props.rgb;
-      var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+      var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
         'default': {
           alpha: {
             absolute: '0px 0px 0px 0px',
@@ -9675,16 +9412,16 @@ var Alpha = function (_ref) {
         overwrite: true
       });
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+      return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
         'div',
         { style: styles.alpha },
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           { style: styles.checkboard },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Checkboard__WEBPACK_IMPORTED_MODULE_3__["default"], { renderers: this.props.renderers })
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Checkboard__WEBPACK_IMPORTED_MODULE_3__["default"], { renderers: this.props.renderers })
         ),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.gradient }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.gradient }),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           {
             style: styles.container,
@@ -9695,10 +9432,10 @@ var Alpha = function (_ref) {
             onTouchMove: this.handleChange,
             onTouchStart: this.handleChange
           },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
             'div',
             { style: styles.pointer },
-            this.props.pointer ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(this.props.pointer, this.props) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.slider })
+            this.props.pointer ? react__WEBPACK_IMPORTED_MODULE_0___default().createElement(this.props.pointer, this.props) : react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.slider })
           )
         )
       );
@@ -9706,7 +9443,7 @@ var Alpha = function (_ref) {
   }]);
 
   return Alpha;
-}(react__WEBPACK_IMPORTED_MODULE_0__["PureComponent"] || react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_0__.PureComponent || react__WEBPACK_IMPORTED_MODULE_0__.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Alpha);
 
@@ -9716,16 +9453,16 @@ var Alpha = function (_ref) {
 /*!*********************************************************************!*\
   !*** ./node_modules/react-color/es/components/common/Checkboard.js ***!
   \*********************************************************************/
-/*! exports provided: Checkboard, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Checkboard", function() { return Checkboard; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Checkboard": function() { return /* binding */ Checkboard; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _helpers_checkboard__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../helpers/checkboard */ "./node_modules/react-color/es/helpers/checkboard.js");
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
@@ -9742,17 +9479,17 @@ var Checkboard = function Checkboard(_ref) {
       boxShadow = _ref.boxShadow,
       children = _ref.children;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       grid: {
         borderRadius: borderRadius,
         boxShadow: boxShadow,
         absolute: '0px 0px 0px 0px',
-        background: 'url(' + _helpers_checkboard__WEBPACK_IMPORTED_MODULE_2__["get"](white, grey, size, renderers.canvas) + ') center left'
+        background: 'url(' + _helpers_checkboard__WEBPACK_IMPORTED_MODULE_2__.get(white, grey, size, renderers.canvas) + ') center left'
       }
     }
   });
-  return Object(react__WEBPACK_IMPORTED_MODULE_0__["isValidElement"])(children) ? react__WEBPACK_IMPORTED_MODULE_0___default.a.cloneElement(children, _extends({}, children.props, { style: _extends({}, children.props.style, styles.grid) })) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.grid });
+  return (0,react__WEBPACK_IMPORTED_MODULE_0__.isValidElement)(children) ? react__WEBPACK_IMPORTED_MODULE_0___default().cloneElement(children, _extends({}, children.props, { style: _extends({}, children.props.style, styles.grid) })) : react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.grid });
 };
 
 Checkboard.defaultProps = {
@@ -9770,12 +9507,13 @@ Checkboard.defaultProps = {
 /*!********************************************************************!*\
   !*** ./node_modules/react-color/es/components/common/ColorWrap.js ***!
   \********************************************************************/
-/*! exports provided: ColorWrap, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ColorWrap", function() { return ColorWrap; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "ColorWrap": function() { return /* binding */ ColorWrap; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var lodash_es_debounce__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! lodash-es/debounce */ "./node_modules/lodash/debounce.js");
@@ -9805,9 +9543,9 @@ var ColorWrap = function ColorWrap(Picker) {
       var _this = _possibleConstructorReturn(this, (ColorPicker.__proto__ || Object.getPrototypeOf(ColorPicker)).call(this));
 
       _this.handleChange = function (data, event) {
-        var isValidColor = _helpers_color__WEBPACK_IMPORTED_MODULE_2__["simpleCheckForValidColor"](data);
+        var isValidColor = _helpers_color__WEBPACK_IMPORTED_MODULE_2__.simpleCheckForValidColor(data);
         if (isValidColor) {
-          var colors = _helpers_color__WEBPACK_IMPORTED_MODULE_2__["toState"](data, data.h || _this.state.oldHue);
+          var colors = _helpers_color__WEBPACK_IMPORTED_MODULE_2__.toState(data, data.h || _this.state.oldHue);
           _this.setState(colors);
           _this.props.onChangeComplete && _this.debounce(_this.props.onChangeComplete, colors, event);
           _this.props.onChange && _this.props.onChange(colors, event);
@@ -9815,14 +9553,14 @@ var ColorWrap = function ColorWrap(Picker) {
       };
 
       _this.handleSwatchHover = function (data, event) {
-        var isValidColor = _helpers_color__WEBPACK_IMPORTED_MODULE_2__["simpleCheckForValidColor"](data);
+        var isValidColor = _helpers_color__WEBPACK_IMPORTED_MODULE_2__.simpleCheckForValidColor(data);
         if (isValidColor) {
-          var colors = _helpers_color__WEBPACK_IMPORTED_MODULE_2__["toState"](data, data.h || _this.state.oldHue);
+          var colors = _helpers_color__WEBPACK_IMPORTED_MODULE_2__.toState(data, data.h || _this.state.oldHue);
           _this.props.onSwatchHover && _this.props.onSwatchHover(colors, event);
         }
       };
 
-      _this.state = _extends({}, _helpers_color__WEBPACK_IMPORTED_MODULE_2__["toState"](props.color, 0));
+      _this.state = _extends({}, _helpers_color__WEBPACK_IMPORTED_MODULE_2__.toState(props.color, 0));
 
       _this.debounce = lodash_es_debounce__WEBPACK_IMPORTED_MODULE_1___default()(function (fn, data, event) {
         fn(data, event);
@@ -9838,19 +9576,19 @@ var ColorWrap = function ColorWrap(Picker) {
           optionalEvents.onSwatchHover = this.handleSwatchHover;
         }
 
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Picker, _extends({}, this.props, this.state, {
+        return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Picker, _extends({}, this.props, this.state, {
           onChange: this.handleChange
         }, optionalEvents));
       }
     }], [{
       key: 'getDerivedStateFromProps',
       value: function getDerivedStateFromProps(nextProps, state) {
-        return _extends({}, _helpers_color__WEBPACK_IMPORTED_MODULE_2__["toState"](nextProps.color, state.oldHue));
+        return _extends({}, _helpers_color__WEBPACK_IMPORTED_MODULE_2__.toState(nextProps.color, state.oldHue));
       }
     }]);
 
     return ColorPicker;
-  }(react__WEBPACK_IMPORTED_MODULE_0__["PureComponent"] || react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+  }(react__WEBPACK_IMPORTED_MODULE_0__.PureComponent || react__WEBPACK_IMPORTED_MODULE_0__.Component);
 
   ColorPicker.propTypes = _extends({}, Picker.propTypes);
 
@@ -9874,16 +9612,16 @@ var ColorWrap = function ColorWrap(Picker) {
 /*!************************************************************************!*\
   !*** ./node_modules/react-color/es/components/common/EditableInput.js ***!
   \************************************************************************/
-/*! exports provided: EditableInput, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "EditableInput", function() { return EditableInput; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "EditableInput": function() { return /* binding */ EditableInput; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
@@ -10017,7 +9755,7 @@ var EditableInput = function (_ref) {
     value: function render() {
       var _this2 = this;
 
-      var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+      var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
         'default': {
           wrap: {
             position: 'relative'
@@ -10037,10 +9775,10 @@ var EditableInput = function (_ref) {
         'user-override': true
       }, this.props);
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+      return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
         'div',
         { style: styles.wrap },
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('input', {
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement('input', {
           id: this.inputId,
           style: styles.input,
           ref: function ref(input) {
@@ -10053,7 +9791,7 @@ var EditableInput = function (_ref) {
           placeholder: this.props.placeholder,
           spellCheck: 'false'
         }),
-        this.props.label && !this.props.hideLabel ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        this.props.label && !this.props.hideLabel ? react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'label',
           {
             htmlFor: this.inputId,
@@ -10067,7 +9805,7 @@ var EditableInput = function (_ref) {
   }]);
 
   return EditableInput;
-}(react__WEBPACK_IMPORTED_MODULE_0__["PureComponent"] || react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_0__.PureComponent || react__WEBPACK_IMPORTED_MODULE_0__.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (EditableInput);
 
@@ -10077,16 +9815,16 @@ var EditableInput = function (_ref) {
 /*!**************************************************************!*\
   !*** ./node_modules/react-color/es/components/common/Hue.js ***!
   \**************************************************************/
-/*! exports provided: Hue, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Hue", function() { return Hue; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Hue": function() { return /* binding */ Hue; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _helpers_hue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../helpers/hue */ "./node_modules/react-color/es/helpers/hue.js");
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -10115,7 +9853,7 @@ var Hue = function (_ref) {
     }
 
     return _ret = (_temp = (_this = _possibleConstructorReturn(this, (_ref2 = Hue.__proto__ || Object.getPrototypeOf(Hue)).call.apply(_ref2, [this].concat(args))), _this), _this.handleChange = function (e) {
-      var change = _helpers_hue__WEBPACK_IMPORTED_MODULE_2__["calculateChange"](e, _this.props.direction, _this.props.hsl, _this.container);
+      var change = _helpers_hue__WEBPACK_IMPORTED_MODULE_2__.calculateChange(e, _this.props.direction, _this.props.hsl, _this.container);
       change && typeof _this.props.onChange === 'function' && _this.props.onChange(change, e);
     }, _this.handleMouseDown = function (e) {
       _this.handleChange(e);
@@ -10146,7 +9884,7 @@ var Hue = function (_ref) {
           direction = _props$direction === undefined ? 'horizontal' : _props$direction;
 
 
-      var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+      var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
         'default': {
           hue: {
             absolute: '0px 0px 0px 0px',
@@ -10181,10 +9919,10 @@ var Hue = function (_ref) {
         }
       }, { vertical: direction === 'vertical' });
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+      return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
         'div',
         { style: styles.hue },
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           {
             className: 'hue-' + direction,
@@ -10196,15 +9934,15 @@ var Hue = function (_ref) {
             onTouchMove: this.handleChange,
             onTouchStart: this.handleChange
           },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
             'style',
             null,
             '\n            .hue-horizontal {\n              background: linear-gradient(to right, #f00 0%, #ff0 17%, #0f0\n                33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);\n              background: -webkit-linear-gradient(to right, #f00 0%, #ff0\n                17%, #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);\n            }\n\n            .hue-vertical {\n              background: linear-gradient(to top, #f00 0%, #ff0 17%, #0f0 33%,\n                #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);\n              background: -webkit-linear-gradient(to top, #f00 0%, #ff0 17%,\n                #0f0 33%, #0ff 50%, #00f 67%, #f0f 83%, #f00 100%);\n            }\n          '
           ),
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
             'div',
             { style: styles.pointer },
-            this.props.pointer ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(this.props.pointer, this.props) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.slider })
+            this.props.pointer ? react__WEBPACK_IMPORTED_MODULE_0___default().createElement(this.props.pointer, this.props) : react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.slider })
           )
         )
       );
@@ -10212,7 +9950,7 @@ var Hue = function (_ref) {
   }]);
 
   return Hue;
-}(react__WEBPACK_IMPORTED_MODULE_0__["PureComponent"] || react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_0__.PureComponent || react__WEBPACK_IMPORTED_MODULE_0__.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Hue);
 
@@ -10222,20 +9960,20 @@ var Hue = function (_ref) {
 /*!*****************************************************************!*\
   !*** ./node_modules/react-color/es/components/common/Raised.js ***!
   \*****************************************************************/
-/*! exports provided: Raised, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Raised", function() { return Raised; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Raised": function() { return /* binding */ Raised; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_2__);
 
 
 
@@ -10249,7 +9987,7 @@ var Raised = function Raised(_ref) {
       _ref$styles = _ref.styles,
       passedStyles = _ref$styles === undefined ? {} : _ref$styles;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_2___default()(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])(lodash_es_merge__WEBPACK_IMPORTED_MODULE_2___default()({
     'default': {
       wrap: {
         position: 'relative',
@@ -10308,11 +10046,11 @@ var Raised = function Raised(_ref) {
     }
   }, passedStyles), { 'zDepth-1': zDepth === 1 });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.wrap },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.bg }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.bg }),
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.content },
       children
@@ -10321,10 +10059,10 @@ var Raised = function Raised(_ref) {
 };
 
 Raised.propTypes = {
-  background: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  zDepth: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOf([0, 1, 2, 3, 4, 5]),
-  radius: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number,
-  styles: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object
+  background: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+  zDepth: prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOf([0, 1, 2, 3, 4, 5]),
+  radius: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().number),
+  styles: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object)
 };
 
 Raised.defaultProps = {
@@ -10342,16 +10080,16 @@ Raised.defaultProps = {
 /*!*********************************************************************!*\
   !*** ./node_modules/react-color/es/components/common/Saturation.js ***!
   \*********************************************************************/
-/*! exports provided: Saturation, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Saturation", function() { return Saturation; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Saturation": function() { return /* binding */ Saturation; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var lodash_es_throttle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es/throttle */ "./node_modules/lodash/throttle.js");
 /* harmony import */ var lodash_es_throttle__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_es_throttle__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _helpers_saturation__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../helpers/saturation */ "./node_modules/react-color/es/helpers/saturation.js");
@@ -10377,7 +10115,7 @@ var Saturation = function (_ref) {
     var _this = _possibleConstructorReturn(this, (Saturation.__proto__ || Object.getPrototypeOf(Saturation)).call(this, props));
 
     _this.handleChange = function (e) {
-      typeof _this.props.onChange === 'function' && _this.throttle(_this.props.onChange, _helpers_saturation__WEBPACK_IMPORTED_MODULE_3__["calculateChange"](e, _this.props.hsl, _this.container), e);
+      typeof _this.props.onChange === 'function' && _this.throttle(_this.props.onChange, _helpers_saturation__WEBPACK_IMPORTED_MODULE_3__.calculateChange(e, _this.props.hsl, _this.container), e);
     };
 
     _this.handleMouseDown = function (e) {
@@ -10433,7 +10171,7 @@ var Saturation = function (_ref) {
           pointer = _ref2.pointer,
           circle = _ref2.circle;
 
-      var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+      var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
         'default': {
           color: {
             absolute: '0px 0px 0px 0px',
@@ -10473,7 +10211,7 @@ var Saturation = function (_ref) {
         }
       }, { 'custom': !!this.props.style });
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+      return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
         'div',
         {
           style: styles.color,
@@ -10484,19 +10222,19 @@ var Saturation = function (_ref) {
           onTouchMove: this.handleChange,
           onTouchStart: this.handleChange
         },
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'style',
           null,
           '\n          .saturation-white {\n            background: -webkit-linear-gradient(to right, #fff, rgba(255,255,255,0));\n            background: linear-gradient(to right, #fff, rgba(255,255,255,0));\n          }\n          .saturation-black {\n            background: -webkit-linear-gradient(to top, #000, rgba(0,0,0,0));\n            background: linear-gradient(to top, #000, rgba(0,0,0,0));\n          }\n        '
         ),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           { style: styles.white, className: 'saturation-white' },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.black, className: 'saturation-black' }),
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.black, className: 'saturation-black' }),
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
             'div',
             { style: styles.pointer },
-            this.props.pointer ? react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(this.props.pointer, this.props) : react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.circle })
+            this.props.pointer ? react__WEBPACK_IMPORTED_MODULE_0___default().createElement(this.props.pointer, this.props) : react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.circle })
           )
         )
       );
@@ -10504,7 +10242,7 @@ var Saturation = function (_ref) {
   }]);
 
   return Saturation;
-}(react__WEBPACK_IMPORTED_MODULE_0__["PureComponent"] || react__WEBPACK_IMPORTED_MODULE_0__["Component"]);
+}(react__WEBPACK_IMPORTED_MODULE_0__.PureComponent || react__WEBPACK_IMPORTED_MODULE_0__.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Saturation);
 
@@ -10514,16 +10252,16 @@ var Saturation = function (_ref) {
 /*!*****************************************************************!*\
   !*** ./node_modules/react-color/es/components/common/Swatch.js ***!
   \*****************************************************************/
-/*! exports provided: Swatch, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Swatch", function() { return Swatch; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Swatch": function() { return /* binding */ Swatch; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _helpers_interaction__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../helpers/interaction */ "./node_modules/react-color/es/helpers/interaction.js");
 /* harmony import */ var _Checkboard__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Checkboard */ "./node_modules/react-color/es/components/common/Checkboard.js");
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -10550,7 +10288,7 @@ var Swatch = function Swatch(_ref) {
       focusStyle = _ref$focusStyle === undefined ? {} : _ref$focusStyle;
 
   var transparent = color === 'transparent';
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     default: {
       swatch: _extends({
         background: color,
@@ -10578,7 +10316,7 @@ var Swatch = function Swatch(_ref) {
     optionalEvents.onMouseOver = handleHover;
   }
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     _extends({
       style: styles.swatch,
@@ -10588,14 +10326,14 @@ var Swatch = function Swatch(_ref) {
       onKeyDown: handleKeyDown
     }, optionalEvents),
     children,
-    transparent && react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Checkboard__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    transparent && react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_Checkboard__WEBPACK_IMPORTED_MODULE_3__["default"], {
       borderRadius: styles.swatch.borderRadius,
       boxShadow: 'inset 0 0 0 1px rgba(0,0,0,0.1)'
     })
   );
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_helpers_interaction__WEBPACK_IMPORTED_MODULE_2__["handleFocus"])(Swatch));
+/* harmony default export */ __webpack_exports__["default"] = ((0,_helpers_interaction__WEBPACK_IMPORTED_MODULE_2__.handleFocus)(Swatch));
 
 /***/ }),
 
@@ -10603,35 +10341,28 @@ var Swatch = function Swatch(_ref) {
 /*!****************************************************************!*\
   !*** ./node_modules/react-color/es/components/common/index.js ***!
   \****************************************************************/
-/*! exports provided: Alpha, Checkboard, EditableInput, Hue, Raised, Saturation, ColorWrap, Swatch */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Alpha": function() { return /* reexport safe */ _Alpha__WEBPACK_IMPORTED_MODULE_0__["default"]; },
+/* harmony export */   "Checkboard": function() { return /* reexport safe */ _Checkboard__WEBPACK_IMPORTED_MODULE_1__["default"]; },
+/* harmony export */   "ColorWrap": function() { return /* reexport safe */ _ColorWrap__WEBPACK_IMPORTED_MODULE_6__["default"]; },
+/* harmony export */   "EditableInput": function() { return /* reexport safe */ _EditableInput__WEBPACK_IMPORTED_MODULE_2__["default"]; },
+/* harmony export */   "Hue": function() { return /* reexport safe */ _Hue__WEBPACK_IMPORTED_MODULE_3__["default"]; },
+/* harmony export */   "Raised": function() { return /* reexport safe */ _Raised__WEBPACK_IMPORTED_MODULE_4__["default"]; },
+/* harmony export */   "Saturation": function() { return /* reexport safe */ _Saturation__WEBPACK_IMPORTED_MODULE_5__["default"]; },
+/* harmony export */   "Swatch": function() { return /* reexport safe */ _Swatch__WEBPACK_IMPORTED_MODULE_7__["default"]; }
+/* harmony export */ });
 /* harmony import */ var _Alpha__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Alpha */ "./node_modules/react-color/es/components/common/Alpha.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Alpha", function() { return _Alpha__WEBPACK_IMPORTED_MODULE_0__["default"]; });
-
 /* harmony import */ var _Checkboard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Checkboard */ "./node_modules/react-color/es/components/common/Checkboard.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Checkboard", function() { return _Checkboard__WEBPACK_IMPORTED_MODULE_1__["default"]; });
-
 /* harmony import */ var _EditableInput__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./EditableInput */ "./node_modules/react-color/es/components/common/EditableInput.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "EditableInput", function() { return _EditableInput__WEBPACK_IMPORTED_MODULE_2__["default"]; });
-
 /* harmony import */ var _Hue__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Hue */ "./node_modules/react-color/es/components/common/Hue.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Hue", function() { return _Hue__WEBPACK_IMPORTED_MODULE_3__["default"]; });
-
 /* harmony import */ var _Raised__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./Raised */ "./node_modules/react-color/es/components/common/Raised.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Raised", function() { return _Raised__WEBPACK_IMPORTED_MODULE_4__["default"]; });
-
 /* harmony import */ var _Saturation__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Saturation */ "./node_modules/react-color/es/components/common/Saturation.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Saturation", function() { return _Saturation__WEBPACK_IMPORTED_MODULE_5__["default"]; });
-
 /* harmony import */ var _ColorWrap__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ColorWrap */ "./node_modules/react-color/es/components/common/ColorWrap.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ColorWrap", function() { return _ColorWrap__WEBPACK_IMPORTED_MODULE_6__["default"]; });
-
 /* harmony import */ var _Swatch__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./Swatch */ "./node_modules/react-color/es/components/common/Swatch.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "Swatch", function() { return _Swatch__WEBPACK_IMPORTED_MODULE_7__["default"]; });
-
 
 
 
@@ -10647,26 +10378,26 @@ __webpack_require__.r(__webpack_exports__);
 /*!*******************************************************************!*\
   !*** ./node_modules/react-color/es/components/compact/Compact.js ***!
   \*******************************************************************/
-/*! exports provided: Compact, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Compact", function() { return Compact; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Compact": function() { return /* binding */ Compact; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash-es/map */ "./node_modules/lodash/map.js");
-/* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_es_map__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _helpers_color__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../helpers/color */ "./node_modules/react-color/es/helpers/color.js");
-/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
-/* harmony import */ var _CompactColor__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./CompactColor */ "./node_modules/react-color/es/components/compact/CompactColor.js");
-/* harmony import */ var _CompactFields__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./CompactFields */ "./node_modules/react-color/es/components/compact/CompactFields.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
+/* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es/map */ "./node_modules/lodash/map.js");
+/* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_es_map__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _helpers_color__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../helpers/color */ "./node_modules/react-color/es/helpers/color.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
+/* harmony import */ var _CompactColor__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./CompactColor */ "./node_modules/react-color/es/components/compact/CompactColor.js");
+/* harmony import */ var _CompactFields__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./CompactFields */ "./node_modules/react-color/es/components/compact/CompactFields.js");
 
 
 
@@ -10689,7 +10420,7 @@ var Compact = function Compact(_ref) {
       _ref$className = _ref.className,
       className = _ref$className === undefined ? '' : _ref$className;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_2___default()(lodash_es_merge__WEBPACK_IMPORTED_MODULE_4___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default()({
     'default': {
       Compact: {
         background: '#f6f6f6',
@@ -10709,7 +10440,7 @@ var Compact = function Compact(_ref) {
 
   var handleChange = function handleChange(data, e) {
     if (data.hex) {
-      _helpers_color__WEBPACK_IMPORTED_MODULE_5__["isValidHex"](data.hex) && onChange({
+      _helpers_color__WEBPACK_IMPORTED_MODULE_4__.isValidHex(data.hex) && onChange({
         hex: data.hex,
         source: 'hex'
       }, e);
@@ -10718,17 +10449,17 @@ var Compact = function Compact(_ref) {
     }
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-    _common__WEBPACK_IMPORTED_MODULE_6__["Raised"],
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
+    _common__WEBPACK_IMPORTED_MODULE_5__.Raised,
     { style: styles.Compact, styles: passedStyles },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.compact, className: 'compact-picker ' + className },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
         'div',
         null,
-        lodash_es_map__WEBPACK_IMPORTED_MODULE_3___default()(colors, function (c) {
-          return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CompactColor__WEBPACK_IMPORTED_MODULE_7__["default"], {
+        lodash_es_map__WEBPACK_IMPORTED_MODULE_2___default()(colors, function (c) {
+          return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_CompactColor__WEBPACK_IMPORTED_MODULE_6__["default"], {
             key: c,
             color: c,
             active: c.toLowerCase() === hex,
@@ -10736,16 +10467,16 @@ var Compact = function Compact(_ref) {
             onSwatchHover: onSwatchHover
           });
         }),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.clear })
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.clear })
       ),
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CompactFields__WEBPACK_IMPORTED_MODULE_8__["default"], { hex: hex, rgb: rgb, onChange: handleChange })
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_CompactFields__WEBPACK_IMPORTED_MODULE_7__["default"], { hex: hex, rgb: rgb, onChange: handleChange })
     )
   );
 };
 
 Compact.propTypes = {
-  colors: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string),
-  styles: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object
+  colors: prop_types__WEBPACK_IMPORTED_MODULE_8___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_8___default().string)),
+  styles: (prop_types__WEBPACK_IMPORTED_MODULE_8___default().object)
 };
 
 Compact.defaultProps = {
@@ -10753,7 +10484,7 @@ Compact.defaultProps = {
   styles: {}
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_common__WEBPACK_IMPORTED_MODULE_6__["ColorWrap"])(Compact));
+/* harmony default export */ __webpack_exports__["default"] = ((0,_common__WEBPACK_IMPORTED_MODULE_5__.ColorWrap)(Compact));
 
 /***/ }),
 
@@ -10761,16 +10492,16 @@ Compact.defaultProps = {
 /*!************************************************************************!*\
   !*** ./node_modules/react-color/es/components/compact/CompactColor.js ***!
   \************************************************************************/
-/*! exports provided: CompactColor, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CompactColor", function() { return CompactColor; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "CompactColor": function() { return /* binding */ CompactColor; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _helpers_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../helpers/color */ "./node_modules/react-color/es/helpers/color.js");
 /* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
 
@@ -10786,7 +10517,7 @@ var CompactColor = function CompactColor(_ref) {
       onSwatchHover = _ref.onSwatchHover,
       active = _ref.active;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       color: {
         background: color,
@@ -10800,7 +10531,7 @@ var CompactColor = function CompactColor(_ref) {
       },
       dot: {
         absolute: '5px 5px 5px 5px',
-        background: _helpers_color__WEBPACK_IMPORTED_MODULE_2__["getContrastingColor"](color),
+        background: _helpers_color__WEBPACK_IMPORTED_MODULE_2__.getContrastingColor(color),
         borderRadius: '50%',
         opacity: '0'
       }
@@ -10825,8 +10556,8 @@ var CompactColor = function CompactColor(_ref) {
     }
   }, { active: active, 'color-#FFFFFF': color === '#FFFFFF', 'transparent': color === 'transparent' });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-    _common__WEBPACK_IMPORTED_MODULE_3__["Swatch"],
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
+    _common__WEBPACK_IMPORTED_MODULE_3__.Swatch,
     {
       style: styles.color,
       color: color,
@@ -10834,7 +10565,7 @@ var CompactColor = function CompactColor(_ref) {
       onHover: onSwatchHover,
       focusStyle: { boxShadow: '0 0 4px ' + color }
     },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.dot })
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.dot })
   );
 };
 
@@ -10846,16 +10577,16 @@ var CompactColor = function CompactColor(_ref) {
 /*!*************************************************************************!*\
   !*** ./node_modules/react-color/es/components/compact/CompactFields.js ***!
   \*************************************************************************/
-/*! exports provided: CompactFields, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CompactFields", function() { return CompactFields; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "CompactFields": function() { return /* binding */ CompactFields; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
 
 
@@ -10867,7 +10598,7 @@ var CompactFields = function CompactFields(_ref) {
       rgb = _ref.rgb,
       onChange = _ref.onChange;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       fields: {
         display: 'flex',
@@ -10944,29 +10675,29 @@ var CompactFields = function CompactFields(_ref) {
     }
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.fields, className: 'flexbox-fix' },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.active }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_2__["EditableInput"], {
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.active }),
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_2__.EditableInput, {
       style: { wrap: styles.HEXwrap, input: styles.HEXinput, label: styles.HEXlabel },
       label: 'hex',
       value: hex,
       onChange: handleChange
     }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_2__["EditableInput"], {
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_2__.EditableInput, {
       style: { wrap: styles.RGBwrap, input: styles.RGBinput, label: styles.RGBlabel },
       label: 'r',
       value: rgb.r,
       onChange: handleChange
     }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_2__["EditableInput"], {
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_2__.EditableInput, {
       style: { wrap: styles.RGBwrap, input: styles.RGBinput, label: styles.RGBlabel },
       label: 'g',
       value: rgb.g,
       onChange: handleChange
     }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_2__["EditableInput"], {
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_2__.EditableInput, {
       style: { wrap: styles.RGBwrap, input: styles.RGBinput, label: styles.RGBlabel },
       label: 'b',
       value: rgb.b,
@@ -10983,24 +10714,24 @@ var CompactFields = function CompactFields(_ref) {
 /*!*****************************************************************!*\
   !*** ./node_modules/react-color/es/components/github/Github.js ***!
   \*****************************************************************/
-/*! exports provided: Github, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Github", function() { return Github; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Github": function() { return /* binding */ Github; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash-es/map */ "./node_modules/lodash/map.js");
-/* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_es_map__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
-/* harmony import */ var _GithubSwatch__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./GithubSwatch */ "./node_modules/react-color/es/components/github/GithubSwatch.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
+/* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es/map */ "./node_modules/lodash/map.js");
+/* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_es_map__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
+/* harmony import */ var _GithubSwatch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./GithubSwatch */ "./node_modules/react-color/es/components/github/GithubSwatch.js");
 
 
 
@@ -11021,7 +10752,7 @@ var Github = function Github(_ref) {
       _ref$className = _ref.className,
       className = _ref$className === undefined ? '' : _ref$className;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_2___default()(lodash_es_merge__WEBPACK_IMPORTED_MODULE_4___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default()({
     'default': {
       card: {
         width: width,
@@ -11109,13 +10840,13 @@ var Github = function Github(_ref) {
     return onChange({ hex: hex, source: 'hex' }, e);
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.card, className: 'github-picker ' + className },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.triangleShadow }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.triangle }),
-    lodash_es_map__WEBPACK_IMPORTED_MODULE_3___default()(colors, function (c) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_GithubSwatch__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.triangleShadow }),
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.triangle }),
+    lodash_es_map__WEBPACK_IMPORTED_MODULE_2___default()(colors, function (c) {
+      return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_GithubSwatch__WEBPACK_IMPORTED_MODULE_5__["default"], {
         color: c,
         key: c,
         onClick: handleChange,
@@ -11126,10 +10857,10 @@ var Github = function Github(_ref) {
 };
 
 Github.propTypes = {
-  width: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number]),
-  colors: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string),
-  triangle: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOf(['hide', 'top-left', 'top-right', 'bottom-left', 'bottom-right']),
-  styles: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object
+  width: prop_types__WEBPACK_IMPORTED_MODULE_6___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_6___default().string), (prop_types__WEBPACK_IMPORTED_MODULE_6___default().number)]),
+  colors: prop_types__WEBPACK_IMPORTED_MODULE_6___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_6___default().string)),
+  triangle: prop_types__WEBPACK_IMPORTED_MODULE_6___default().oneOf(['hide', 'top-left', 'top-right', 'bottom-left', 'bottom-right']),
+  styles: (prop_types__WEBPACK_IMPORTED_MODULE_6___default().object)
 };
 
 Github.defaultProps = {
@@ -11139,7 +10870,7 @@ Github.defaultProps = {
   styles: {}
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_common__WEBPACK_IMPORTED_MODULE_5__["ColorWrap"])(Github));
+/* harmony default export */ __webpack_exports__["default"] = ((0,_common__WEBPACK_IMPORTED_MODULE_4__.ColorWrap)(Github));
 
 /***/ }),
 
@@ -11147,16 +10878,16 @@ Github.defaultProps = {
 /*!***********************************************************************!*\
   !*** ./node_modules/react-color/es/components/github/GithubSwatch.js ***!
   \***********************************************************************/
-/*! exports provided: GithubSwatch, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GithubSwatch", function() { return GithubSwatch; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "GithubSwatch": function() { return /* binding */ GithubSwatch; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
 
 
@@ -11176,7 +10907,7 @@ var GithubSwatch = function GithubSwatch(_ref) {
     boxShadow: '0 0 5px 2px rgba(0,0,0,0.25)'
   };
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       swatch: {
         width: '25px',
@@ -11189,10 +10920,10 @@ var GithubSwatch = function GithubSwatch(_ref) {
     }
   }, { hover: hover });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.swatch },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_2__["Swatch"], {
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_2__.Swatch, {
       color: color,
       onClick: onClick,
       onHover: onSwatchHover,
@@ -11201,7 +10932,7 @@ var GithubSwatch = function GithubSwatch(_ref) {
   );
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(reactcss__WEBPACK_IMPORTED_MODULE_1__["handleHover"])(GithubSwatch));
+/* harmony default export */ __webpack_exports__["default"] = ((0,reactcss__WEBPACK_IMPORTED_MODULE_1__.handleHover)(GithubSwatch));
 
 /***/ }),
 
@@ -11209,24 +10940,24 @@ var GithubSwatch = function GithubSwatch(_ref) {
 /*!*****************************************************************!*\
   !*** ./node_modules/react-color/es/components/google/Google.js ***!
   \*****************************************************************/
-/*! exports provided: Google, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Google", function() { return Google; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Google": function() { return /* binding */ Google; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
-/* harmony import */ var _GooglePointerCircle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./GooglePointerCircle */ "./node_modules/react-color/es/components/google/GooglePointerCircle.js");
-/* harmony import */ var _GooglePointer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./GooglePointer */ "./node_modules/react-color/es/components/google/GooglePointer.js");
-/* harmony import */ var _GoogleFields__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./GoogleFields */ "./node_modules/react-color/es/components/google/GoogleFields.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
+/* harmony import */ var _GooglePointerCircle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./GooglePointerCircle */ "./node_modules/react-color/es/components/google/GooglePointerCircle.js");
+/* harmony import */ var _GooglePointer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./GooglePointer */ "./node_modules/react-color/es/components/google/GooglePointer.js");
+/* harmony import */ var _GoogleFields__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./GoogleFields */ "./node_modules/react-color/es/components/google/GoogleFields.js");
 
 
 
@@ -11250,7 +10981,7 @@ var Google = function Google(_ref) {
       _ref$className = _ref.className,
       className = _ref$className === undefined ? '' : _ref$className;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_2___default()(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])(lodash_es_merge__WEBPACK_IMPORTED_MODULE_2___default()({
     'default': {
       picker: {
         width: width,
@@ -11309,44 +11040,44 @@ var Google = function Google(_ref) {
       }
     }
   }, passedStyles));
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.picker, className: 'google-picker ' + className },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.head },
       header
     ),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.swatch }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.swatch }),
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.saturation },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["Saturation"], {
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.Saturation, {
         hsl: hsl,
         hsv: hsv,
-        pointer: _GooglePointerCircle__WEBPACK_IMPORTED_MODULE_5__["default"],
+        pointer: _GooglePointerCircle__WEBPACK_IMPORTED_MODULE_4__["default"],
         onChange: onChange
       })
     ),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.body },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
         'div',
         { style: styles.controls, className: 'flexbox-fix' },
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           { style: styles.hue },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["Hue"], {
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.Hue, {
             style: styles.Hue,
             hsl: hsl,
             radius: '4px',
-            pointer: _GooglePointer__WEBPACK_IMPORTED_MODULE_6__["default"],
+            pointer: _GooglePointer__WEBPACK_IMPORTED_MODULE_5__["default"],
             onChange: onChange
           })
         )
       ),
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_GoogleFields__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_GoogleFields__WEBPACK_IMPORTED_MODULE_6__["default"], {
         rgb: rgb,
         hsl: hsl,
         hex: hex,
@@ -11358,9 +11089,9 @@ var Google = function Google(_ref) {
 };
 
 Google.propTypes = {
-  width: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number]),
-  styles: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object,
-  header: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
+  width: prop_types__WEBPACK_IMPORTED_MODULE_7___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_7___default().string), (prop_types__WEBPACK_IMPORTED_MODULE_7___default().number)]),
+  styles: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().object),
+  header: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().string)
 
 };
 
@@ -11370,7 +11101,7 @@ Google.defaultProps = {
   header: 'Color picker'
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_common__WEBPACK_IMPORTED_MODULE_4__["ColorWrap"])(Google));
+/* harmony default export */ __webpack_exports__["default"] = ((0,_common__WEBPACK_IMPORTED_MODULE_3__.ColorWrap)(Google));
 
 /***/ }),
 
@@ -11378,16 +11109,16 @@ Google.defaultProps = {
 /*!***********************************************************************!*\
   !*** ./node_modules/react-color/es/components/google/GoogleFields.js ***!
   \***********************************************************************/
-/*! exports provided: GoogleFields, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GoogleFields", function() { return GoogleFields; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "GoogleFields": function() { return /* binding */ GoogleFields; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _helpers_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../helpers/color */ "./node_modules/react-color/es/helpers/color.js");
 /* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
 
@@ -11405,13 +11136,13 @@ var GoogleFields = function GoogleFields(_ref) {
 
   var handleChange = function handleChange(data, e) {
     if (data.hex) {
-      _helpers_color__WEBPACK_IMPORTED_MODULE_2__["isValidHex"](data.hex) && onChange({
+      _helpers_color__WEBPACK_IMPORTED_MODULE_2__.isValidHex(data.hex) && onChange({
         hex: data.hex,
         source: 'hex'
       }, e);
     } else if (data.rgb) {
       var values = data.rgb.split(',');
-      _helpers_color__WEBPACK_IMPORTED_MODULE_2__["isvalidColorString"](data.rgb, 'rgb') && onChange({
+      _helpers_color__WEBPACK_IMPORTED_MODULE_2__.isvalidColorString(data.rgb, 'rgb') && onChange({
         r: values[0],
         g: values[1],
         b: values[2],
@@ -11420,7 +11151,7 @@ var GoogleFields = function GoogleFields(_ref) {
       }, e);
     } else if (data.hsv) {
       var _values = data.hsv.split(',');
-      if (_helpers_color__WEBPACK_IMPORTED_MODULE_2__["isvalidColorString"](data.hsv, 'hsv')) {
+      if (_helpers_color__WEBPACK_IMPORTED_MODULE_2__.isvalidColorString(data.hsv, 'hsv')) {
         _values[2] = _values[2].replace('%', '');
         _values[1] = _values[1].replace('%', '');
         _values[0] = _values[0].replace('°', '');
@@ -11438,7 +11169,7 @@ var GoogleFields = function GoogleFields(_ref) {
       }
     } else if (data.hsl) {
       var _values2 = data.hsl.split(',');
-      if (_helpers_color__WEBPACK_IMPORTED_MODULE_2__["isvalidColorString"](data.hsl, 'hsl')) {
+      if (_helpers_color__WEBPACK_IMPORTED_MODULE_2__.isvalidColorString(data.hsl, 'hsl')) {
         _values2[2] = _values2[2].replace('%', '');
         _values2[1] = _values2[1].replace('%', '');
         _values2[0] = _values2[0].replace('°', '');
@@ -11457,7 +11188,7 @@ var GoogleFields = function GoogleFields(_ref) {
     }
   };
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       wrap: {
         display: 'flex',
@@ -11539,49 +11270,49 @@ var GoogleFields = function GoogleFields(_ref) {
   var hslValue = Math.round(hsl.h) + '\xB0, ' + Math.round(hsl.s * 100) + '%, ' + Math.round(hsl.l * 100) + '%';
   var hsvValue = Math.round(hsv.h) + '\xB0, ' + Math.round(hsv.s * 100) + '%, ' + Math.round(hsv.v * 100) + '%';
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.wrap, className: 'flexbox-fix' },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.fields },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
         'div',
         { style: styles.double },
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_3__["EditableInput"], {
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.EditableInput, {
           style: { input: styles.input, label: styles.label },
           label: 'hex',
           value: hex,
           onChange: handleChange
         })
       ),
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
         'div',
         { style: styles.column },
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           { style: styles.single },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_3__["EditableInput"], {
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.EditableInput, {
             style: { input: styles.input2, label: styles.label2 },
             label: 'rgb',
             value: rgbValue,
             onChange: handleChange
           })
         ),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           { style: styles.single },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_3__["EditableInput"], {
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.EditableInput, {
             style: { input: styles.input2, label: styles.label2 },
             label: 'hsv',
             value: hsvValue,
             onChange: handleChange
           })
         ),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           { style: styles.single },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_3__["EditableInput"], {
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.EditableInput, {
             style: { input: styles.input2, label: styles.label2 },
             label: 'hsl',
             value: hslValue,
@@ -11601,16 +11332,16 @@ var GoogleFields = function GoogleFields(_ref) {
 /*!************************************************************************!*\
   !*** ./node_modules/react-color/es/components/google/GooglePointer.js ***!
   \************************************************************************/
-/*! exports provided: GooglePointer, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GooglePointer", function() { return GooglePointer; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "GooglePointer": function() { return /* binding */ GooglePointer; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
 
@@ -11618,7 +11349,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var GooglePointer = function GooglePointer(props) {
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       picker: {
         width: '20px',
@@ -11631,15 +11362,15 @@ var GooglePointer = function GooglePointer(props) {
     }
   });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.picker });
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.picker });
 };
 
 GooglePointer.propTypes = {
-  hsl: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.shape({
-    h: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    s: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    l: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    a: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number
+  hsl: prop_types__WEBPACK_IMPORTED_MODULE_2___default().shape({
+    h: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().number),
+    s: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().number),
+    l: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().number),
+    a: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().number)
   })
 };
 
@@ -11655,16 +11386,16 @@ GooglePointer.defaultProps = {
 /*!******************************************************************************!*\
   !*** ./node_modules/react-color/es/components/google/GooglePointerCircle.js ***!
   \******************************************************************************/
-/*! exports provided: GooglePointerCircle, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GooglePointerCircle", function() { return GooglePointerCircle; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "GooglePointerCircle": function() { return /* binding */ GooglePointerCircle; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
 
@@ -11672,7 +11403,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var GooglePointerCircle = function GooglePointerCircle(props) {
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       picker: {
         width: '20px',
@@ -11685,15 +11416,15 @@ var GooglePointerCircle = function GooglePointerCircle(props) {
     }
   });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.picker });
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.picker });
 };
 
 GooglePointerCircle.propTypes = {
-  hsl: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.shape({
-    h: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    s: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    l: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number,
-    a: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.number
+  hsl: prop_types__WEBPACK_IMPORTED_MODULE_2___default().shape({
+    h: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().number),
+    s: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().number),
+    l: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().number),
+    a: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().number)
   })
 };
 
@@ -11709,22 +11440,22 @@ GooglePointerCircle.defaultProps = {
 /*!***********************************************************!*\
   !*** ./node_modules/react-color/es/components/hue/Hue.js ***!
   \***********************************************************/
-/*! exports provided: HuePicker, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HuePicker", function() { return HuePicker; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "HuePicker": function() { return /* binding */ HuePicker; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
-/* harmony import */ var _HuePointer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./HuePointer */ "./node_modules/react-color/es/components/hue/HuePointer.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
+/* harmony import */ var _HuePointer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./HuePointer */ "./node_modules/react-color/es/components/hue/HuePointer.js");
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -11747,7 +11478,7 @@ var HuePicker = function HuePicker(_ref) {
       _ref$className = _ref.className,
       className = _ref$className === undefined ? '' : _ref$className;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_2___default()(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])(lodash_es_merge__WEBPACK_IMPORTED_MODULE_2___default()({
     'default': {
       picker: {
         position: 'relative',
@@ -11765,10 +11496,10 @@ var HuePicker = function HuePicker(_ref) {
     return onChange({ a: 1, h: data.h, l: 0.5, s: 1 });
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.picker, className: 'hue-picker ' + className },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["Hue"], _extends({}, styles.hue, {
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.Hue, _extends({}, styles.hue, {
       hsl: hsl,
       pointer: pointer,
       onChange: handleChange,
@@ -11778,17 +11509,17 @@ var HuePicker = function HuePicker(_ref) {
 };
 
 HuePicker.propTypes = {
-  styles: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object
+  styles: (prop_types__WEBPACK_IMPORTED_MODULE_5___default().object)
 };
 HuePicker.defaultProps = {
   width: '316px',
   height: '16px',
   direction: 'horizontal',
-  pointer: _HuePointer__WEBPACK_IMPORTED_MODULE_5__["default"],
+  pointer: _HuePointer__WEBPACK_IMPORTED_MODULE_4__["default"],
   styles: {}
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_common__WEBPACK_IMPORTED_MODULE_4__["ColorWrap"])(HuePicker));
+/* harmony default export */ __webpack_exports__["default"] = ((0,_common__WEBPACK_IMPORTED_MODULE_3__.ColorWrap)(HuePicker));
 
 /***/ }),
 
@@ -11796,23 +11527,23 @@ HuePicker.defaultProps = {
 /*!******************************************************************!*\
   !*** ./node_modules/react-color/es/components/hue/HuePointer.js ***!
   \******************************************************************/
-/*! exports provided: SliderPointer, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SliderPointer", function() { return SliderPointer; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SliderPointer": function() { return /* binding */ SliderPointer; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
 var SliderPointer = function SliderPointer(_ref) {
   var direction = _ref.direction;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       picker: {
         width: '18px',
@@ -11830,7 +11561,7 @@ var SliderPointer = function SliderPointer(_ref) {
     }
   }, { vertical: direction === 'vertical' });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.picker });
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.picker });
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SliderPointer);
@@ -11841,16 +11572,16 @@ var SliderPointer = function SliderPointer(_ref) {
 /*!*********************************************************************!*\
   !*** ./node_modules/react-color/es/components/material/Material.js ***!
   \*********************************************************************/
-/*! exports provided: Material, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Material", function() { return Material; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Material": function() { return /* binding */ Material; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
 /* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _helpers_color__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../helpers/color */ "./node_modules/react-color/es/helpers/color.js");
@@ -11871,7 +11602,7 @@ var Material = function Material(_ref) {
       _ref$className = _ref.className,
       className = _ref$className === undefined ? '' : _ref$className;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()(lodash_es_merge__WEBPACK_IMPORTED_MODULE_2___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])(lodash_es_merge__WEBPACK_IMPORTED_MODULE_2___default()({
     'default': {
       material: {
         width: '98px',
@@ -11940,7 +11671,7 @@ var Material = function Material(_ref) {
 
   var handleChange = function handleChange(data, e) {
     if (data.hex) {
-      _helpers_color__WEBPACK_IMPORTED_MODULE_3__["isValidHex"](data.hex) && onChange({
+      _helpers_color__WEBPACK_IMPORTED_MODULE_3__.isValidHex(data.hex) && onChange({
         hex: data.hex,
         source: 'hex'
       }, e);
@@ -11954,44 +11685,44 @@ var Material = function Material(_ref) {
     }
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-    _common__WEBPACK_IMPORTED_MODULE_4__["Raised"],
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
+    _common__WEBPACK_IMPORTED_MODULE_4__.Raised,
     { styles: passedStyles },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.material, className: 'material-picker ' + className },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["EditableInput"], {
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_4__.EditableInput, {
         style: { wrap: styles.HEXwrap, input: styles.HEXinput, label: styles.HEXlabel },
         label: 'hex',
         value: hex,
         onChange: handleChange
       }),
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
         'div',
         { style: styles.split, className: 'flexbox-fix' },
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           { style: styles.third },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["EditableInput"], {
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_4__.EditableInput, {
             style: { wrap: styles.RGBwrap, input: styles.RGBinput, label: styles.RGBlabel },
             label: 'r', value: rgb.r,
             onChange: handleChange
           })
         ),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           { style: styles.third },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["EditableInput"], {
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_4__.EditableInput, {
             style: { wrap: styles.RGBwrap, input: styles.RGBinput, label: styles.RGBlabel },
             label: 'g',
             value: rgb.g,
             onChange: handleChange
           })
         ),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           { style: styles.third },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["EditableInput"], {
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_4__.EditableInput, {
             style: { wrap: styles.RGBwrap, input: styles.RGBinput, label: styles.RGBlabel },
             label: 'b',
             value: rgb.b,
@@ -12003,7 +11734,7 @@ var Material = function Material(_ref) {
   );
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_common__WEBPACK_IMPORTED_MODULE_4__["ColorWrap"])(Material));
+/* harmony default export */ __webpack_exports__["default"] = ((0,_common__WEBPACK_IMPORTED_MODULE_4__.ColorWrap)(Material));
 
 /***/ }),
 
@@ -12011,26 +11742,26 @@ var Material = function Material(_ref) {
 /*!***********************************************************************!*\
   !*** ./node_modules/react-color/es/components/photoshop/Photoshop.js ***!
   \***********************************************************************/
-/*! exports provided: Photoshop, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Photoshop", function() { return Photoshop; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Photoshop": function() { return /* binding */ Photoshop; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
-/* harmony import */ var _PhotoshopFields__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./PhotoshopFields */ "./node_modules/react-color/es/components/photoshop/PhotoshopFields.js");
-/* harmony import */ var _PhotoshopPointerCircle__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./PhotoshopPointerCircle */ "./node_modules/react-color/es/components/photoshop/PhotoshopPointerCircle.js");
-/* harmony import */ var _PhotoshopPointer__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./PhotoshopPointer */ "./node_modules/react-color/es/components/photoshop/PhotoshopPointer.js");
-/* harmony import */ var _PhotoshopButton__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./PhotoshopButton */ "./node_modules/react-color/es/components/photoshop/PhotoshopButton.js");
-/* harmony import */ var _PhotoshopPreviews__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./PhotoshopPreviews */ "./node_modules/react-color/es/components/photoshop/PhotoshopPreviews.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
+/* harmony import */ var _PhotoshopFields__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./PhotoshopFields */ "./node_modules/react-color/es/components/photoshop/PhotoshopFields.js");
+/* harmony import */ var _PhotoshopPointerCircle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./PhotoshopPointerCircle */ "./node_modules/react-color/es/components/photoshop/PhotoshopPointerCircle.js");
+/* harmony import */ var _PhotoshopPointer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./PhotoshopPointer */ "./node_modules/react-color/es/components/photoshop/PhotoshopPointer.js");
+/* harmony import */ var _PhotoshopButton__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./PhotoshopButton */ "./node_modules/react-color/es/components/photoshop/PhotoshopButton.js");
+/* harmony import */ var _PhotoshopPreviews__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./PhotoshopPreviews */ "./node_modules/react-color/es/components/photoshop/PhotoshopPreviews.js");
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -12074,7 +11805,7 @@ var Photoshop = function (_React$Component) {
           _props$className = _props.className,
           className = _props$className === undefined ? '' : _props$className;
 
-      var styles = reactcss__WEBPACK_IMPORTED_MODULE_2___default()(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default()({
+      var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])(lodash_es_merge__WEBPACK_IMPORTED_MODULE_2___default()({
         'default': {
           picker: {
             background: '#DCDCDC',
@@ -12131,57 +11862,57 @@ var Photoshop = function (_React$Component) {
         }
       }, passedStyles));
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+      return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
         'div',
         { style: styles.picker, className: 'photoshop-picker ' + className },
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           { style: styles.head },
           this.props.header
         ),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           { style: styles.body, className: 'flexbox-fix' },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
             'div',
             { style: styles.saturation },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["Saturation"], {
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.Saturation, {
               hsl: this.props.hsl,
               hsv: this.props.hsv,
-              pointer: _PhotoshopPointerCircle__WEBPACK_IMPORTED_MODULE_6__["default"],
+              pointer: _PhotoshopPointerCircle__WEBPACK_IMPORTED_MODULE_5__["default"],
               onChange: this.props.onChange
             })
           ),
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
             'div',
             { style: styles.hue },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["Hue"], {
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.Hue, {
               direction: 'vertical',
               hsl: this.props.hsl,
-              pointer: _PhotoshopPointer__WEBPACK_IMPORTED_MODULE_7__["default"],
+              pointer: _PhotoshopPointer__WEBPACK_IMPORTED_MODULE_6__["default"],
               onChange: this.props.onChange
             })
           ),
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
             'div',
             { style: styles.controls },
-            react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+            react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
               'div',
               { style: styles.top, className: 'flexbox-fix' },
-              react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+              react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
                 'div',
                 { style: styles.previews },
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PhotoshopPreviews__WEBPACK_IMPORTED_MODULE_9__["default"], {
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_PhotoshopPreviews__WEBPACK_IMPORTED_MODULE_8__["default"], {
                   rgb: this.props.rgb,
                   currentColor: this.state.currentColor
                 })
               ),
-              react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+              react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
                 'div',
                 { style: styles.actions },
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PhotoshopButton__WEBPACK_IMPORTED_MODULE_8__["default"], { label: 'OK', onClick: this.props.onAccept, active: true }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PhotoshopButton__WEBPACK_IMPORTED_MODULE_8__["default"], { label: 'Cancel', onClick: this.props.onCancel }),
-                react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PhotoshopFields__WEBPACK_IMPORTED_MODULE_5__["default"], {
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_PhotoshopButton__WEBPACK_IMPORTED_MODULE_7__["default"], { label: 'OK', onClick: this.props.onAccept, active: true }),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_PhotoshopButton__WEBPACK_IMPORTED_MODULE_7__["default"], { label: 'Cancel', onClick: this.props.onCancel }),
+                react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_PhotoshopFields__WEBPACK_IMPORTED_MODULE_4__["default"], {
                   onChange: this.props.onChange,
                   rgb: this.props.rgb,
                   hsv: this.props.hsv,
@@ -12196,11 +11927,11 @@ var Photoshop = function (_React$Component) {
   }]);
 
   return Photoshop;
-}(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+}((react__WEBPACK_IMPORTED_MODULE_0___default().Component));
 
 Photoshop.propTypes = {
-  header: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-  styles: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object
+  header: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().string),
+  styles: (prop_types__WEBPACK_IMPORTED_MODULE_9___default().object)
 };
 
 Photoshop.defaultProps = {
@@ -12208,7 +11939,7 @@ Photoshop.defaultProps = {
   styles: {}
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_common__WEBPACK_IMPORTED_MODULE_4__["ColorWrap"])(Photoshop));
+/* harmony default export */ __webpack_exports__["default"] = ((0,_common__WEBPACK_IMPORTED_MODULE_3__.ColorWrap)(Photoshop));
 
 /***/ }),
 
@@ -12216,16 +11947,16 @@ Photoshop.defaultProps = {
 /*!*****************************************************************************!*\
   !*** ./node_modules/react-color/es/components/photoshop/PhotoshopButton.js ***!
   \*****************************************************************************/
-/*! exports provided: PhotoshopButton, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PhotoshopButton", function() { return PhotoshopButton; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "PhotoshopButton": function() { return /* binding */ PhotoshopButton; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
@@ -12235,7 +11966,7 @@ var PhotoshopButton = function PhotoshopButton(_ref) {
       children = _ref.children,
       active = _ref.active;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       button: {
         backgroundImage: 'linear-gradient(-180deg, #FFFFFF 0%, #E6E6E6 100%)',
@@ -12258,7 +11989,7 @@ var PhotoshopButton = function PhotoshopButton(_ref) {
     }
   }, { active: active });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.button, onClick: onClick },
     label || children
@@ -12273,16 +12004,16 @@ var PhotoshopButton = function PhotoshopButton(_ref) {
 /*!*****************************************************************************!*\
   !*** ./node_modules/react-color/es/components/photoshop/PhotoshopFields.js ***!
   \*****************************************************************************/
-/*! exports provided: PhotoshopPicker, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PhotoshopPicker", function() { return PhotoshopPicker; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "PhotoshopPicker": function() { return /* binding */ PhotoshopPicker; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _helpers_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../helpers/color */ "./node_modules/react-color/es/helpers/color.js");
 /* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
 
@@ -12297,7 +12028,7 @@ var PhotoshopPicker = function PhotoshopPicker(_ref) {
       hsv = _ref.hsv,
       hex = _ref.hex;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       fields: {
         paddingTop: '5px',
@@ -12371,7 +12102,7 @@ var PhotoshopPicker = function PhotoshopPicker(_ref) {
 
   var handleChange = function handleChange(data, e) {
     if (data['#']) {
-      _helpers_color__WEBPACK_IMPORTED_MODULE_2__["isValidHex"](data['#']) && onChange({
+      _helpers_color__WEBPACK_IMPORTED_MODULE_2__.isValidHex(data['#']) && onChange({
         hex: data['#'],
         source: 'hex'
       }, e);
@@ -12392,67 +12123,67 @@ var PhotoshopPicker = function PhotoshopPicker(_ref) {
     }
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.fields },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_3__["EditableInput"], {
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.EditableInput, {
       style: { wrap: styles.RGBwrap, input: styles.RGBinput, label: styles.RGBlabel },
       label: 'h',
       value: Math.round(hsv.h),
       onChange: handleChange
     }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_3__["EditableInput"], {
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.EditableInput, {
       style: { wrap: styles.RGBwrap, input: styles.RGBinput, label: styles.RGBlabel },
       label: 's',
       value: Math.round(hsv.s * 100),
       onChange: handleChange
     }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_3__["EditableInput"], {
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.EditableInput, {
       style: { wrap: styles.RGBwrap, input: styles.RGBinput, label: styles.RGBlabel },
       label: 'v',
       value: Math.round(hsv.v * 100),
       onChange: handleChange
     }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.divider }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_3__["EditableInput"], {
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.divider }),
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.EditableInput, {
       style: { wrap: styles.RGBwrap, input: styles.RGBinput, label: styles.RGBlabel },
       label: 'r',
       value: rgb.r,
       onChange: handleChange
     }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_3__["EditableInput"], {
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.EditableInput, {
       style: { wrap: styles.RGBwrap, input: styles.RGBinput, label: styles.RGBlabel },
       label: 'g',
       value: rgb.g,
       onChange: handleChange
     }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_3__["EditableInput"], {
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.EditableInput, {
       style: { wrap: styles.RGBwrap, input: styles.RGBinput, label: styles.RGBlabel },
       label: 'b',
       value: rgb.b,
       onChange: handleChange
     }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.divider }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_3__["EditableInput"], {
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.divider }),
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.EditableInput, {
       style: { wrap: styles.HEXwrap, input: styles.HEXinput, label: styles.HEXlabel },
       label: '#',
       value: hex.replace('#', ''),
       onChange: handleChange
     }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.fieldSymbols },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
         'div',
         { style: styles.symbol },
         '\xB0'
       ),
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
         'div',
         { style: styles.symbol },
         '%'
       ),
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
         'div',
         { style: styles.symbol },
         '%'
@@ -12469,21 +12200,21 @@ var PhotoshopPicker = function PhotoshopPicker(_ref) {
 /*!******************************************************************************!*\
   !*** ./node_modules/react-color/es/components/photoshop/PhotoshopPointer.js ***!
   \******************************************************************************/
-/*! exports provided: PhotoshopPointerCircle, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PhotoshopPointerCircle", function() { return PhotoshopPointerCircle; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "PhotoshopPointerCircle": function() { return /* binding */ PhotoshopPointerCircle; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
 var PhotoshopPointerCircle = function PhotoshopPointerCircle() {
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       triangle: {
         width: 0,
@@ -12523,18 +12254,18 @@ var PhotoshopPointerCircle = function PhotoshopPointerCircle() {
     }
   });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.pointer },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.left },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.leftInside })
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.leftInside })
     ),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.right },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.rightInside })
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.rightInside })
     )
   );
 };
@@ -12547,23 +12278,23 @@ var PhotoshopPointerCircle = function PhotoshopPointerCircle() {
 /*!************************************************************************************!*\
   !*** ./node_modules/react-color/es/components/photoshop/PhotoshopPointerCircle.js ***!
   \************************************************************************************/
-/*! exports provided: PhotoshopPointerCircle, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PhotoshopPointerCircle", function() { return PhotoshopPointerCircle; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "PhotoshopPointerCircle": function() { return /* binding */ PhotoshopPointerCircle; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
 var PhotoshopPointerCircle = function PhotoshopPointerCircle(_ref) {
   var hsl = _ref.hsl;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       picker: {
         width: '12px',
@@ -12580,7 +12311,7 @@ var PhotoshopPointerCircle = function PhotoshopPointerCircle(_ref) {
     }
   }, { 'black-outline': hsl.l > 0.5 });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.picker });
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.picker });
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (PhotoshopPointerCircle);
@@ -12591,16 +12322,16 @@ var PhotoshopPointerCircle = function PhotoshopPointerCircle(_ref) {
 /*!*******************************************************************************!*\
   !*** ./node_modules/react-color/es/components/photoshop/PhotoshopPreviews.js ***!
   \*******************************************************************************/
-/*! exports provided: PhotoshopPreviews, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PhotoshopPreviews", function() { return PhotoshopPreviews; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "PhotoshopPreviews": function() { return /* binding */ PhotoshopPreviews; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
@@ -12608,7 +12339,7 @@ var PhotoshopPreviews = function PhotoshopPreviews(_ref) {
   var rgb = _ref.rgb,
       currentColor = _ref.currentColor;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       swatches: {
         border: '1px solid #B3B3B3',
@@ -12634,21 +12365,21 @@ var PhotoshopPreviews = function PhotoshopPreviews(_ref) {
     }
   });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     null,
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.label },
       'new'
     ),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.swatches },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.new }),
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.current })
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.new }),
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.current })
     ),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.label },
       'current'
@@ -12664,23 +12395,23 @@ var PhotoshopPreviews = function PhotoshopPreviews(_ref) {
 /*!*****************************************************************!*\
   !*** ./node_modules/react-color/es/components/sketch/Sketch.js ***!
   \*****************************************************************/
-/*! exports provided: Sketch, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Sketch", function() { return Sketch; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Sketch": function() { return /* binding */ Sketch; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
-/* harmony import */ var _SketchFields__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./SketchFields */ "./node_modules/react-color/es/components/sketch/SketchFields.js");
-/* harmony import */ var _SketchPresetColors__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./SketchPresetColors */ "./node_modules/react-color/es/components/sketch/SketchPresetColors.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
+/* harmony import */ var _SketchFields__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SketchFields */ "./node_modules/react-color/es/components/sketch/SketchFields.js");
+/* harmony import */ var _SketchPresetColors__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./SketchPresetColors */ "./node_modules/react-color/es/components/sketch/SketchPresetColors.js");
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -12708,7 +12439,7 @@ var Sketch = function Sketch(_ref) {
       _ref$className = _ref.className,
       className = _ref$className === undefined ? '' : _ref$className;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_2___default()(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])(lodash_es_merge__WEBPACK_IMPORTED_MODULE_2___default()({
     'default': _extends({
       picker: {
         width: width,
@@ -12783,38 +12514,38 @@ var Sketch = function Sketch(_ref) {
     }
   }, passedStyles), { disableAlpha: disableAlpha });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.picker, className: 'sketch-picker ' + className },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.saturation },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["Saturation"], {
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.Saturation, {
         style: styles.Saturation,
         hsl: hsl,
         hsv: hsv,
         onChange: onChange
       })
     ),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.controls, className: 'flexbox-fix' },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
         'div',
         { style: styles.sliders },
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           { style: styles.hue },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["Hue"], {
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.Hue, {
             style: styles.Hue,
             hsl: hsl,
             onChange: onChange
           })
         ),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           { style: styles.alpha },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["Alpha"], {
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.Alpha, {
             style: styles.Alpha,
             rgb: rgb,
             hsl: hsl,
@@ -12823,21 +12554,21 @@ var Sketch = function Sketch(_ref) {
           })
         )
       ),
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
         'div',
         { style: styles.color },
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["Checkboard"], null),
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.activeColor })
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.Checkboard, null),
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.activeColor })
       )
     ),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SketchFields__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SketchFields__WEBPACK_IMPORTED_MODULE_4__["default"], {
       rgb: rgb,
       hsl: hsl,
       hex: hex,
       onChange: onChange,
       disableAlpha: disableAlpha
     }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SketchPresetColors__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SketchPresetColors__WEBPACK_IMPORTED_MODULE_5__["default"], {
       colors: presetColors,
       onClick: onChange,
       onSwatchHover: onSwatchHover
@@ -12846,9 +12577,9 @@ var Sketch = function Sketch(_ref) {
 };
 
 Sketch.propTypes = {
-  disableAlpha: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.bool,
-  width: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number]),
-  styles: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object
+  disableAlpha: (prop_types__WEBPACK_IMPORTED_MODULE_6___default().bool),
+  width: prop_types__WEBPACK_IMPORTED_MODULE_6___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_6___default().string), (prop_types__WEBPACK_IMPORTED_MODULE_6___default().number)]),
+  styles: (prop_types__WEBPACK_IMPORTED_MODULE_6___default().object)
 };
 
 Sketch.defaultProps = {
@@ -12858,7 +12589,7 @@ Sketch.defaultProps = {
   presetColors: ['#D0021B', '#F5A623', '#F8E71C', '#8B572A', '#7ED321', '#417505', '#BD10E0', '#9013FE', '#4A90E2', '#50E3C2', '#B8E986', '#000000', '#4A4A4A', '#9B9B9B', '#FFFFFF']
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_common__WEBPACK_IMPORTED_MODULE_4__["ColorWrap"])(Sketch));
+/* harmony default export */ __webpack_exports__["default"] = ((0,_common__WEBPACK_IMPORTED_MODULE_3__.ColorWrap)(Sketch));
 
 /***/ }),
 
@@ -12866,16 +12597,16 @@ Sketch.defaultProps = {
 /*!***********************************************************************!*\
   !*** ./node_modules/react-color/es/components/sketch/SketchFields.js ***!
   \***********************************************************************/
-/*! exports provided: SketchFields, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SketchFields", function() { return SketchFields; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SketchFields": function() { return /* binding */ SketchFields; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _helpers_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../helpers/color */ "./node_modules/react-color/es/helpers/color.js");
 /* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
 /* eslint-disable no-param-reassign */
@@ -12893,7 +12624,7 @@ var SketchFields = function SketchFields(_ref) {
       hex = _ref.hex,
       disableAlpha = _ref.disableAlpha;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       fields: {
         display: 'flex',
@@ -12936,7 +12667,7 @@ var SketchFields = function SketchFields(_ref) {
 
   var handleChange = function handleChange(data, e) {
     if (data.hex) {
-      _helpers_color__WEBPACK_IMPORTED_MODULE_2__["isValidHex"](data.hex) && onChange({
+      _helpers_color__WEBPACK_IMPORTED_MODULE_2__.isValidHex(data.hex) && onChange({
         hex: data.hex,
         source: 'hex'
       }, e);
@@ -12966,23 +12697,23 @@ var SketchFields = function SketchFields(_ref) {
     }
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.fields, className: 'flexbox-fix' },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.double },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_3__["EditableInput"], {
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.EditableInput, {
         style: { input: styles.input, label: styles.label },
         label: 'hex',
         value: hex.replace('#', ''),
         onChange: handleChange
       })
     ),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.single },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_3__["EditableInput"], {
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.EditableInput, {
         style: { input: styles.input, label: styles.label },
         label: 'r',
         value: rgb.r,
@@ -12991,10 +12722,10 @@ var SketchFields = function SketchFields(_ref) {
         dragMax: '255'
       })
     ),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.single },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_3__["EditableInput"], {
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.EditableInput, {
         style: { input: styles.input, label: styles.label },
         label: 'g',
         value: rgb.g,
@@ -13003,10 +12734,10 @@ var SketchFields = function SketchFields(_ref) {
         dragMax: '255'
       })
     ),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.single },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_3__["EditableInput"], {
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.EditableInput, {
         style: { input: styles.input, label: styles.label },
         label: 'b',
         value: rgb.b,
@@ -13015,10 +12746,10 @@ var SketchFields = function SketchFields(_ref) {
         dragMax: '255'
       })
     ),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.alpha },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_3__["EditableInput"], {
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.EditableInput, {
         style: { input: styles.input, label: styles.label },
         label: 'a',
         value: Math.round(rgb.a * 100),
@@ -13038,19 +12769,19 @@ var SketchFields = function SketchFields(_ref) {
 /*!*****************************************************************************!*\
   !*** ./node_modules/react-color/es/components/sketch/SketchPresetColors.js ***!
   \*****************************************************************************/
-/*! exports provided: SketchPresetColors, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SketchPresetColors", function() { return SketchPresetColors; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SketchPresetColors": function() { return /* binding */ SketchPresetColors; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 
@@ -13065,7 +12796,7 @@ var SketchPresetColors = function SketchPresetColors(_ref) {
       onClick = _ref$onClick === undefined ? function () {} : _ref$onClick,
       onSwatchHover = _ref.onSwatchHover;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_2___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       colors: {
         margin: '0 -10px',
@@ -13101,16 +12832,16 @@ var SketchPresetColors = function SketchPresetColors(_ref) {
     }, e);
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.colors, className: 'flexbox-fix' },
     colors.map(function (colorObjOrString) {
       var c = typeof colorObjOrString === 'string' ? { color: colorObjOrString } : colorObjOrString;
       var key = '' + c.color + (c.title || '');
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+      return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
         'div',
         { key: key, style: styles.swatchWrap },
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_3__["Swatch"], _extends({}, c, {
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_2__.Swatch, _extends({}, c, {
           style: styles.swatch,
           onClick: handleClick,
           onHover: onSwatchHover,
@@ -13124,9 +12855,9 @@ var SketchPresetColors = function SketchPresetColors(_ref) {
 };
 
 SketchPresetColors.propTypes = {
-  colors: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.shape({
-    color: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string,
-    title: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
+  colors: prop_types__WEBPACK_IMPORTED_MODULE_3___default().arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_3___default().string), prop_types__WEBPACK_IMPORTED_MODULE_3___default().shape({
+    color: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string),
+    title: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().string)
   })])).isRequired
 };
 
@@ -13138,23 +12869,23 @@ SketchPresetColors.propTypes = {
 /*!*****************************************************************!*\
   !*** ./node_modules/react-color/es/components/slider/Slider.js ***!
   \*****************************************************************/
-/*! exports provided: Slider, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Slider", function() { return Slider; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Slider": function() { return /* binding */ Slider; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
-/* harmony import */ var _SliderSwatches__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./SliderSwatches */ "./node_modules/react-color/es/components/slider/SliderSwatches.js");
-/* harmony import */ var _SliderPointer__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./SliderPointer */ "./node_modules/react-color/es/components/slider/SliderPointer.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
+/* harmony import */ var _SliderSwatches__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./SliderSwatches */ "./node_modules/react-color/es/components/slider/SliderSwatches.js");
+/* harmony import */ var _SliderPointer__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./SliderPointer */ "./node_modules/react-color/es/components/slider/SliderPointer.js");
 
 
 
@@ -13173,7 +12904,7 @@ var Slider = function Slider(_ref) {
       _ref$className = _ref.className,
       className = _ref$className === undefined ? '' : _ref$className;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_2___default()(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])(lodash_es_merge__WEBPACK_IMPORTED_MODULE_2___default()({
     'default': {
       hue: {
         height: '12px',
@@ -13185,36 +12916,36 @@ var Slider = function Slider(_ref) {
     }
   }, passedStyles));
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.wrap || {}, className: 'slider-picker ' + className },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.hue },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_4__["Hue"], {
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_3__.Hue, {
         style: styles.Hue,
         hsl: hsl,
         pointer: pointer,
         onChange: onChange
       })
     ),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.swatches },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SliderSwatches__WEBPACK_IMPORTED_MODULE_5__["default"], { hsl: hsl, onClick: onChange })
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SliderSwatches__WEBPACK_IMPORTED_MODULE_4__["default"], { hsl: hsl, onClick: onChange })
     )
   );
 };
 
 Slider.propTypes = {
-  styles: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object
+  styles: (prop_types__WEBPACK_IMPORTED_MODULE_6___default().object)
 };
 Slider.defaultProps = {
-  pointer: _SliderPointer__WEBPACK_IMPORTED_MODULE_6__["default"],
+  pointer: _SliderPointer__WEBPACK_IMPORTED_MODULE_5__["default"],
   styles: {}
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_common__WEBPACK_IMPORTED_MODULE_4__["ColorWrap"])(Slider));
+/* harmony default export */ __webpack_exports__["default"] = ((0,_common__WEBPACK_IMPORTED_MODULE_3__.ColorWrap)(Slider));
 
 /***/ }),
 
@@ -13222,21 +12953,21 @@ Slider.defaultProps = {
 /*!************************************************************************!*\
   !*** ./node_modules/react-color/es/components/slider/SliderPointer.js ***!
   \************************************************************************/
-/*! exports provided: SliderPointer, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SliderPointer", function() { return SliderPointer; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SliderPointer": function() { return /* binding */ SliderPointer; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
 var SliderPointer = function SliderPointer() {
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       picker: {
         width: '14px',
@@ -13249,7 +12980,7 @@ var SliderPointer = function SliderPointer() {
     }
   });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.picker });
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.picker });
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SliderPointer);
@@ -13260,16 +12991,16 @@ var SliderPointer = function SliderPointer() {
 /*!***********************************************************************!*\
   !*** ./node_modules/react-color/es/components/slider/SliderSwatch.js ***!
   \***********************************************************************/
-/*! exports provided: SliderSwatch, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SliderSwatch", function() { return SliderSwatch; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SliderSwatch": function() { return /* binding */ SliderSwatch; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 
 
 
@@ -13282,7 +13013,7 @@ var SliderSwatch = function SliderSwatch(_ref) {
       first = _ref.first,
       last = _ref.last;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       swatch: {
         height: '12px',
@@ -13317,7 +13048,7 @@ var SliderSwatch = function SliderSwatch(_ref) {
     }, e);
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.swatch, onClick: handleClick });
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.swatch, onClick: handleClick });
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (SliderSwatch);
@@ -13328,16 +13059,16 @@ var SliderSwatch = function SliderSwatch(_ref) {
 /*!*************************************************************************!*\
   !*** ./node_modules/react-color/es/components/slider/SliderSwatches.js ***!
   \*************************************************************************/
-/*! exports provided: SliderSwatches, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SliderSwatches", function() { return SliderSwatches; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SliderSwatches": function() { return /* binding */ SliderSwatches; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _SliderSwatch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./SliderSwatch */ "./node_modules/react-color/es/components/slider/SliderSwatch.js");
 
 
@@ -13348,7 +13079,7 @@ var SliderSwatches = function SliderSwatches(_ref) {
   var onClick = _ref.onClick,
       hsl = _ref.hsl;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       swatches: {
         marginTop: '20px'
@@ -13368,13 +13099,13 @@ var SliderSwatches = function SliderSwatches(_ref) {
   // Acceptible difference in floating point equality
   var epsilon = 0.1;
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.swatches },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.swatch },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SliderSwatch__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SliderSwatch__WEBPACK_IMPORTED_MODULE_2__["default"], {
         hsl: hsl,
         offset: '.80',
         active: Math.abs(hsl.l - 0.80) < epsilon && Math.abs(hsl.s - 0.50) < epsilon,
@@ -13382,40 +13113,40 @@ var SliderSwatches = function SliderSwatches(_ref) {
         first: true
       })
     ),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.swatch },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SliderSwatch__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SliderSwatch__WEBPACK_IMPORTED_MODULE_2__["default"], {
         hsl: hsl,
         offset: '.65',
         active: Math.abs(hsl.l - 0.65) < epsilon && Math.abs(hsl.s - 0.50) < epsilon,
         onClick: onClick
       })
     ),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.swatch },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SliderSwatch__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SliderSwatch__WEBPACK_IMPORTED_MODULE_2__["default"], {
         hsl: hsl,
         offset: '.50',
         active: Math.abs(hsl.l - 0.50) < epsilon && Math.abs(hsl.s - 0.50) < epsilon,
         onClick: onClick
       })
     ),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.swatch },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SliderSwatch__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SliderSwatch__WEBPACK_IMPORTED_MODULE_2__["default"], {
         hsl: hsl,
         offset: '.35',
         active: Math.abs(hsl.l - 0.35) < epsilon && Math.abs(hsl.s - 0.50) < epsilon,
         onClick: onClick
       })
     ),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.swatch },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SliderSwatch__WEBPACK_IMPORTED_MODULE_2__["default"], {
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SliderSwatch__WEBPACK_IMPORTED_MODULE_2__["default"], {
         hsl: hsl,
         offset: '.20',
         active: Math.abs(hsl.l - 0.20) < epsilon && Math.abs(hsl.s - 0.50) < epsilon,
@@ -13423,7 +13154,7 @@ var SliderSwatches = function SliderSwatches(_ref) {
         last: true
       })
     ),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.clear })
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.clear })
   );
 };
 
@@ -13435,25 +13166,25 @@ var SliderSwatches = function SliderSwatches(_ref) {
 /*!*********************************************************************!*\
   !*** ./node_modules/react-color/es/components/swatches/Swatches.js ***!
   \*********************************************************************/
-/*! exports provided: Swatches, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Swatches", function() { return Swatches; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Swatches": function() { return /* binding */ Swatches; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash-es/map */ "./node_modules/lodash/map.js");
-/* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_es_map__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var material_colors__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! material-colors */ "./node_modules/material-colors/dist/colors.es2015.js");
-/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
-/* harmony import */ var _SwatchesGroup__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./SwatchesGroup */ "./node_modules/react-color/es/components/swatches/SwatchesGroup.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
+/* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es/map */ "./node_modules/lodash/map.js");
+/* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_es_map__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var material_colors__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! material-colors */ "./node_modules/material-colors/dist/colors.es2015.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
+/* harmony import */ var _SwatchesGroup__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./SwatchesGroup */ "./node_modules/react-color/es/components/swatches/SwatchesGroup.js");
 
 
 
@@ -13476,7 +13207,7 @@ var Swatches = function Swatches(_ref) {
       _ref$className = _ref.className,
       className = _ref$className === undefined ? '' : _ref$className;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_2___default()(lodash_es_merge__WEBPACK_IMPORTED_MODULE_4___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default()({
     'default': {
       picker: {
         width: width,
@@ -13499,20 +13230,20 @@ var Swatches = function Swatches(_ref) {
     return onChange({ hex: data, source: 'hex' }, e);
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.picker, className: 'swatches-picker ' + className },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-      _common__WEBPACK_IMPORTED_MODULE_6__["Raised"],
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
+      _common__WEBPACK_IMPORTED_MODULE_5__.Raised,
       null,
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
         'div',
         { style: styles.overflow },
-        react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           'div',
           { style: styles.body },
-          lodash_es_map__WEBPACK_IMPORTED_MODULE_3___default()(colors, function (group) {
-            return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SwatchesGroup__WEBPACK_IMPORTED_MODULE_7__["default"], {
+          lodash_es_map__WEBPACK_IMPORTED_MODULE_2___default()(colors, function (group) {
+            return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SwatchesGroup__WEBPACK_IMPORTED_MODULE_6__["default"], {
               key: group.toString(),
               group: group,
               active: hex,
@@ -13520,7 +13251,7 @@ var Swatches = function Swatches(_ref) {
               onSwatchHover: onSwatchHover
             });
           }),
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.clear })
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.clear })
         )
       )
     )
@@ -13528,20 +13259,20 @@ var Swatches = function Swatches(_ref) {
 };
 
 Swatches.propTypes = {
-  width: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number]),
-  height: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number]),
-  colors: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string)),
-  styles: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object
+  width: prop_types__WEBPACK_IMPORTED_MODULE_7___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_7___default().string), (prop_types__WEBPACK_IMPORTED_MODULE_7___default().number)]),
+  height: prop_types__WEBPACK_IMPORTED_MODULE_7___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_7___default().string), (prop_types__WEBPACK_IMPORTED_MODULE_7___default().number)]),
+  colors: prop_types__WEBPACK_IMPORTED_MODULE_7___default().arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_7___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_7___default().string))),
+  styles: (prop_types__WEBPACK_IMPORTED_MODULE_7___default().object)
 
   /* eslint-disable max-len */
 };Swatches.defaultProps = {
   width: 320,
   height: 240,
-  colors: [[material_colors__WEBPACK_IMPORTED_MODULE_5__["red"]['900'], material_colors__WEBPACK_IMPORTED_MODULE_5__["red"]['700'], material_colors__WEBPACK_IMPORTED_MODULE_5__["red"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["red"]['300'], material_colors__WEBPACK_IMPORTED_MODULE_5__["red"]['100']], [material_colors__WEBPACK_IMPORTED_MODULE_5__["pink"]['900'], material_colors__WEBPACK_IMPORTED_MODULE_5__["pink"]['700'], material_colors__WEBPACK_IMPORTED_MODULE_5__["pink"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["pink"]['300'], material_colors__WEBPACK_IMPORTED_MODULE_5__["pink"]['100']], [material_colors__WEBPACK_IMPORTED_MODULE_5__["purple"]['900'], material_colors__WEBPACK_IMPORTED_MODULE_5__["purple"]['700'], material_colors__WEBPACK_IMPORTED_MODULE_5__["purple"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["purple"]['300'], material_colors__WEBPACK_IMPORTED_MODULE_5__["purple"]['100']], [material_colors__WEBPACK_IMPORTED_MODULE_5__["deepPurple"]['900'], material_colors__WEBPACK_IMPORTED_MODULE_5__["deepPurple"]['700'], material_colors__WEBPACK_IMPORTED_MODULE_5__["deepPurple"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["deepPurple"]['300'], material_colors__WEBPACK_IMPORTED_MODULE_5__["deepPurple"]['100']], [material_colors__WEBPACK_IMPORTED_MODULE_5__["indigo"]['900'], material_colors__WEBPACK_IMPORTED_MODULE_5__["indigo"]['700'], material_colors__WEBPACK_IMPORTED_MODULE_5__["indigo"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["indigo"]['300'], material_colors__WEBPACK_IMPORTED_MODULE_5__["indigo"]['100']], [material_colors__WEBPACK_IMPORTED_MODULE_5__["blue"]['900'], material_colors__WEBPACK_IMPORTED_MODULE_5__["blue"]['700'], material_colors__WEBPACK_IMPORTED_MODULE_5__["blue"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["blue"]['300'], material_colors__WEBPACK_IMPORTED_MODULE_5__["blue"]['100']], [material_colors__WEBPACK_IMPORTED_MODULE_5__["lightBlue"]['900'], material_colors__WEBPACK_IMPORTED_MODULE_5__["lightBlue"]['700'], material_colors__WEBPACK_IMPORTED_MODULE_5__["lightBlue"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["lightBlue"]['300'], material_colors__WEBPACK_IMPORTED_MODULE_5__["lightBlue"]['100']], [material_colors__WEBPACK_IMPORTED_MODULE_5__["cyan"]['900'], material_colors__WEBPACK_IMPORTED_MODULE_5__["cyan"]['700'], material_colors__WEBPACK_IMPORTED_MODULE_5__["cyan"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["cyan"]['300'], material_colors__WEBPACK_IMPORTED_MODULE_5__["cyan"]['100']], [material_colors__WEBPACK_IMPORTED_MODULE_5__["teal"]['900'], material_colors__WEBPACK_IMPORTED_MODULE_5__["teal"]['700'], material_colors__WEBPACK_IMPORTED_MODULE_5__["teal"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["teal"]['300'], material_colors__WEBPACK_IMPORTED_MODULE_5__["teal"]['100']], ['#194D33', material_colors__WEBPACK_IMPORTED_MODULE_5__["green"]['700'], material_colors__WEBPACK_IMPORTED_MODULE_5__["green"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["green"]['300'], material_colors__WEBPACK_IMPORTED_MODULE_5__["green"]['100']], [material_colors__WEBPACK_IMPORTED_MODULE_5__["lightGreen"]['900'], material_colors__WEBPACK_IMPORTED_MODULE_5__["lightGreen"]['700'], material_colors__WEBPACK_IMPORTED_MODULE_5__["lightGreen"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["lightGreen"]['300'], material_colors__WEBPACK_IMPORTED_MODULE_5__["lightGreen"]['100']], [material_colors__WEBPACK_IMPORTED_MODULE_5__["lime"]['900'], material_colors__WEBPACK_IMPORTED_MODULE_5__["lime"]['700'], material_colors__WEBPACK_IMPORTED_MODULE_5__["lime"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["lime"]['300'], material_colors__WEBPACK_IMPORTED_MODULE_5__["lime"]['100']], [material_colors__WEBPACK_IMPORTED_MODULE_5__["yellow"]['900'], material_colors__WEBPACK_IMPORTED_MODULE_5__["yellow"]['700'], material_colors__WEBPACK_IMPORTED_MODULE_5__["yellow"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["yellow"]['300'], material_colors__WEBPACK_IMPORTED_MODULE_5__["yellow"]['100']], [material_colors__WEBPACK_IMPORTED_MODULE_5__["amber"]['900'], material_colors__WEBPACK_IMPORTED_MODULE_5__["amber"]['700'], material_colors__WEBPACK_IMPORTED_MODULE_5__["amber"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["amber"]['300'], material_colors__WEBPACK_IMPORTED_MODULE_5__["amber"]['100']], [material_colors__WEBPACK_IMPORTED_MODULE_5__["orange"]['900'], material_colors__WEBPACK_IMPORTED_MODULE_5__["orange"]['700'], material_colors__WEBPACK_IMPORTED_MODULE_5__["orange"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["orange"]['300'], material_colors__WEBPACK_IMPORTED_MODULE_5__["orange"]['100']], [material_colors__WEBPACK_IMPORTED_MODULE_5__["deepOrange"]['900'], material_colors__WEBPACK_IMPORTED_MODULE_5__["deepOrange"]['700'], material_colors__WEBPACK_IMPORTED_MODULE_5__["deepOrange"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["deepOrange"]['300'], material_colors__WEBPACK_IMPORTED_MODULE_5__["deepOrange"]['100']], [material_colors__WEBPACK_IMPORTED_MODULE_5__["brown"]['900'], material_colors__WEBPACK_IMPORTED_MODULE_5__["brown"]['700'], material_colors__WEBPACK_IMPORTED_MODULE_5__["brown"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["brown"]['300'], material_colors__WEBPACK_IMPORTED_MODULE_5__["brown"]['100']], [material_colors__WEBPACK_IMPORTED_MODULE_5__["blueGrey"]['900'], material_colors__WEBPACK_IMPORTED_MODULE_5__["blueGrey"]['700'], material_colors__WEBPACK_IMPORTED_MODULE_5__["blueGrey"]['500'], material_colors__WEBPACK_IMPORTED_MODULE_5__["blueGrey"]['300'], material_colors__WEBPACK_IMPORTED_MODULE_5__["blueGrey"]['100']], ['#000000', '#525252', '#969696', '#D9D9D9', '#FFFFFF']],
+  colors: [[material_colors__WEBPACK_IMPORTED_MODULE_4__.red[900], material_colors__WEBPACK_IMPORTED_MODULE_4__.red[700], material_colors__WEBPACK_IMPORTED_MODULE_4__.red[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.red[300], material_colors__WEBPACK_IMPORTED_MODULE_4__.red[100]], [material_colors__WEBPACK_IMPORTED_MODULE_4__.pink[900], material_colors__WEBPACK_IMPORTED_MODULE_4__.pink[700], material_colors__WEBPACK_IMPORTED_MODULE_4__.pink[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.pink[300], material_colors__WEBPACK_IMPORTED_MODULE_4__.pink[100]], [material_colors__WEBPACK_IMPORTED_MODULE_4__.purple[900], material_colors__WEBPACK_IMPORTED_MODULE_4__.purple[700], material_colors__WEBPACK_IMPORTED_MODULE_4__.purple[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.purple[300], material_colors__WEBPACK_IMPORTED_MODULE_4__.purple[100]], [material_colors__WEBPACK_IMPORTED_MODULE_4__.deepPurple[900], material_colors__WEBPACK_IMPORTED_MODULE_4__.deepPurple[700], material_colors__WEBPACK_IMPORTED_MODULE_4__.deepPurple[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.deepPurple[300], material_colors__WEBPACK_IMPORTED_MODULE_4__.deepPurple[100]], [material_colors__WEBPACK_IMPORTED_MODULE_4__.indigo[900], material_colors__WEBPACK_IMPORTED_MODULE_4__.indigo[700], material_colors__WEBPACK_IMPORTED_MODULE_4__.indigo[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.indigo[300], material_colors__WEBPACK_IMPORTED_MODULE_4__.indigo[100]], [material_colors__WEBPACK_IMPORTED_MODULE_4__.blue[900], material_colors__WEBPACK_IMPORTED_MODULE_4__.blue[700], material_colors__WEBPACK_IMPORTED_MODULE_4__.blue[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.blue[300], material_colors__WEBPACK_IMPORTED_MODULE_4__.blue[100]], [material_colors__WEBPACK_IMPORTED_MODULE_4__.lightBlue[900], material_colors__WEBPACK_IMPORTED_MODULE_4__.lightBlue[700], material_colors__WEBPACK_IMPORTED_MODULE_4__.lightBlue[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.lightBlue[300], material_colors__WEBPACK_IMPORTED_MODULE_4__.lightBlue[100]], [material_colors__WEBPACK_IMPORTED_MODULE_4__.cyan[900], material_colors__WEBPACK_IMPORTED_MODULE_4__.cyan[700], material_colors__WEBPACK_IMPORTED_MODULE_4__.cyan[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.cyan[300], material_colors__WEBPACK_IMPORTED_MODULE_4__.cyan[100]], [material_colors__WEBPACK_IMPORTED_MODULE_4__.teal[900], material_colors__WEBPACK_IMPORTED_MODULE_4__.teal[700], material_colors__WEBPACK_IMPORTED_MODULE_4__.teal[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.teal[300], material_colors__WEBPACK_IMPORTED_MODULE_4__.teal[100]], ['#194D33', material_colors__WEBPACK_IMPORTED_MODULE_4__.green[700], material_colors__WEBPACK_IMPORTED_MODULE_4__.green[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.green[300], material_colors__WEBPACK_IMPORTED_MODULE_4__.green[100]], [material_colors__WEBPACK_IMPORTED_MODULE_4__.lightGreen[900], material_colors__WEBPACK_IMPORTED_MODULE_4__.lightGreen[700], material_colors__WEBPACK_IMPORTED_MODULE_4__.lightGreen[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.lightGreen[300], material_colors__WEBPACK_IMPORTED_MODULE_4__.lightGreen[100]], [material_colors__WEBPACK_IMPORTED_MODULE_4__.lime[900], material_colors__WEBPACK_IMPORTED_MODULE_4__.lime[700], material_colors__WEBPACK_IMPORTED_MODULE_4__.lime[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.lime[300], material_colors__WEBPACK_IMPORTED_MODULE_4__.lime[100]], [material_colors__WEBPACK_IMPORTED_MODULE_4__.yellow[900], material_colors__WEBPACK_IMPORTED_MODULE_4__.yellow[700], material_colors__WEBPACK_IMPORTED_MODULE_4__.yellow[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.yellow[300], material_colors__WEBPACK_IMPORTED_MODULE_4__.yellow[100]], [material_colors__WEBPACK_IMPORTED_MODULE_4__.amber[900], material_colors__WEBPACK_IMPORTED_MODULE_4__.amber[700], material_colors__WEBPACK_IMPORTED_MODULE_4__.amber[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.amber[300], material_colors__WEBPACK_IMPORTED_MODULE_4__.amber[100]], [material_colors__WEBPACK_IMPORTED_MODULE_4__.orange[900], material_colors__WEBPACK_IMPORTED_MODULE_4__.orange[700], material_colors__WEBPACK_IMPORTED_MODULE_4__.orange[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.orange[300], material_colors__WEBPACK_IMPORTED_MODULE_4__.orange[100]], [material_colors__WEBPACK_IMPORTED_MODULE_4__.deepOrange[900], material_colors__WEBPACK_IMPORTED_MODULE_4__.deepOrange[700], material_colors__WEBPACK_IMPORTED_MODULE_4__.deepOrange[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.deepOrange[300], material_colors__WEBPACK_IMPORTED_MODULE_4__.deepOrange[100]], [material_colors__WEBPACK_IMPORTED_MODULE_4__.brown[900], material_colors__WEBPACK_IMPORTED_MODULE_4__.brown[700], material_colors__WEBPACK_IMPORTED_MODULE_4__.brown[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.brown[300], material_colors__WEBPACK_IMPORTED_MODULE_4__.brown[100]], [material_colors__WEBPACK_IMPORTED_MODULE_4__.blueGrey[900], material_colors__WEBPACK_IMPORTED_MODULE_4__.blueGrey[700], material_colors__WEBPACK_IMPORTED_MODULE_4__.blueGrey[500], material_colors__WEBPACK_IMPORTED_MODULE_4__.blueGrey[300], material_colors__WEBPACK_IMPORTED_MODULE_4__.blueGrey[100]], ['#000000', '#525252', '#969696', '#D9D9D9', '#FFFFFF']],
   styles: {}
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_common__WEBPACK_IMPORTED_MODULE_6__["ColorWrap"])(Swatches));
+/* harmony default export */ __webpack_exports__["default"] = ((0,_common__WEBPACK_IMPORTED_MODULE_5__.ColorWrap)(Swatches));
 
 /***/ }),
 
@@ -13549,20 +13280,19 @@ Swatches.propTypes = {
 /*!**************************************************************************!*\
   !*** ./node_modules/react-color/es/components/swatches/SwatchesColor.js ***!
   \**************************************************************************/
-/*! exports provided: SwatchesColor, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SwatchesColor", function() { return SwatchesColor; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SwatchesColor": function() { return /* binding */ SwatchesColor; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _helpers_color__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../helpers/color */ "./node_modules/react-color/es/helpers/color.js");
 /* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
 /* harmony import */ var _icons_material_CheckIcon__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @icons/material/CheckIcon */ "./node_modules/@icons/material/CheckIcon.js");
-/* harmony import */ var _icons_material_CheckIcon__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_icons_material_CheckIcon__WEBPACK_IMPORTED_MODULE_4__);
 
 
 
@@ -13579,7 +13309,7 @@ var SwatchesColor = function SwatchesColor(_ref) {
       last = _ref.last,
       active = _ref.active;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       color: {
         width: '40px',
@@ -13589,7 +13319,7 @@ var SwatchesColor = function SwatchesColor(_ref) {
         marginBottom: '1px'
       },
       check: {
-        color: _helpers_color__WEBPACK_IMPORTED_MODULE_2__["getContrastingColor"](color),
+        color: _helpers_color__WEBPACK_IMPORTED_MODULE_2__.getContrastingColor(color),
         marginLeft: '8px',
         display: 'none'
       }
@@ -13632,8 +13362,8 @@ var SwatchesColor = function SwatchesColor(_ref) {
     'transparent': color === 'transparent'
   });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
-    _common__WEBPACK_IMPORTED_MODULE_3__["Swatch"],
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
+    _common__WEBPACK_IMPORTED_MODULE_3__.Swatch,
     {
       color: color,
       style: styles.color,
@@ -13641,10 +13371,10 @@ var SwatchesColor = function SwatchesColor(_ref) {
       onHover: onSwatchHover,
       focusStyle: { boxShadow: '0 0 4px ' + color }
     },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.check },
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_icons_material_CheckIcon__WEBPACK_IMPORTED_MODULE_4___default.a, null)
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_icons_material_CheckIcon__WEBPACK_IMPORTED_MODULE_4__["default"], null)
     )
   );
 };
@@ -13657,16 +13387,16 @@ var SwatchesColor = function SwatchesColor(_ref) {
 /*!**************************************************************************!*\
   !*** ./node_modules/react-color/es/components/swatches/SwatchesGroup.js ***!
   \**************************************************************************/
-/*! exports provided: SwatchesGroup, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SwatchesGroup", function() { return SwatchesGroup; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "SwatchesGroup": function() { return /* binding */ SwatchesGroup; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es/map */ "./node_modules/lodash/map.js");
 /* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_es_map__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _SwatchesColor__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./SwatchesColor */ "./node_modules/react-color/es/components/swatches/SwatchesColor.js");
@@ -13682,7 +13412,7 @@ var SwatchesGroup = function SwatchesGroup(_ref) {
       group = _ref.group,
       active = _ref.active;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_1___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])({
     'default': {
       group: {
         paddingBottom: '10px',
@@ -13693,11 +13423,11 @@ var SwatchesGroup = function SwatchesGroup(_ref) {
     }
   });
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.group },
     lodash_es_map__WEBPACK_IMPORTED_MODULE_2___default()(group, function (color, i) {
-      return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SwatchesColor__WEBPACK_IMPORTED_MODULE_3__["default"], {
+      return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_SwatchesColor__WEBPACK_IMPORTED_MODULE_3__["default"], {
         key: color,
         color: color,
         active: color.toLowerCase() === active,
@@ -13718,24 +13448,24 @@ var SwatchesGroup = function SwatchesGroup(_ref) {
 /*!*******************************************************************!*\
   !*** ./node_modules/react-color/es/components/twitter/Twitter.js ***!
   \*******************************************************************/
-/*! exports provided: Twitter, default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "Twitter", function() { return Twitter; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "Twitter": function() { return /* binding */ Twitter; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
-/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactcss__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash-es/map */ "./node_modules/lodash/map.js");
-/* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_es_map__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
-/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _helpers_color__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../helpers/color */ "./node_modules/react-color/es/helpers/color.js");
-/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var reactcss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! reactcss */ "./node_modules/reactcss/lib/index.js");
+/* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! lodash-es/map */ "./node_modules/lodash/map.js");
+/* harmony import */ var lodash_es_map__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(lodash_es_map__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! lodash-es/merge */ "./node_modules/lodash/merge.js");
+/* harmony import */ var lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _helpers_color__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../helpers/color */ "./node_modules/react-color/es/helpers/color.js");
+/* harmony import */ var _common__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../common */ "./node_modules/react-color/es/components/common/index.js");
 
 
 
@@ -13757,7 +13487,7 @@ var Twitter = function Twitter(_ref) {
       _ref$className = _ref.className,
       className = _ref$className === undefined ? '' : _ref$className;
 
-  var styles = reactcss__WEBPACK_IMPORTED_MODULE_2___default()(lodash_es_merge__WEBPACK_IMPORTED_MODULE_4___default()({
+  var styles = (0,reactcss__WEBPACK_IMPORTED_MODULE_1__["default"])(lodash_es_merge__WEBPACK_IMPORTED_MODULE_3___default()({
     'default': {
       card: {
         width: width,
@@ -13860,22 +13590,22 @@ var Twitter = function Twitter(_ref) {
   });
 
   var handleChange = function handleChange(hexcode, e) {
-    _helpers_color__WEBPACK_IMPORTED_MODULE_5__["isValidHex"](hexcode) && onChange({
+    _helpers_color__WEBPACK_IMPORTED_MODULE_4__.isValidHex(hexcode) && onChange({
       hex: hexcode,
       source: 'hex'
     }, e);
   };
 
-  return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
     'div',
     { style: styles.card, className: 'twitter-picker ' + className },
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.triangleShadow }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.triangle }),
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.triangleShadow }),
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.triangle }),
+    react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
       'div',
       { style: styles.body },
-      lodash_es_map__WEBPACK_IMPORTED_MODULE_3___default()(colors, function (c, i) {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_6__["Swatch"], {
+      lodash_es_map__WEBPACK_IMPORTED_MODULE_2___default()(colors, function (c, i) {
+        return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_5__.Swatch, {
           key: i,
           color: c,
           hex: c,
@@ -13887,27 +13617,27 @@ var Twitter = function Twitter(_ref) {
           }
         });
       }),
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
         'div',
         { style: styles.hash },
         '#'
       ),
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common__WEBPACK_IMPORTED_MODULE_6__["EditableInput"], {
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_common__WEBPACK_IMPORTED_MODULE_5__.EditableInput, {
         label: null,
         style: { input: styles.input },
         value: hex.replace('#', ''),
         onChange: handleChange
       }),
-      react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement('div', { style: styles.clear })
+      react__WEBPACK_IMPORTED_MODULE_0___default().createElement('div', { style: styles.clear })
     )
   );
 };
 
 Twitter.propTypes = {
-  width: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOfType([prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string, prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.number]),
-  triangle: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.oneOf(['hide', 'top-left', 'top-right']),
-  colors: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.arrayOf(prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string),
-  styles: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.object
+  width: prop_types__WEBPACK_IMPORTED_MODULE_6___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_6___default().string), (prop_types__WEBPACK_IMPORTED_MODULE_6___default().number)]),
+  triangle: prop_types__WEBPACK_IMPORTED_MODULE_6___default().oneOf(['hide', 'top-left', 'top-right']),
+  colors: prop_types__WEBPACK_IMPORTED_MODULE_6___default().arrayOf((prop_types__WEBPACK_IMPORTED_MODULE_6___default().string)),
+  styles: (prop_types__WEBPACK_IMPORTED_MODULE_6___default().object)
 };
 
 Twitter.defaultProps = {
@@ -13917,7 +13647,7 @@ Twitter.defaultProps = {
   styles: {}
 };
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(_common__WEBPACK_IMPORTED_MODULE_6__["ColorWrap"])(Twitter));
+/* harmony default export */ __webpack_exports__["default"] = ((0,_common__WEBPACK_IMPORTED_MODULE_5__.ColorWrap)(Twitter));
 
 /***/ }),
 
@@ -13925,12 +13655,13 @@ Twitter.defaultProps = {
 /*!******************************************************!*\
   !*** ./node_modules/react-color/es/helpers/alpha.js ***!
   \******************************************************/
-/*! exports provided: calculateChange */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "calculateChange", function() { return calculateChange; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "calculateChange": function() { return /* binding */ calculateChange; }
+/* harmony export */ });
 var calculateChange = function calculateChange(e, hsl, direction, initialA, container) {
   var containerWidth = container.clientWidth;
   var containerHeight = container.clientHeight;
@@ -13987,13 +13718,14 @@ var calculateChange = function calculateChange(e, hsl, direction, initialA, cont
 /*!***********************************************************!*\
   !*** ./node_modules/react-color/es/helpers/checkboard.js ***!
   \***********************************************************/
-/*! exports provided: render, get */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "render", function() { return render; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "get", function() { return get; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "get": function() { return /* binding */ get; },
+/* harmony export */   "render": function() { return /* binding */ render; }
+/* harmony export */ });
 var checkboardCache = {};
 
 var render = function render(c1, c2, size, serverCanvas) {
@@ -14034,17 +13766,18 @@ var get = function get(c1, c2, size, serverCanvas) {
 /*!******************************************************!*\
   !*** ./node_modules/react-color/es/helpers/color.js ***!
   \******************************************************/
-/*! exports provided: simpleCheckForValidColor, toState, isValidHex, getContrastingColor, red, isvalidColorString */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "simpleCheckForValidColor", function() { return simpleCheckForValidColor; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "toState", function() { return toState; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isValidHex", function() { return isValidHex; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "getContrastingColor", function() { return getContrastingColor; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "red", function() { return red; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "isvalidColorString", function() { return isvalidColorString; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "getContrastingColor": function() { return /* binding */ getContrastingColor; },
+/* harmony export */   "isValidHex": function() { return /* binding */ isValidHex; },
+/* harmony export */   "isvalidColorString": function() { return /* binding */ isvalidColorString; },
+/* harmony export */   "red": function() { return /* binding */ red; },
+/* harmony export */   "simpleCheckForValidColor": function() { return /* binding */ simpleCheckForValidColor; },
+/* harmony export */   "toState": function() { return /* binding */ toState; }
+/* harmony export */ });
 /* harmony import */ var lodash_es_each__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! lodash-es/each */ "./node_modules/lodash/each.js");
 /* harmony import */ var lodash_es_each__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(lodash_es_each__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var tinycolor2__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! tinycolor2 */ "./node_modules/tinycolor2/tinycolor.js");
@@ -14134,12 +13867,13 @@ var isvalidColorString = function isvalidColorString(string, type) {
 /*!****************************************************!*\
   !*** ./node_modules/react-color/es/helpers/hue.js ***!
   \****************************************************/
-/*! exports provided: calculateChange */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "calculateChange", function() { return calculateChange; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "calculateChange": function() { return /* binding */ calculateChange; }
+/* harmony export */ });
 var calculateChange = function calculateChange(e, direction, hsl, container) {
   var containerWidth = container.clientWidth;
   var containerHeight = container.clientHeight;
@@ -14198,12 +13932,13 @@ var calculateChange = function calculateChange(e, direction, hsl, container) {
 /*!************************************************************!*\
   !*** ./node_modules/react-color/es/helpers/interaction.js ***!
   \************************************************************/
-/*! exports provided: handleFocus */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "handleFocus", function() { return handleFocus; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "handleFocus": function() { return /* binding */ handleFocus; }
+/* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -14245,16 +13980,16 @@ var handleFocus = function handleFocus(Component) {
     _createClass(Focus, [{
       key: 'render',
       value: function render() {
-        return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(
+        return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
           Span,
           { onFocus: this.handleFocus, onBlur: this.handleBlur },
-          react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, _extends({}, this.props, this.state))
+          react__WEBPACK_IMPORTED_MODULE_0___default().createElement(Component, _extends({}, this.props, this.state))
         );
       }
     }]);
 
     return Focus;
-  }(react__WEBPACK_IMPORTED_MODULE_0___default.a.Component);
+  }((react__WEBPACK_IMPORTED_MODULE_0___default().Component));
 };
 
 /***/ }),
@@ -14263,12 +13998,13 @@ var handleFocus = function handleFocus(Component) {
 /*!***********************************************************!*\
   !*** ./node_modules/react-color/es/helpers/saturation.js ***!
   \***********************************************************/
-/*! exports provided: calculateChange */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "calculateChange", function() { return calculateChange; });
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "calculateChange": function() { return /* binding */ calculateChange; }
+/* harmony export */ });
 var calculateChange = function calculateChange(e, hsl, container) {
   var _container$getBoundin = container.getBoundingClientRect(),
       containerWidth = _container$getBoundin.width,
@@ -14309,58 +14045,43 @@ var calculateChange = function calculateChange(e, hsl, container) {
 /*!**********************************************!*\
   !*** ./node_modules/react-color/es/index.js ***!
   \**********************************************/
-/*! exports provided: AlphaPicker, BlockPicker, CirclePicker, default, ChromePicker, CompactPicker, GithubPicker, HuePicker, MaterialPicker, PhotoshopPicker, SketchPicker, SliderPicker, SwatchesPicker, TwitterPicker, GooglePicker, CustomPicker */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "AlphaPicker": function() { return /* reexport safe */ _components_alpha_Alpha__WEBPACK_IMPORTED_MODULE_0__["default"]; },
+/* harmony export */   "BlockPicker": function() { return /* reexport safe */ _components_block_Block__WEBPACK_IMPORTED_MODULE_1__["default"]; },
+/* harmony export */   "ChromePicker": function() { return /* reexport safe */ _components_chrome_Chrome__WEBPACK_IMPORTED_MODULE_3__["default"]; },
+/* harmony export */   "CirclePicker": function() { return /* reexport safe */ _components_circle_Circle__WEBPACK_IMPORTED_MODULE_2__["default"]; },
+/* harmony export */   "CompactPicker": function() { return /* reexport safe */ _components_compact_Compact__WEBPACK_IMPORTED_MODULE_4__["default"]; },
+/* harmony export */   "CustomPicker": function() { return /* reexport safe */ _components_common_ColorWrap__WEBPACK_IMPORTED_MODULE_14__["default"]; },
+/* harmony export */   "GithubPicker": function() { return /* reexport safe */ _components_github_Github__WEBPACK_IMPORTED_MODULE_5__["default"]; },
+/* harmony export */   "GooglePicker": function() { return /* reexport safe */ _components_google_Google__WEBPACK_IMPORTED_MODULE_13__["default"]; },
+/* harmony export */   "HuePicker": function() { return /* reexport safe */ _components_hue_Hue__WEBPACK_IMPORTED_MODULE_6__["default"]; },
+/* harmony export */   "MaterialPicker": function() { return /* reexport safe */ _components_material_Material__WEBPACK_IMPORTED_MODULE_7__["default"]; },
+/* harmony export */   "PhotoshopPicker": function() { return /* reexport safe */ _components_photoshop_Photoshop__WEBPACK_IMPORTED_MODULE_8__["default"]; },
+/* harmony export */   "SketchPicker": function() { return /* reexport safe */ _components_sketch_Sketch__WEBPACK_IMPORTED_MODULE_9__["default"]; },
+/* harmony export */   "SliderPicker": function() { return /* reexport safe */ _components_slider_Slider__WEBPACK_IMPORTED_MODULE_10__["default"]; },
+/* harmony export */   "SwatchesPicker": function() { return /* reexport safe */ _components_swatches_Swatches__WEBPACK_IMPORTED_MODULE_11__["default"]; },
+/* harmony export */   "TwitterPicker": function() { return /* reexport safe */ _components_twitter_Twitter__WEBPACK_IMPORTED_MODULE_12__["default"]; },
+/* harmony export */   "default": function() { return /* reexport safe */ _components_chrome_Chrome__WEBPACK_IMPORTED_MODULE_3__["default"]; }
+/* harmony export */ });
 /* harmony import */ var _components_alpha_Alpha__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/alpha/Alpha */ "./node_modules/react-color/es/components/alpha/Alpha.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "AlphaPicker", function() { return _components_alpha_Alpha__WEBPACK_IMPORTED_MODULE_0__["default"]; });
-
 /* harmony import */ var _components_block_Block__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./components/block/Block */ "./node_modules/react-color/es/components/block/Block.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "BlockPicker", function() { return _components_block_Block__WEBPACK_IMPORTED_MODULE_1__["default"]; });
-
 /* harmony import */ var _components_circle_Circle__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./components/circle/Circle */ "./node_modules/react-color/es/components/circle/Circle.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CirclePicker", function() { return _components_circle_Circle__WEBPACK_IMPORTED_MODULE_2__["default"]; });
-
 /* harmony import */ var _components_chrome_Chrome__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./components/chrome/Chrome */ "./node_modules/react-color/es/components/chrome/Chrome.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _components_chrome_Chrome__WEBPACK_IMPORTED_MODULE_3__["default"]; });
-
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "ChromePicker", function() { return _components_chrome_Chrome__WEBPACK_IMPORTED_MODULE_3__["default"]; });
-
 /* harmony import */ var _components_compact_Compact__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/compact/Compact */ "./node_modules/react-color/es/components/compact/Compact.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CompactPicker", function() { return _components_compact_Compact__WEBPACK_IMPORTED_MODULE_4__["default"]; });
-
 /* harmony import */ var _components_github_Github__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./components/github/Github */ "./node_modules/react-color/es/components/github/Github.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "GithubPicker", function() { return _components_github_Github__WEBPACK_IMPORTED_MODULE_5__["default"]; });
-
 /* harmony import */ var _components_hue_Hue__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./components/hue/Hue */ "./node_modules/react-color/es/components/hue/Hue.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "HuePicker", function() { return _components_hue_Hue__WEBPACK_IMPORTED_MODULE_6__["default"]; });
-
 /* harmony import */ var _components_material_Material__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./components/material/Material */ "./node_modules/react-color/es/components/material/Material.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "MaterialPicker", function() { return _components_material_Material__WEBPACK_IMPORTED_MODULE_7__["default"]; });
-
 /* harmony import */ var _components_photoshop_Photoshop__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./components/photoshop/Photoshop */ "./node_modules/react-color/es/components/photoshop/Photoshop.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "PhotoshopPicker", function() { return _components_photoshop_Photoshop__WEBPACK_IMPORTED_MODULE_8__["default"]; });
-
 /* harmony import */ var _components_sketch_Sketch__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./components/sketch/Sketch */ "./node_modules/react-color/es/components/sketch/Sketch.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "SketchPicker", function() { return _components_sketch_Sketch__WEBPACK_IMPORTED_MODULE_9__["default"]; });
-
 /* harmony import */ var _components_slider_Slider__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./components/slider/Slider */ "./node_modules/react-color/es/components/slider/Slider.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "SliderPicker", function() { return _components_slider_Slider__WEBPACK_IMPORTED_MODULE_10__["default"]; });
-
 /* harmony import */ var _components_swatches_Swatches__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./components/swatches/Swatches */ "./node_modules/react-color/es/components/swatches/Swatches.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "SwatchesPicker", function() { return _components_swatches_Swatches__WEBPACK_IMPORTED_MODULE_11__["default"]; });
-
 /* harmony import */ var _components_twitter_Twitter__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./components/twitter/Twitter */ "./node_modules/react-color/es/components/twitter/Twitter.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "TwitterPicker", function() { return _components_twitter_Twitter__WEBPACK_IMPORTED_MODULE_12__["default"]; });
-
 /* harmony import */ var _components_google_Google__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./components/google/Google */ "./node_modules/react-color/es/components/google/Google.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "GooglePicker", function() { return _components_google_Google__WEBPACK_IMPORTED_MODULE_13__["default"]; });
-
 /* harmony import */ var _components_common_ColorWrap__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./components/common/ColorWrap */ "./node_modules/react-color/es/components/common/ColorWrap.js");
-/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, "CustomPicker", function() { return _components_common_ColorWrap__WEBPACK_IMPORTED_MODULE_14__["default"]; });
-
 
 
 
@@ -14386,8 +14107,7 @@ __webpack_require__.r(__webpack_exports__);
 /*!***********************************************************!*\
   !*** ./node_modules/react-is/cjs/react-is.development.js ***!
   \***********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports) {
 
 "use strict";
 /** @license React v16.13.1
@@ -14579,8 +14299,7 @@ exports.typeOf = typeOf;
 /*!****************************************!*\
   !*** ./node_modules/react-is/index.js ***!
   \****************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, __unused_webpack_exports, __webpack_require__) {
 
 "use strict";
 
@@ -14596,15 +14315,14 @@ if (false) {} else {
 /*!*************************************************!*\
   !*** ./node_modules/reactcss/lib/autoprefix.js ***!
   \*************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, "__esModule", ({
   value: true
-});
+}));
 exports.autoprefix = undefined;
 
 var _forOwn2 = __webpack_require__(/*! lodash/forOwn */ "./node_modules/lodash/forOwn.js");
@@ -14724,7 +14442,7 @@ var autoprefix = exports.autoprefix = function autoprefix(elements) {
   return prefixed;
 };
 
-exports.default = autoprefix;
+exports["default"] = autoprefix;
 
 /***/ }),
 
@@ -14732,15 +14450,14 @@ exports.default = autoprefix;
 /*!********************************************************!*\
   !*** ./node_modules/reactcss/lib/components/active.js ***!
   \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, "__esModule", ({
   value: true
-});
+}));
 exports.active = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -14791,7 +14508,7 @@ var active = exports.active = function active(Component) {
   }(_react2.default.Component);
 };
 
-exports.default = active;
+exports["default"] = active;
 
 /***/ }),
 
@@ -14799,15 +14516,14 @@ exports.default = active;
 /*!*******************************************************!*\
   !*** ./node_modules/reactcss/lib/components/hover.js ***!
   \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, "__esModule", ({
   value: true
-});
+}));
 exports.hover = undefined;
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
@@ -14858,7 +14574,7 @@ var hover = exports.hover = function hover(Component) {
   }(_react2.default.Component);
 };
 
-exports.default = hover;
+exports["default"] = hover;
 
 /***/ }),
 
@@ -14866,15 +14582,14 @@ exports.default = hover;
 /*!***************************************************!*\
   !*** ./node_modules/reactcss/lib/flattenNames.js ***!
   \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, "__esModule", ({
   value: true
-});
+}));
 exports.flattenNames = undefined;
 
 var _isString2 = __webpack_require__(/*! lodash/isString */ "./node_modules/lodash/isString.js");
@@ -14918,7 +14633,7 @@ var flattenNames = exports.flattenNames = function flattenNames() {
   return names;
 };
 
-exports.default = flattenNames;
+exports["default"] = flattenNames;
 
 /***/ }),
 
@@ -14926,15 +14641,14 @@ exports.default = flattenNames;
 /*!********************************************!*\
   !*** ./node_modules/reactcss/lib/index.js ***!
   \********************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, "__esModule", ({
   value: true
-});
+}));
 exports.ReactCSS = exports.loop = exports.handleActive = exports.handleHover = exports.hover = undefined;
 
 var _flattenNames = __webpack_require__(/*! ./flattenNames */ "./node_modules/reactcss/lib/flattenNames.js");
@@ -14977,7 +14691,7 @@ var ReactCSS = exports.ReactCSS = function ReactCSS(classes) {
   return (0, _autoprefix2.default)(merged);
 };
 
-exports.default = ReactCSS;
+exports["default"] = ReactCSS;
 
 /***/ }),
 
@@ -14985,15 +14699,14 @@ exports.default = ReactCSS;
 /*!*******************************************!*\
   !*** ./node_modules/reactcss/lib/loop.js ***!
   \*******************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports) {
 
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, "__esModule", ({
   value: true
-});
+}));
 var loopable = function loopable(i, length) {
   var props = {};
   var setProp = function setProp(name) {
@@ -15011,7 +14724,7 @@ var loopable = function loopable(i, length) {
   return props;
 };
 
-exports.default = loopable;
+exports["default"] = loopable;
 
 /***/ }),
 
@@ -15019,15 +14732,14 @@ exports.default = loopable;
 /*!***************************************************!*\
   !*** ./node_modules/reactcss/lib/mergeClasses.js ***!
   \***************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
 
 
-Object.defineProperty(exports, "__esModule", {
+Object.defineProperty(exports, "__esModule", ({
   value: true
-});
+}));
 exports.mergeClasses = undefined;
 
 var _forOwn2 = __webpack_require__(/*! lodash/forOwn */ "./node_modules/lodash/forOwn.js");
@@ -15063,7 +14775,7 @@ var mergeClasses = exports.mergeClasses = function mergeClasses(classes) {
   return styles;
 };
 
-exports.default = mergeClasses;
+exports["default"] = mergeClasses;
 
 /***/ }),
 
@@ -15071,7 +14783,6 @@ exports.default = mergeClasses;
 /*!**********************************************!*\
   !*** ./node_modules/tinycolor2/tinycolor.js ***!
   \**********************************************/
-/*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_RESULT__;// TinyColor v1.4.2
@@ -16262,7 +15973,7 @@ if ( true && module.exports) {
 // AMD/requirejs: Define the module
 else if (true) {
     !(__WEBPACK_AMD_DEFINE_RESULT__ = (function () {return tinycolor;}).call(exports, __webpack_require__, exports, module),
-				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
 }
 // Browser: Expose to window
 else {}
@@ -16272,78 +15983,149 @@ else {}
 
 /***/ }),
 
-/***/ "./node_modules/webpack/buildin/global.js":
-/*!***********************************!*\
-  !*** (webpack)/buildin/global.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "react":
+/*!************************!*\
+  !*** external "React" ***!
+  \************************/
+/***/ (function(module) {
 
-var g;
-
-// This works in non-strict mode
-g = (function() {
-	return this;
-})();
-
-try {
-	// This works if eval is allowed (see CSP)
-	g = g || new Function("return this")();
-} catch (e) {
-	// This works if the window reference is available
-	if (typeof window === "object") g = window;
-}
-
-// g can still be undefined, but nothing to do about it...
-// We return undefined, instead of nothing here, so it's
-// easier to handle this case. if(!global) { ...}
-
-module.exports = g;
-
+"use strict";
+module.exports = window["React"];
 
 /***/ }),
 
-/***/ "./node_modules/webpack/buildin/module.js":
-/*!***********************************!*\
-  !*** (webpack)/buildin/module.js ***!
-  \***********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
+/***/ "@wordpress/block-editor":
+/*!*************************************!*\
+  !*** external ["wp","blockEditor"] ***!
+  \*************************************/
+/***/ (function(module) {
 
-module.exports = function(module) {
-	if (!module.webpackPolyfill) {
-		module.deprecate = function() {};
-		module.paths = [];
-		// module.parent = undefined by default
-		if (!module.children) module.children = [];
-		Object.defineProperty(module, "loaded", {
-			enumerable: true,
-			get: function() {
-				return module.l;
-			}
-		});
-		Object.defineProperty(module, "id", {
-			enumerable: true,
-			get: function() {
-				return module.i;
-			}
-		});
-		module.webpackPolyfill = 1;
-	}
-	return module;
-};
-
+"use strict";
+module.exports = window["wp"]["blockEditor"];
 
 /***/ }),
 
-/***/ "./src/index.js":
+/***/ "@wordpress/components":
+/*!************************************!*\
+  !*** external ["wp","components"] ***!
+  \************************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = window["wp"]["components"];
+
+/***/ }),
+
+/***/ "@wordpress/element":
+/*!*********************************!*\
+  !*** external ["wp","element"] ***!
+  \*********************************/
+/***/ (function(module) {
+
+"use strict";
+module.exports = window["wp"]["element"];
+
+/***/ })
+
+/******/ 	});
+/************************************************************************/
+/******/ 	// The module cache
+/******/ 	var __webpack_module_cache__ = {};
+/******/ 	
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+/******/ 		// Check if module is in cache
+/******/ 		var cachedModule = __webpack_module_cache__[moduleId];
+/******/ 		if (cachedModule !== undefined) {
+/******/ 			return cachedModule.exports;
+/******/ 		}
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = __webpack_module_cache__[moduleId] = {
+/******/ 			id: moduleId,
+/******/ 			loaded: false,
+/******/ 			exports: {}
+/******/ 		};
+/******/ 	
+/******/ 		// Execute the module function
+/******/ 		__webpack_modules__[moduleId](module, module.exports, __webpack_require__);
+/******/ 	
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
+/******/ 	
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+/******/ 	
+/************************************************************************/
+/******/ 	/* webpack/runtime/compat get default export */
+/******/ 	!function() {
+/******/ 		// getDefaultExport function for compatibility with non-harmony modules
+/******/ 		__webpack_require__.n = function(module) {
+/******/ 			var getter = module && module.__esModule ?
+/******/ 				function() { return module['default']; } :
+/******/ 				function() { return module; };
+/******/ 			__webpack_require__.d(getter, { a: getter });
+/******/ 			return getter;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/define property getters */
+/******/ 	!function() {
+/******/ 		// define getter functions for harmony exports
+/******/ 		__webpack_require__.d = function(exports, definition) {
+/******/ 			for(var key in definition) {
+/******/ 				if(__webpack_require__.o(definition, key) && !__webpack_require__.o(exports, key)) {
+/******/ 					Object.defineProperty(exports, key, { enumerable: true, get: definition[key] });
+/******/ 				}
+/******/ 			}
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	!function() {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/hasOwnProperty shorthand */
+/******/ 	!function() {
+/******/ 		__webpack_require__.o = function(obj, prop) { return Object.prototype.hasOwnProperty.call(obj, prop); }
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	!function() {
+/******/ 		// define __esModule on exports
+/******/ 		__webpack_require__.r = function(exports) {
+/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
+/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
+/******/ 			}
+/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/******/ 	/* webpack/runtime/node module decorator */
+/******/ 	!function() {
+/******/ 		__webpack_require__.nmd = function(module) {
+/******/ 			module.paths = [];
+/******/ 			if (!module.children) module.children = [];
+/******/ 			return module;
+/******/ 		};
+/******/ 	}();
+/******/ 	
+/************************************************************************/
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+!function() {
+"use strict";
 /*!**********************!*\
   !*** ./src/index.js ***!
   \**********************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @wordpress/element */ "@wordpress/element");
 /* harmony import */ var _wordpress_element__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__);
@@ -16358,26 +16140,22 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 (function () {
-  var locked = false;
+  let locked = false;
   wp.data.subscribe(function () {
-    var results = wp.data.select("core/block-editor").getBlocks().filter(function (block) {
+    const results = wp.data.select("core/block-editor").getBlocks().filter(function (block) {
       return block.name == "ourplugin/are-you-paying-attention" && block.attributes.correctAnswer == undefined;
     });
-
     if (results.length && locked == false) {
       locked = true;
       wp.data.dispatch("core/editor").lockPostSaving("noanswer");
     }
-
     if (!results.length && locked) {
       locked = false;
       wp.data.dispatch("core/editor").unlockPostSaving("noanswer");
     }
   });
 })();
-
 wp.blocks.registerBlockType("ourplugin/are-you-paying-attention", {
   title: "Are You Paying Attention?",
   icon: "smiley",
@@ -16414,170 +16192,97 @@ wp.blocks.registerBlockType("ourplugin/are-you-paying-attention", {
     }
   },
   edit: EditComponent,
-  save: function save(props) {
+  save: function (props) {
     return null;
   }
 });
-
 function EditComponent(props) {
-  var blockProps = Object(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["useBlockProps"])({
+  const blockProps = (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.useBlockProps)({
     className: "paying-attention-edit-block",
     style: {
       backgroundColor: props.attributes.bgColor
     }
   });
-
   function updateQuestion(value) {
     props.setAttributes({
       question: value
     });
   }
-
   function deleteAnswer(indexToDelete) {
-    var newAnswers = props.attributes.answers.filter(function (x, index) {
+    const newAnswers = props.attributes.answers.filter(function (x, index) {
       return index != indexToDelete;
     });
     props.setAttributes({
       answers: newAnswers
     });
-
     if (indexToDelete == props.attributes.correctAnswer) {
       props.setAttributes({
         correctAnswer: undefined
       });
     }
   }
-
   function markAsCorrect(index) {
     props.setAttributes({
       correctAnswer: index
     });
   }
-
-  return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("div", blockProps, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["BlockControls"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["AlignmentToolbar"], {
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", blockProps, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.BlockControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.AlignmentToolbar, {
     value: props.attributes.theAlignment,
-    onChange: function onChange(x) {
-      return props.setAttributes({
-        theAlignment: x
-      });
-    }
-  })), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__["InspectorControls"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__["PanelBody"], {
+    onChange: x => props.setAttributes({
+      theAlignment: x
+    })
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.InspectorControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelBody, {
     title: "Background Color",
     initialOpen: true
-  }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__["PanelRow"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(react_color__WEBPACK_IMPORTED_MODULE_4__["ChromePicker"], {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.PanelRow, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(react_color__WEBPACK_IMPORTED_MODULE_4__.ChromePicker, {
     color: props.attributes.bgColor,
-    onChangeComplete: function onChangeComplete(x) {
-      return props.setAttributes({
-        bgColor: x.hex
-      });
-    },
+    onChangeComplete: x => props.setAttributes({
+      bgColor: x.hex
+    }),
     disableAlpha: true
-  })))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__["TextControl"], {
+  })))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
     label: "Question:",
     value: props.attributes.question,
     onChange: updateQuestion,
     style: {
       fontSize: "20px"
     }
-  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])("p", {
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     style: {
       fontSize: "13px",
       margin: "20px 0 8px 0"
     }
   }, "Answers:"), props.attributes.answers.map(function (answer, index) {
-    return Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__["Flex"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__["FlexBlock"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__["TextControl"], {
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Flex, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.FlexBlock, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.TextControl, {
       autoFocus: answer == undefined,
       value: answer,
-      onChange: function onChange(newValue) {
-        var newAnswers = props.attributes.answers.concat([]);
+      onChange: newValue => {
+        const newAnswers = props.attributes.answers.concat([]);
         newAnswers[index] = newValue;
         props.setAttributes({
           answers: newAnswers
         });
       }
-    })), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__["FlexItem"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__["Button"], {
-      onClick: function onClick() {
-        return markAsCorrect(index);
-      }
-    }, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__["Icon"], {
+    })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.FlexItem, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
+      onClick: () => markAsCorrect(index)
+    }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Icon, {
       className: "mark-as-correct",
       icon: props.attributes.correctAnswer == index ? "star-filled" : "star-empty"
-    }))), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__["FlexItem"], null, Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+    }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.FlexItem, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
       isLink: true,
       className: "attention-delete",
-      onClick: function onClick() {
-        return deleteAnswer(index);
-      }
+      onClick: () => deleteAnswer(index)
     }, "Delete")));
-  }), Object(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__["createElement"])(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.Button, {
     isPrimary: true,
-    onClick: function onClick() {
+    onClick: () => {
       props.setAttributes({
         answers: props.attributes.answers.concat([undefined])
       });
     }
   }, "Add another answer"));
 }
-
-/***/ }),
-
-/***/ "./src/index.scss":
-/*!************************!*\
-  !*** ./src/index.scss ***!
-  \************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "@wordpress/block-editor":
-/*!*************************************!*\
-  !*** external ["wp","blockEditor"] ***!
-  \*************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-(function() { module.exports = window["wp"]["blockEditor"]; }());
-
-/***/ }),
-
-/***/ "@wordpress/components":
-/*!************************************!*\
-  !*** external ["wp","components"] ***!
-  \************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-(function() { module.exports = window["wp"]["components"]; }());
-
-/***/ }),
-
-/***/ "@wordpress/element":
-/*!*********************************!*\
-  !*** external ["wp","element"] ***!
-  \*********************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-(function() { module.exports = window["wp"]["element"]; }());
-
-/***/ }),
-
-/***/ "react":
-/*!************************!*\
-  !*** external "React" ***!
-  \************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-(function() { module.exports = window["React"]; }());
-
-/***/ })
-
-/******/ });
+}();
+/******/ })()
+;
 //# sourceMappingURL=index.js.map
