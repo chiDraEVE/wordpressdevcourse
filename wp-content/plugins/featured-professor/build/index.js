@@ -195,7 +195,7 @@ function EditComponent(props) {
     });
   });
   console.log(allProfs);
-  if (allProfs == undefined) return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Loading...");
+  if (allProfs === undefined) return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Loading...");
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "featured-professor-wrapper"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -209,7 +209,7 @@ function EditComponent(props) {
   }, "Select a professor"), allProfs.map(prof => {
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("option", {
       value: prof.id,
-      selected: props.attributes.profId == prof.id
+      selected: props.attributes.profId === prof.id
     }, prof.title.rendered);
   }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     dangerouslySetInnerHTML: {

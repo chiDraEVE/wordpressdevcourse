@@ -59,7 +59,7 @@ function EditComponent(props) {
 
   console.log(allProfs)
 
-  if (allProfs == undefined) return <p>Loading...</p>
+  if (allProfs === undefined) return <p>Loading...</p>
 
   return (
     <div className="featured-professor-wrapper">
@@ -68,7 +68,7 @@ function EditComponent(props) {
           <option value="">Select a professor</option>
           {allProfs.map(prof => {
             return (
-              <option value={prof.id} selected={props.attributes.profId == prof.id}>
+              <option value={prof.id} selected={props.attributes.profId === prof.id}>
                 {prof.title.rendered}
               </option>
             )
