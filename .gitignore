@@ -17,6 +17,7 @@ wp-content/plugins/*
 !wp-content/plugins/our-world-filter-plugin/
 !wp-content/plugins/featured-professor/
 !wp-content/plugins/pets-custom-post-type/
+!wp-content/plugins/new-database-table/
 
 !wp-content/themes/
 wp-content/themes/*
