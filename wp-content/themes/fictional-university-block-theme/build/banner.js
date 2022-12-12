@@ -146,7 +146,7 @@ function EditComponent() {
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "page-banner__bg-image",
     style: {
-      backgroundImage: "url('/wp-content/themes/fictional-block-theme/images/library-hero.jpg')"
+      backgroundImage: "url('/udemy/wpdev/wp-content/themes/fictional-university-block-theme/images/library-hero.jpg')"
     }
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "page-banner__content container t-center c-white"
