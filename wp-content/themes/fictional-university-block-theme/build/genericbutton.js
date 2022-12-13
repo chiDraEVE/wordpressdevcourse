@@ -217,30 +217,24 @@ __webpack_require__.r(__webpack_exports__);
   edit: EditComponent,
   save: SaveComponent
 });
-
 function EditComponent(props) {
   const [isLinkPickerVisible, setIsLinkPickerVisible] = (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.useState)(false);
-
   function handleTextChange(x) {
     props.setAttributes({
       text: x
     });
   }
-
   function buttonHandler() {
     setIsLinkPickerVisible(prev => !prev);
   }
-
   function handleLinkChange(newLink) {
     props.setAttributes({
       linkObject: newLink
     });
   }
-
   const currentColorValue = _inc_ourColors__WEBPACK_IMPORTED_MODULE_1__["default"].filter(color => {
     return color.name == props.attributes.colorName;
   })[0].color;
-
   function handleColorChange(colorCode) {
     // from the hex value that the color palette gives us, we need to find its color name
     const {
@@ -250,7 +244,6 @@ function EditComponent(props) {
       colorName: name
     });
   }
-
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.Fragment, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_3__.BlockControls, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToolbarGroup, null, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_2__.ToolbarButton, {
     onClick: buttonHandler,
     icon: _wordpress_icons__WEBPACK_IMPORTED_MODULE_5__["default"]
@@ -299,7 +292,6 @@ function EditComponent(props) {
     }
   }, "Confirm Link")));
 }
-
 function SaveComponent(props) {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
     href: props.attributes.linkObject.url,
