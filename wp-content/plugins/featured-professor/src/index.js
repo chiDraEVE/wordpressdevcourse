@@ -18,7 +18,6 @@ wp.blocks.registerBlockType("ourplugin/featured-professor", {
   }
 })
 
-
 function EditComponent(props) {
   const [thePreview, setThePreview] = useState("")
 
@@ -40,15 +39,15 @@ function EditComponent(props) {
     return () => {
       updateTheMeta()
     }
-  })
-
+  }, [])
+  
   function updateTheMeta() {
     const profsForMeta = wp.data.select("core/block-editor")
       .getBlocks()
-      .filter(x => "ourplugin/featured-professor")
+      .filter(x => x.name == "ourplugin/featured-professor")
       .map(x => x.attributes.profId)
       .filter((x, index, arr) => {
-        return arr.indexOf(x) === index && x !== undefined
+        return arr.indexOf(x) == index
       })
     console.log(profsForMeta)
     wp.data.dispatch("core/editor").editPost({meta: {featuredprofessor: profsForMeta}})
@@ -60,7 +59,7 @@ function EditComponent(props) {
 
   console.log(allProfs)
 
-  if (allProfs === undefined) return <p>Loading...</p>
+  if (allProfs == undefined) return <p>Loading...</p>
 
   return (
     <div className="featured-professor-wrapper">
@@ -69,7 +68,7 @@ function EditComponent(props) {
           <option value="">{__("Select a professor", "featured-professor")}</option>
           {allProfs.map(prof => {
             return (
-              <option value={prof.id} selected={props.attributes.profId === prof.id}>
+              <option value={prof.id} selected={props.attributes.profId == prof.id}>
                 {prof.title.rendered}
               </option>
             )

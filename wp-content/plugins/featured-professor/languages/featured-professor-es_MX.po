@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Featured Professor Block Type\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-07 10:43+0000\n"
-"PO-Revision-Date: 2022-12-07 10:44+0000\n"
-"Last-Translator: \n"
+"POT-Creation-Date: 2021-05-27 21:17+0000\n"
+"PO-Revision-Date: 2021-05-27 21:21+0000\n"
+"Last-Translator: Brad\n"
 "Language-Team: Spanish (Mexico)\n"
 "Language: es_MX\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.6.3; wp-6.1.1\n"
+"X-Loco-Version: 2.5.2; wp-5.7.2\n"
 "X-Domain: featured-professor"
 
 #. Name of the plugin
@@ -23,7 +23,7 @@ msgstr ""
 msgid "https://www.udemy.com/user/bradschiff/"
 msgstr ""
 
-#: build/index.js:210 src/index.js:69
+#: build/index.js:181 src/index.js:68
 msgid "Select a professor"
 msgstr "Elige una profesora"
 

@@ -11,10 +11,10 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^25.0.0"
+  },
   "dependencies": {
     "react-color": "^2.19.3"
-  },
-  "devDependencies": {
-    "@wordpress/scripts": "^24.6.0"
   }
 }
