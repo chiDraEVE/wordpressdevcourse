@@ -15,22 +15,33 @@ get_header(); ?>
 <div class="container container--narrow page-section">
 
   <?php 
-    $petArgs = array(
-      'favColor' => sanitize_text_field($_GET['favcolor']),
-      'species' => sanitize_text_field($_GET['species']),
-      'minYear' => sanitize_text_field($_GET['minyear']),
-      'maxYear' => sanitize_text_field($_GET['maxyear']),
-      'minWeight' => sanitize_text_field($_GET['minweight']),
-      'maxWeight' => sanitize_text_field($_GET['maxweight']),
-      'favHobby' => sanitize_text_field($_GET['favhobby']),
-      'favFood' => sanitize_text_field($_GET['favfood']),
-    );
+    $petArgs = [];
+
+    if (isset($_GET['favcolor'])) $petArgs['favColor'] = sanitize_text_field($_GET['favcolor']);
+    if (isset($_GET['species'])) $petArgs['species'] = sanitize_text_field($_GET['species']);
+    if (isset($_GET['minyear'])) $petArgs['minYear'] = sanitize_text_field($_GET['minyear']);
+    if (isset($_GET['maxyear'])) $petArgs['maxYear'] = sanitize_text_field($_GET['maxyear']);
+    if (isset($_GET['minweight'])) $petArgs['minWeight'] = sanitize_text_field($_GET['minweight']);
+    if (isset($_GET['maxweight'])) $petArgs['maxWeight'] = sanitize_text_field($_GET['maxweight']);
+    if (isset($_GET['favhobby'])) $petArgs['favHobby'] = sanitize_text_field($_GET['favhobby']);
+    if (isset($_GET['favfood'])) $petArgs['favFood'] = sanitize_text_field($_GET['favfood']);
+    
+    // $petArgs = array(
+    //   'favColor' => sanitize_text_field($_GET['favcolor']),
+    //   'species' => sanitize_text_field($_GET['species']),
+    //   'minYear' => sanitize_text_field($_GET['minyear']),
+    //   'maxYear' => sanitize_text_field($_GET['maxyear']),
+    //   'minWeight' => sanitize_text_field($_GET['minweight']),
+    //   'maxWeight' => sanitize_text_field($_GET['maxweight']),
+    //   'favHobby' => sanitize_text_field($_GET['favhobby']),
+    //   'favFood' => sanitize_text_field($_GET['favfood']),
+    // );
 
     $petMetaQuery = array(
       'relation' => 'AND'
     );
 
-    if ($petArgs['species']) {
+    if (isset($petArgs['species'])) {
       array_push($petMetaQuery, array(
 			'key' => 'species',
 			'compare' => '=',
@@ -39,7 +50,7 @@ get_header(); ?>
       ));
     }
 
-    if ($petArgs['favColor']) {
+    if (isset($petArgs['favColor'])) {
       array_push($petMetaQuery, array(
 			'key' => 'favColor',
 			'compare' => '=',
@@ -48,7 +59,7 @@ get_header(); ?>
       ));
     }
 
-    if ($petArgs['minYear']) {
+    if (isset($petArgs['minYear'])) {
       array_push($petMetaQuery, array(
 			'key' => 'birthYear',
 			'compare' => '>=',
@@ -57,7 +68,7 @@ get_header(); ?>
       ));
     }
 
-    if ($petArgs['maxYear']) {
+    if (isset($petArgs['maxYear'])) {
       array_push($petMetaQuery, array(
 			'key' => 'birthYear',
 			'compare' => '<=',
@@ -66,7 +77,7 @@ get_header(); ?>
       ));
     }
 
-    if ($petArgs['minWeight']) {
+    if (isset($petArgs['minWeight'])) {
       array_push($petMetaQuery, array(
 			'key' => 'weight',
 			'compare' => '>=',
@@ -75,7 +86,7 @@ get_header(); ?>
       ));
     }
 
-    if ($petArgs['maxWeight']) {
+    if (isset($petArgs['maxWeight'])) {
       array_push($petMetaQuery, array(
 			'key' => 'weight',
 			'compare' => '<=',
@@ -84,7 +95,7 @@ get_header(); ?>
       ));
     }
 
-    if ($petArgs['favHobby']) {
+    if (isset($petArgs['favHobby'])) {
       array_push($petMetaQuery, array(
 			'key' => 'favHobby',
 			'compare' => '=',
@@ -93,7 +104,7 @@ get_header(); ?>
       ));
     }
 
-    if ($petArgs['favFood']) {
+    if (isset($petArgs['favFood'])) {
       array_push($petMetaQuery, array(
 			'key' => 'favFood',
 			'compare' => '=',
